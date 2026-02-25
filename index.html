@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html>
 
-<style> body {
-  background-color: #1C1C1D;
-  color: #ABA8BF;
-  border: #ABA8BF;
-}
-.light-mode {
-  background-color: white;
-  color: black;
-}
-table {  border-collapse: collapse;  width: max-content;table-layout:auto;}
+<style> 
+  body {
+    background-color: #1C1C1D;
+    color: #ABA8BF;
+    border: #ABA8BF;
+  }
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  table {  border-collapse: collapse;  width: max-content;table-layout:auto;}
 
-#mainTable > td,th {border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:6px; } 
+  #mainTable > td,th {border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:6px; } 
 
-#mainTable:hover{background-color:#6564AF}
-.search{border:1px solid currentColor}
+  #mainTable:hover{background-color:#6564AF}
+  .search{border:1px solid currentColor}
 
-#usage-all{border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:6px; } 
-#usage-all>tr:hover{background-color:#6564AF}
+  #usage-all{border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:6px; } 
+  #usage-all>tr:hover{background-color:#6564AF}
 
-a{color:inherit;text-decoration:none;}
-input[type="text"]{width:100px}
-#tourSearch{background-color:none}
-.searchTitle{font-size:40px}
+  a{color:inherit;text-decoration:none;}
+  input[type="text"]{width:100px}
+  #tourSearch{background-color:none}
+  .searchTitle{font-size:40px}
 
-.column {
-  float: left;
-  width: max-content;
-  padding: 8px;
-}
+  .column {
+    float: left;
+    width: max-content;
+    padding: 8px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-th.searchable {
-  position: relative;
-}
-th.searchable input,th.searchable select{
-  all: unset; 
-  font: inherit;
-  color: inherit;
-  cursor: text;
-}
-th.searchable option {background:#1C1C1D}
-th.searchable input::placeholder {
-  color: inherit;
-  opacity: 1;
-  font-weight: 600;
-}
-th.searchable input:focus {
-  outline: none;
-  box-shadow: inset 0 -2px 0 #888;
-}
+  th.searchable {
+    position: relative;
+  }
+  th.searchable input,th.searchable select{
+    all: unset; 
+    font: inherit;
+    color: inherit;
+    cursor: text;
+  }
+  th.searchable option {background:#1C1C1D}
+  th.searchable input::placeholder {
+    color: inherit;
+    opacity: 1;
+    font-weight: 600;
+  }
+  th.searchable input:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 0 #888;
+  }
 
 </style>
 
 <body>
   <!--<button onclick="lightMode()">Toggle light mode</button>-->
-  <h1>SM OU Replay Bank</h1>
-  <p>Welcome to the SM OU replay bank, a ressource that aims to render accessible all major games played in gen 7 OU.<br>
+  <h1>Replay Bank</h1><select id="format" onchange="start(this.value)"><option value="none">Choose a format</option></select>
+  <p>Welcome to the replay bank, a ressource that aims to render accessible all major games played in pokemon showdown.<br>
   For each row, the winning team is automatically put on the left, and the battler's names may be different from their smogon name.<br>
   You can filter through these replays by looking for pokemons or combinations of pokemons, pokemon matchups, players, teamstyles, tournaments and for replays featuring sample teams.</p>
   
@@ -122,7 +123,7 @@ th.searchable input:focus {
 
   <button onclick="switchReplaysUsage()" id="switch" hidden>Show usage stats</button><br>
   <table id="myTable" hidden>
-    <tr>
+    <thead><tr>
       <th>Link</th>
       <th>Winner</th>
       <th>Loser</th>
@@ -132,7 +133,8 @@ th.searchable input:focus {
       <th>Tournament</th>
       <th>Tournament<br>round</th>
       <th class="searchable"><select id="sampleSearch" onchange="tableFilter()"><option value="All">Features a sample team? ▼</option><option value="Yes">Yes (new) ▼</option><option value="Any">Yes ▼</option><option value="Yes (old)">Yes (old) ▼</option><option value="No">No ▼</option></th>
-    </tr>
+      </tr></thead>
+      <tbody></tbody>
   </table>
   <br>
 
@@ -159,10 +161,22 @@ th.searchable input:focus {
 
 
 <script>
-  fetch("./format-data/gen1ou/data.json").then(response=>response.json()).then(data=>{
-    console.log(data)
-    init(data)
-  })
+  const format = window.location.hash||document.getElementById("format").value
+  let formats=[]
+  
+  for (var form of ["ou","ubers","uu","ru","nu","pu","zu","lc","doublesou","monotype"]){
+      for (var gen of [9,8,7,6,5,4,3,2,1]){
+        formats.push("gen"+gen+form)
+    }
+  }
+  
+  if (format!="none") start(format)
+
+  function start(fromat){
+    fetch("./format-data/"+fromat+"/data.json").then(response=>response.json()).then(data=>{
+      console.log(fromat,data)
+      init(data)
+  })}
 
   function init(data){
   
@@ -177,12 +191,14 @@ th.searchable input:focus {
     createTable(data)
     function createTable(data){
       document.getElementById("switch").hidden=false
-      var table=document.getElementById("myTable")
+      const table=document.getElementById("myTable")
+      const tbody = document.querySelector("#myTable tbody");
       table.hidden = false
+      tbody.innerHTML=""
       document.getElementById("temp").hidden = true
       
       data.forEach(x => {
-        row=table.insertRow()
+        row=tbody.insertRow()
         row.id="mainTable"
         row.dataset.team1=x["team1"].split(".")
         row.dataset.team2=x["team2"].split(".")
@@ -203,7 +219,7 @@ th.searchable input:focus {
         var mega=dataLine["team"+i].split(".")[6]
         for (var j=0;j<6;j++){
           var mon=dataLine["team"+i].split(".")[j]
-          string+='<img src="https://www.smogon.com/forums/media/minisprites/'+(mega.includes(mon)?mega:mon)+'.png" loading="lazy">'
+          string+='<img src="https://www.smogon.com/forums/media/minisprites/'+(mon==""?"unknown":(mega.includes(mon)?mega:mon))+'.png" loading="lazy">'
         }
         if (i==1) string+= "</span><b> VS </b><span class=imTeam2>"
       }
@@ -256,6 +272,16 @@ th.searchable input:focus {
     var images=["https://media1.tenor.com/m/QlgoisBpRZ4AAAAd/shroomish.gif","https://media1.tenor.com/m/-pTbEWFXCbQAAAAd/furret-pokemon.gif"]
 
     document.getElementById("temp").innerHTML='<center><b style="font-size:20px">Loading...Please Wait...</b></center><img src="'+images[(new Date().getTime() % 1000)%images.length]+'" style="display: block;margin-left: auto;margin-right: auto;height: 50%;">'
+  }
+
+  formatChoice()
+  function formatChoice(){
+    const select = document.getElementById("format")
+    string='<option value="none">Choose a format</option>'
+    formats.forEach(f=>{
+      string+='<option value="'+f+'">'+f+'</option>'
+    })
+    select.innerHTML=string
   }
 
   function lightMode() {
@@ -508,18 +534,17 @@ th.searchable input:focus {
           team1.forEach(mon=>{if(dic[mon]){dic[mon][0]+=1;dic[mon][1]+=1}else{dic[mon]=[1,1]}});
           teamNo+=1;winNo+=1;
           if (team1.length>=n){
-            var cores1=combi(n,team1)
-            console.log(cores1)
-            cores1.forEach(core=>{
-            if(dicTeam[core]){dicTeam[core][0]+=1;dicTeam[core][1]+=1}else{dicTeam[core]=[1,1]}})}
+          var cores1=combi(n,team1)
+          cores1.forEach(core=>{
+          if(dicTeam[core]){dicTeam[core][0]+=1;dicTeam[core][1]+=1}else{dicTeam[core]=[1,1]}})}
         }
         if (i==0||i==2){
           team2.forEach(mon=>{if(dic[mon]){dic[mon][0]+=1}else{dic[mon]=[1,0]}});
           teamNo+=1
           if (team2.length>=n){
-            var cores2=combi(n,team2)
-            cores2.forEach(core=>{
-            if(dicTeam[core]){dicTeam[core][0]+=1}else{dicTeam[core]=[1,0]}})}
+          var cores2=combi(n,team2)
+          cores2.forEach(core=>{
+          if(dicTeam[core]){dicTeam[core][0]+=1}else{dicTeam[core]=[1,0]}})}
         }
       })
       if (data[0][1]!=0){document.getElementById("totWinrate").innerHTML="Winrate of the search : "+(winNo*100/(teamNo)).toFixed(1)+"%"}
@@ -539,6 +564,8 @@ th.searchable input:focus {
       });
       div.innerHTML=string+"</tr>"
       sortTable("usage-filtered",[4,5,2],true)
+      console.log(dicTeam)
+
       if (refreshCores){
         var dicNoTeam={}
         Object.values(dicTeam).forEach(x=>{if(!dicNoTeam[x[0]]){dicNoTeam[x[0]]=0};dicNoTeam[x[0]]+=1})
@@ -565,11 +592,25 @@ th.searchable input:focus {
       }
       else{document.getElementById("refreshButton").hidden=false}
     }
-    function combi(n,team){
-        if (team.length==n-1) return
-        if (n==1) return team 
-        return (Array.from({length:team.length-1}, (_,i)=>i).map(i=>[team[0],combi(n-1,team.slice(1))[i]]).concat(combi(n,team.slice(1)))).filter(x=>Array.isArray(x)).map(x=>x.flat(n)).filter(x=>x.length==n)
+    function combi(n,arr) {
+      const res = [];
+      const total = Math.pow(2, arr.length);
+      for (let i = 1; i < total; i++) {
+          const comb = [];
+          for (let j = 0; j < arr.length; j++) {
+              if (i & (1 << j)) {
+                  comb.push(arr[j]);
+              }
+          }
+          res.push(comb);
       }
+      return res.filter(x=>x.length==n)
+    }
+    // function combi(n,team){
+    //     if (team.length==n-1) return
+    //     if (n==1) return team 
+    //     return (Array.from({length:team.length-1}, (_,i)=>i).map(i=>[team[0],combi(n-1,team.slice(1))[i]]).concat(combi(n,team.slice(1)))).filter(x=>Array.isArray(x)).map(x=>x.flat(n)).filter(x=>x.length==n)
+    //   }
   
   function clickSortMon(text){
     if (text.toLowerCase().includes("usage")){
