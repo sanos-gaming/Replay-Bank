@@ -161,7 +161,7 @@
 
 
 <script>
-  const format = window.location.hash||document.getElementById("format").value
+  const format = (window.location.hash||document.getElementById("format").value).replace("#","")
   let formats=[]
   
   for (var form of ["ou","ubers","uu","ru","nu","pu","zu","lc","doublesou","monotype"]){
