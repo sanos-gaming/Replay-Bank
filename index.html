@@ -159,7 +159,7 @@ th.searchable input:focus {
 
 
 <script>
-  fetch("./format-data/gen7ou/data.json").then(response=>response.json()).then(data=>{
+  fetch("./format-data/gen1ou/data.json").then(response=>response.json()).then(data=>{
     console.log(data)
     init(data)
   })
@@ -507,16 +507,19 @@ th.searchable input:focus {
         if (i==0||i==1){
           team1.forEach(mon=>{if(dic[mon]){dic[mon][0]+=1;dic[mon][1]+=1}else{dic[mon]=[1,1]}});
           teamNo+=1;winNo+=1;
-          var cores1=combi(n,team1)
-          cores1.forEach(core=>{
-          if(dicTeam[core]){dicTeam[core][0]+=1;dicTeam[core][1]+=1}else{dicTeam[core]=[1,1]}})
+          if (team1.length>=n){
+            var cores1=combi(n,team1)
+            console.log(cores1)
+            cores1.forEach(core=>{
+            if(dicTeam[core]){dicTeam[core][0]+=1;dicTeam[core][1]+=1}else{dicTeam[core]=[1,1]}})}
         }
         if (i==0||i==2){
           team2.forEach(mon=>{if(dic[mon]){dic[mon][0]+=1}else{dic[mon]=[1,0]}});
           teamNo+=1
-          var cores2=combi(n,team2)
-          cores2.forEach(core=>{
-          if(dicTeam[core]){dicTeam[core][0]+=1}else{dicTeam[core]=[1,0]}})
+          if (team2.length>=n){
+            var cores2=combi(n,team2)
+            cores2.forEach(core=>{
+            if(dicTeam[core]){dicTeam[core][0]+=1}else{dicTeam[core]=[1,0]}})}
         }
       })
       if (data[0][1]!=0){document.getElementById("totWinrate").innerHTML="Winrate of the search : "+(winNo*100/(teamNo)).toFixed(1)+"%"}
@@ -536,7 +539,6 @@ th.searchable input:focus {
       });
       div.innerHTML=string+"</tr>"
       sortTable("usage-filtered",[4,5,2],true)
-
       if (refreshCores){
         var dicNoTeam={}
         Object.values(dicTeam).forEach(x=>{if(!dicNoTeam[x[0]]){dicNoTeam[x[0]]=0};dicNoTeam[x[0]]+=1})
