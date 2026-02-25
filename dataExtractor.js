@@ -1,3 +1,5 @@
+//This script is how I go from tournament thread URL to all the info stored in data.db
+
 const { resolve } = require('node:dns');
 const fs = require("node:fs");
 const { format } = require('node:path');
@@ -379,4 +381,5 @@ function warnOnce(message) {
         console.warn(message);
         warnedMessages.add(message);
     }
+
 }
