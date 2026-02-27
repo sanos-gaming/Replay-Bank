@@ -1,0 +1,23 @@
+name: upload-threads
+run-name: ${{ github.actor }} is uploading
+on: 
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: node dataExtractorGit.js
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Auto update data" || echo "No changes to commit"
+          git push
