@@ -162,7 +162,7 @@
 
 
 <script>
-  let format = window.location.hash||"none"
+  let format = window.location.hash.slice(1)||"none"
   let formats
   fetch("./format-data/format-list.txt").then(resp=>resp.text()).then(x=>formats=x.split(","))
   
