@@ -62,7 +62,8 @@
 
 <body>
   <!--<button onclick="lightMode()">Toggle light mode</button>-->
-  <h1>Replay Bank</h1><select id="format" onchange="start(this.value)"><option value="none">Choose a format</option></select>
+  <h1>Replay Bank</h1>
+  <button id="formatButton" onclick="revealFormatList()" class="row">Choose another format</button><div id="formatDiv"></div><br><br>
   <p>Welcome to the replay bank, a ressource that aims to render accessible all major games played in pokemon showdown.<br>
   For each row, the winning team is automatically put on the left, and the battler's names may be different from their smogon name.<br>
   You can filter through these replays by looking for pokemons or combinations of pokemons, pokemon matchups, players, teamstyles, tournaments and for replays featuring sample teams.</p>
@@ -88,7 +89,7 @@
     </table>
   </div>
   <div class="column">
-    <table class="search">
+    <table class="search" id="styleSearch">
       <tr>
         <th COLSPAN = 2><h class="searchTitle">Search by teamstyle</h></th>
       </tr>
@@ -116,7 +117,7 @@
 
   <br><b><div id="count"></div></b><button onclick="clearFilters()">Clear all filters</button><br>
   <input type="checkbox" onchange="seeOld()" id="seeOld"><label for="seeOld">Include older replays (pre 2022)</label><br>
-  <input type="checkbox" onchange="togglePlayers()" id="seePlay"><label for="seePlay">Hide players (reduces the clutter on small screens)</label><br>
+  <!-- <input type="checkbox" onchange="togglePlayers()" id="seePlay"><label for="seePlay">Hide players (reduces the clutter on small screens)</label><br> -->
   <input type="checkbox" onchange="toggleTourRound()" id="toggleRound"><label for="toggleRound">See tournament rounds (experimental)</label>
 
   <br><div id="temp"></div>
@@ -161,18 +162,15 @@
 
 
 <script>
-  const format = (window.location.hash||document.getElementById("format").value).replace("#","")
-  let formats=[]
-  
-  for (var form of ["ou","ubers","uu","ru","nu","pu","zu","lc","doublesou","monotype"]){
-      for (var gen of [9,8,7,6,5,4,3,2,1]){
-        formats.push("gen"+gen+form)
-    }
-  }
+  let format = window.location.hash||"none"
+  let formats
+  fetch("./format-data/format-list.txt").then(resp=>resp.text()).then(x=>formats=x.split(","))
   
   if (format!="none") start(format)
 
   function start(fromat){
+    format=fromat
+    revealFormatList(false)
     fetch("./format-data/"+fromat+"/data.json").then(response=>response.json()).then(data=>{
       console.log(fromat,data)
       init(data)
@@ -212,6 +210,8 @@
         row.insertCell(7).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadRound"]+'</a>'
         row.insertCell(8).innerHTML=x["isASample"]
       })
+      toggleSample(!data.every(x=>x["isASample"]==""))
+      toggleStyles(!data.every(x=>x["style1"]==""))
     }
     function visual(dataLine){
       var string = '<a href="'+dataLine["url"]+'" target="_blank" ><span class="imTeam1">'
@@ -274,15 +274,26 @@
     document.getElementById("temp").innerHTML='<center><b style="font-size:20px">Loading...Please Wait...</b></center><img src="'+images[(new Date().getTime() % 1000)%images.length]+'" style="display: block;margin-left: auto;margin-right: auto;height: 50%;">'
   }
 
-  formatChoice()
-  function formatChoice(){
-    const select = document.getElementById("format")
-    string='<option value="none">Choose a format</option>'
-    formats.forEach(f=>{
-      string+='<option value="'+f+'">'+f+'</option>'
+  function revealFormatList(canShow=true){
+    const div=document.getElementById("formatDiv")
+    const button=document.getElementById("formatButton")
+    if (div.innerHTML==""&canShow){
+    let subformatList=[...new Set(formats.map(x=>x.slice(4)))]
+    var string=''
+
+    gens=Array.from({ length: 20 }, (_, i)=>20-i)
+    gens.forEach(gen=>{
+      if (formats.includes("gen"+gen+"ou")){
+      string+='<div class="column"><table id="tablegen'+gen+'"><tr><th>Gen '+gen+'</th></tr><tr><td>'
+      subformatList.forEach(f=>{
+        if (formats.includes("gen"+gen+f)) string+='<button onclick="start(this.value)" value="gen'+gen+f+'">Gen '+gen+' '+((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1)))+'<br>'})
+      string+="</td></tr></table></div>"}
     })
-    select.innerHTML=string
+    div.innerHTML=string;button.innerHTML="Cancel";
+    }
+    else {div.innerHTML="";button.innerHTML="Choose another format";}
   }
+
 
   function lightMode() {
     var element = document.body;
@@ -291,6 +302,15 @@
   function toggleTourRound(){
     const rows = Array.from(document.getElementById("myTable").rows)
     rows.forEach(row=>row.cells[7].style.display=(document.getElementById("toggleRound").checked?"":"none"))
+  }
+  function toggleStyles(value){
+    const rows = Array.from(document.getElementById("myTable").rows)
+    rows.forEach(row=>{row.cells[3].style.display=(value?"":"none");row.cells[4].style.display=(value?"":"none")})
+    document.getElementById("styleSearch").hidden=!value
+  }
+  function toggleSample(value){
+    const rows = Array.from(document.getElementById("myTable").rows)
+    rows.forEach(row=>{row.cells[8].style.display=(value?"":"none")})
   }
   function togglePlayers(){
     const rows = Array.from(document.getElementById("myTable").rows)
@@ -331,11 +351,13 @@
     }
     else {div.innerHTML="";button.innerHTML="Reveal";document.querySelectorAll(".convenienceTourButton").forEach(x=>x.hidden=true);tableFilter()}
   }
+
   function yearCheck(year){
     table=document.getElementById("table"+year)
     Array.from(table.getElementsByTagName("input")).forEach(x=>x.checked=document.getElementById(year).checked)
     tableFilter(true)
   }
+
   function checkOpp(a){
     Array.from(document.getElementById("tourListTop").getElementsByTagName("input")).forEach(check=>
     {if (+a===0){check.checked=true};if (+a===1){check.checked=false};if (+a===2){check.checked=!check.checked}})
