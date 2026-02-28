@@ -1,12 +1,139 @@
-https://www.smogon.com/forums/threads/oras-invitational-iv-main-event-won-by-ox-the-fox.3773008/,ORAS Invitational IV
-https://www.smogon.com/forums/threads/oraspl-v-replays-and-usage-stats.3770380/,ORASPL V
-https://www.smogon.com/forums/threads/oras-underground-i-replays-and-usage-statistics.3766241/,ORAS Underground I
-https://www.smogon.com/forums/threads/oraspl-iv-replays-and-usage-stats.3749445/,ORASPL IV
-https://www.smogon.com/forums/threads/oras-ou-ladder-tournament-i-playoffs-won-by-kingofking8010.3742254/,ORAS OU Ladder Tournament I
-https://www.smogon.com/forums/threads/oras-slam-i-playoffs-won-by-lpz.3741179/,ORAS Grand Slam I
-https://www.smogon.com/forums/threads/oras-grand-slam-ii-commencement-and-playoffs-won-by-thiago-nunes.3759227/,ORAS Grand Slam II
-https://www.smogon.com/forums/threads/oras-invitational-ii-replays-and-usage-stats.3729767/,ORAS Invitational II
-https://www.smogon.com/forums/threads/oraspl-iii-replays-and-usage-stats.3728653/,ORASPL III
-https://www.smogon.com/forums/threads/oras-pl-ii-replays-and-usage-stats.3707802/,ORASPL II
-https://www.smogon.com/forums/threads/oras-invitational-i-replays-and-usage-stats.3708671/,ORAS Invitational I
-https://www.smogon.com/forums/threads/oras-premier-league-usage-stats-and-player-records.3692057/,ORASPL I
+https://www.smogon.com/forums/threads/smogon-masters-iii-finals-replays-mandatory-won-by-c0mp.3775594/,Smogon Masters III,Finals
+https://www.smogon.com/forums/threads/smogon-masters-iii-top-4-replays-mandatory.3775380/,Smogon Masters III,Top 4
+https://www.smogon.com/forums/threads/sm-rising-stars-ii-won-by-zden.3773971/,SM Rising Stars II,
+https://www.smogon.com/forums/threads/smogon-masters-iii-top-8-replays-mandatory.3775149/,Smogon Masters III,Top 8
+https://www.smogon.com/forums/threads/sm-ou-2025-circuit-championship-finals-won-by-abele.3774303/,SM OU 2025 Circuit Championship,
+https://www.smogon.com/forums/threads/smogon-masters-iii-top-16-replays-mandatory.3774870/,Smogon Masters III,Top 16
+https://www.smogon.com/forums/threads/smogon-masters-iii-play-ins-top-cut-round-1-replays-mandatory.3774261/,Smogon Masters III,Top 32
+https://www.smogon.com/forums/threads/sm-ou-ladder-tournament-ii-finals-won-by-reze.3773021/,SM OU Ladder Tournament II,
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-5-grand-finals-256-man-won-by-eelektrone.3773638/,SM OU Summer Seasonal #5,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-5-round-15.3773288/,SM OU Summer Seasonal #5,Loser's Finals
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-5-round-14.3772835/,SM OU Summer Seasonal #5,Top 4
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-5-round-13.3772479/,SM OU Summer Seasonal #5,Loser's Top 4
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-5-round-12.3772090/,SM OU Summer Seasonal #5,Top 8
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-5-round-10.3771457/,SM OU Summer Seasonal #5,Top 16
+https://www.smogon.com/forums/threads/sm-cup-vi-finals-256-man-won-by-kyo.3768995/,SM Cup VI,Finals
+https://www.smogon.com/forums/threads/smpl-iv-replays-and-usage-statistics.3766509/,SMPL IV,
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2025-finals-256-man-won-by-drachenkeule.3769029/,SM OU Global Championship 2025,Finals
+https://www.smogon.com/forums/threads/sm-cup-vi-round-7.3768654/,SM Cup VI,Semifinals
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2025-round-7.3768578/,SM OU Global Championship 2025,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-replays.3763185/,WCUP 2025,
+https://www.smogon.com/forums/threads/sm-cup-vi-round-6.3768271/,SM Cup VI,Quarterfinals
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2025-round-6.3767657/,SM OU Global Championship 2025,Quarterfinals
+https://www.smogon.com/forums/threads/sm-cup-vi-round-5.3767905/,SM Cup VI,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/,Smogon Tour 37,
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2025-round-5.3767084/,SM OU Global Championship 2025,Top 16
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-grand-finals-256-man-won-by-brandonlee1.3763892/,SM OU Winter Seasonal #6,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-round-15.3763525/,SM OU Winter Seasonal #6,Loser Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-round-14.3763162/,SM OU Winter Seasonal #6,Top 4
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-round-13.3762808/,SM OU Winter Seasonal #6,Loser Semifinals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-round-12.3762333/,SM OU Winter Seasonal #6,Top 8
+https://www.smogon.com/forums/threads/spl-xvi-replays.3758078/,SPL XVI,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-round-11.3762125/,SM OU Winter Seasonal #6,Loser Quarterfinals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-6-round-10.3761734/,SM OU Winter Seasonal #6,Top 16
+https://www.smogon.com/forums/threads/sm-trios-real-finals.3759662/,SM Trios,
+https://www.smogon.com/forums/threads/sm-trios-round-11-losers-bracket.3759233/,SM Trios,
+https://www.smogon.com/forums/threads/sm-trios-round-10.3758958/,SM Trios,
+https://www.smogon.com/forums/threads/sm-trios-round-9-losers-bracket.3758512/,SM Trios,
+https://www.smogon.com/forums/threads/smogon-masters-ii-top-cut-finals-won-by-empo.3757962/,Smogon Masters II,Finals
+https://www.smogon.com/forums/threads/smogon-masters-ii-top-cut-semifinals-replays-required.3757328/,Smogon Masters II,Semifinals
+https://www.smogon.com/forums/threads/smogon-masters-ii-top-cut-quarterfinals-replays-required.3756976/,Smogon Masters II,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-masters-ii-top-cut-round-3-replays-required.3756673/,Smogon Masters II,Top 16
+https://www.smogon.com/forums/threads/sm-ou-2024-circuit-championship-finals-won-by-skypenguin.3755578/,SM OU 2024 Circuit Championship,
+https://www.smogon.com/forums/threads/smogon-masters-ii-top-cut-round-2-replays-required.3756326/,Smogon Masters II,Top 32
+https://www.smogon.com/forums/threads/smogon-masters-ii-top-cut-play-ins-round-1-replays-required.3755532/,Smogon Masters II,Top 64
+https://www.smogon.com/forums/threads/sm-ou-ladder-tournament-i-playoffs-finals-won-by-zaza.3755512/,SM OU Ladder Tournament I,Finals
+https://www.smogon.com/forums/threads/sm-ou-ladder-tournament-i-playoffs-semifinals.3755154/,SM OU Ladder Tournament I,Semifinals
+https://www.smogon.com/forums/threads/sm-ou-ladder-tournament-i-playoffs-round-2.3754736/,SM OU Ladder Tournament I,Quarterfinals
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-4-grand-finals-128-man-won-by-skypenguin.3754364/,SM OU Summer Seasonal #4,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-ladder-tournament-i-playoffs-round-1.3754375/,SM OU Ladder Tournament I,Top 16
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-4-round-13.3753660/,SM OU Summer Seasonal #4,Loser's Finals
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-4-round-12.3753252/,SM OU Summer Seasonal #4,Top 4
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-4-round-11.3752715/,SM OU Summer Seasonal #4,Loser's Semifinals
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2024-finals-192-man-won-by-entrocefalo.3748078/,SM OU Global Championship 2024,Finals
+https://www.smogon.com/forums/threads/smpl-iii-replays-and-usage-stats.3746642/,SMPL III,
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2024-round-6.3747220/,SM OU Global Championship 2024,Top 6
+https://www.smogon.com/forums/threads/sm-cup-v-round-6.3747178/,SM Cup V,Top 6
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2024-replays.3742226/,WCUP 2024,
+https://www.smogon.com/forums/threads/sm-cup-v-round-5.3746772/,SM Cup V,Top 12
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2024-round-5.3746229/,SM OU Global Championship 2024,Top 12
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/,Smogon Tour 36,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-5-round-15.3741827/,SM OU Winter Seasonal #5,Loser's Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-5-round-14.3741318/,SM OU Winter Seasonal #5,Top 4
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-5-round-13.3740820/,SM OU Winter Seasonal #5,Loser's Semifinals
+https://www.smogon.com/forums/threads/spl-xv-replays.3734444/,SPL XV,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-5-round-12.3740317/,SM OU Winter Seasonal #5,Top 8
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-5-round-11.3739807/,SM OU Winter Seasonal #5,Loser's Top 8
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-5-round-10.3739207/,SM OU Winter Seasonal #5,Top 16
+https://www.smogon.com/forums/threads/smogon-masters-i-top-cut-semifinals-replays-needed.3733630/,Smogon Masters I,Semifinals
+https://www.smogon.com/forums/threads/smogon-masters-i-top-cut-quarterfinals-replays-needed.3733126/,Smogon Masters I,QuarterFinals
+https://www.smogon.com/forums/threads/smogon-masters-i-top-cut-round-3-replays-needed.3732821/,Smogon Masters I,Top 16
+https://www.smogon.com/forums/threads/smogon-masters-i-top-cut-round-2-replays-needed.3732429/,Smogon Masters I,Top 32
+https://www.smogon.com/forums/threads/smogon-masters-i-top-cut-play-ins-round-1-replays-needed.3731859/,Smogon Masters I,Top 64
+https://www.smogon.com/forums/threads/sm-cup-iv-round-6.3727333/,SM Cup IV,Top 6
+https://www.smogon.com/forums/threads/sm-cup-iv-round-5.3726968/,SM Cup IV,Top 12
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/,Smogon Tour 35,
+https://www.smogon.com/forums/threads/smpl-ii-finals-won-by-andromeda-galaxy-cosmogs.3721613/,SMPL II,Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-grand-finals-512-man-won-by-chafouuu.3721377/,SM OU Winter Seasonal #4,Grand Finals
+https://www.smogon.com/forums/threads/smpl-ii-semifinals.3721220/,SMPL II,Semifinals
+https://www.smogon.com/forums/threads/smpl-ii-week-5.3720701/,SMPL II,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-round-16.3720562/,SM OU Winter Seasonal #4,Top 4
+https://www.smogon.com/forums/threads/smpl-ii-week-4.3720335/,SMPL II,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-round-15.3720182/,SM OU Winter Seasonal #4,Loser's Top 4
+https://www.smogon.com/forums/threads/smpl-week-3.3719959/,SMPL II,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-round-14.3719962/,SM OU Winter Seasonal #4,Top 8
+https://www.smogon.com/forums/threads/smpl-week-2.3719579/,SMPL II,
+https://www.smogon.com/forums/threads/smpl-ii-week-1.3719198/,SMPL II,
+https://www.smogon.com/forums/threads/spl-xiv-replays.3714486/,SPL XIV,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-round-12.3719140/,SM OU Winter Seasonal #4,Top 16
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-round-11.3718724/,SM OU Winter Seasonal #4,Loser's Top 16
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-4-round-10.3718406/,SM OU Winter Seasonal #4,Top 32
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/,Smogon Tour 34,
+https://www.smogon.com/forums/threads/sm-cup-iii-finals-192-man-won-by-robjr.3706624/,SM Cup III,Finals
+https://www.smogon.com/forums/threads/sm-cup-iii-round-6.3706306/,SM Cup III,Top 6
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-3-round-13.3706042/,SM OU Summer Seasonal #3,Loser's Top 4
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-3-round-11.3705333/,SM OU Summer Seasonal #3,Loser's Top 8
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-3-round-10.3704995/,SM OU Summer Seasonal #3,Top 16
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2022-round-5.3702558/,SM OU Global Championship 2022,Top 12
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/,Smogon Tour 33,
+https://www.smogon.com/forums/threads/smpl-finals-won-by-wailord-of-the-rings.3701390/,SMPL,Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-3-grand-finals-256-man-won-by-pohjis.3701017/,SM OU Winter Seasonal #3,Grand Finals
+https://www.smogon.com/forums/threads/smpl-semifinals.3701143/,SMPL,Semifinals
+https://www.smogon.com/forums/threads/smpl-week-5.3700711/,SMPL,
+https://www.smogon.com/forums/threads/smpl-week-4.3700485/,SMPL,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-3-round-14.3700373/,SM OU Winter Seasonal #3,Top 4
+https://www.smogon.com/forums/threads/smpl-week-3.3700103/,SMPL,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-3-round-13.3700143/,SM OU Winter Seasonal #3,Loser's Top 4
+https://www.smogon.com/forums/threads/smpl-week-2.3699728/,SMPL,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-3-round-12.3699767/,SM OU Winter Seasonal #3,Top 8
+https://www.smogon.com/forums/threads/smpl-week-1.3699365/,SMPL,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-3-round-11.3699339/,SM OU Winter Seasonal #3,Loser's Top 8
+https://www.smogon.com/forums/threads/spl-xiii-replays.3695657/,SPL XIII,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-3-round-10.3699069/,SM OU Winter Seasonal #3,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-32-playoffs-won-by-soulwind.3693624/,Smogon Tour 32,
+https://www.smogon.com/forums/threads/smogon-tour-season-31-playoffs-won-by-lusa.3684041/,Smogon Tour 31,
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-2-grand-finals-256-man-won-by-drafeu-kun.3682937/,SM OU Winter Seasonal #2,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-2-round-14.3681914/,SM OU Winter Seasonal #2,Top 4
+https://www.smogon.com/forums/threads/spl-xii-replays.3676213/,SPL XII,
+https://www.smogon.com/forums/threads/smogon-tour-season-30-playoffs-won-by-empo.3673513/,Smogon Tour 30,
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-1-grand-finals-192-man-won-by-slave-of-passion.3671849/,SM OU Summer Seasonal #1,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-1-round-13.3671648/,SM OU Summer Seasonal #1,Loser's Finals
+https://www.smogon.com/forums/threads/sm-ou-summer-seasonal-1-round-12.3671380/,SM OU Summer Seasonal #1,Top 6
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2020-finals-256-man-won-by-lopunny-kicks.3670162/,SM OU Global Championship 2020,Finals
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2020-round-7.3669545/,SM OU Global Championship 2020,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-29-playoffs-won-by-abr.3664063/,Smogon Tour 29,
+https://www.smogon.com/forums/threads/sm-cup-i-finals-96-man-won-by-aurella.3662764/,SM Cup I,Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-2-grand-finals-192-man-won-by-empo.3662702/,SM OU Winter Seasonal #1,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-1-round-13.3662493/,SM OU Winter Seasonal #1,Top 3
+https://www.smogon.com/forums/threads/spl-xi-replays.3658653/,SPL XI,
+https://www.smogon.com/forums/threads/smogon-tour-season-28-playoffs-won-by-abr.3656121/,Smogon Tour 28,
+https://www.smogon.com/forums/threads/smogon-snake-draft-iii-replays.3653850/,Smogon Snake Draft III,
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2019-replays.3650498/,WCUP 2019,
+https://www.smogon.com/forums/threads/smogon-tour-season-27-playoffs-won-by-luigi.3650190/,Smogon Tour 27,
+https://www.smogon.com/forums/threads/spl-x-replays.3645759/,SPL X,
+https://www.smogon.com/forums/threads/smogon-tour-season-26-playoffs-won-by-z0mog.3643653/,Smogon Tour 26,
+https://www.smogon.com/forums/threads/smogon-tour-season-26-playoffs-won-by-z0mog.3643653/,Smogon Tour 25,
+https://www.smogon.com/forums/threads/smogon-snake-draft-ii-replays.3640779/,Smogon Snake Draft II,
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2018-replays.3634230/,WCUP 2018,
+https://www.smogon.com/forums/threads/smogon-tour-season-25-playoffs-won-by-blunder.3634739/,Smogon Tour 25,
+https://www.smogon.com/forums/threads/spl-ix-replays.3624592/,SPL IX,
