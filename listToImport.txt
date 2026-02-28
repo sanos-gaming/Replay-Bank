@@ -1,4 +1,26 @@
-https://www.smogon.com/forums/threads/masters-league-replays-and-usage-statistics.3762753/,Masters League
-https://www.smogon.com/forums/threads/roapl-x-replays-and-usage-stats.3744517/,RoAPL X
-https://www.smogon.com/forums/threads/alt-pl-vol-2-replays-and-usage-statistics.3734367/,ALTPL II
-https://www.smogon.com/forums/threads/sm-grand-slam-ii-playoffs-won-by-mz.3775633/,SM Grand Slam II,Playoffs
+https://www.smogon.com/forums/threads/oras-ou-last-chance-1-finals-256-man-won-by-noname6293.3773880/,ORAS OU Last Chance #1,Finals
+https://www.smogon.com/forums/threads/oras-ou-last-chance-1-round-7.3773704/,ORAS OU Last Chance #1,Semifinals
+https://www.smogon.com/forums/threads/oras-ou-last-chance-1-round-6.3773588/,ORAS OU Last Chance #1,Quarterfinals
+https://www.smogon.com/forums/threads/oras-ou-last-chance-1-round-5.3773437/,ORAS OU Last Chance #1,Top 16
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-grand-finals-256-man-won-by-kingofking.3773211/,ORAS OU Summer Seasonal #6,Grand Finals
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-round-15.3772857/,ORAS OU Summer Seasonal #6,Loser Finals
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-round-14.3772309/,ORAS OU Summer Seasonal #6,Top 4
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-round-13.3772026/,ORAS OU Summer Seasonal #6,Loser Semifinals
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-round-12.3771804/,ORAS OU Summer Seasonal #6,Top 8
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-round-11.3771513/,ORAS OU Summer Seasonal #6,Loser Quarterfinals
+https://www.smogon.com/forums/threads/oras-ou-summer-seasonal-6-round-9.3770817/,ORAS OU Summer Seasonal #6,Top 16
+https://www.smogon.com/forums/threads/oras-ladder-tournament-ii-finals-won-by-c0mp.3771734/,ORAS Ladder Tournament II,
+https://www.smogon.com/forums/threads/oras-cup-viii-finals-256-man-won-by-twinkay.3769327/,ORAS Cup VIII,Finals
+https://www.smogon.com/forums/threads/oras-cup-viii-round-7.3769046/,ORAS Cup VIII,Semifinals
+https://www.smogon.com/forums/threads/oras-cup-viii-round-6.3768627/,ORAS Cup VIII,Quarterfinals
+https://www.smogon.com/forums/threads/oras-cup-viii-round-5.3768265/,ORAS Cup VIII,Top 16
+https://www.smogon.com/forums/threads/oras-ou-global-championship-2025-finals-256-man-won-by-xurkiyee.3768913/,ORAS OU Global Championship 2025,Finals
+https://www.smogon.com/forums/threads/oras-ou-global-championship-2025-round-6.3767314/,ORAS OU Global Championship 2025,Quarterfinals
+https://www.smogon.com/forums/threads/oras-ou-global-championship-2025-round-5.3766805/,ORAS OU Global Championship 2025,Top 16
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-grand-finals-256-man-won-by-cloud-and-book.3764233/,ORAS OU Winter Seasonal #7,Grand Finals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-round-15.3763866/,ORAS OU Winter Seasonal #7,Loser Finals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-round-14.3763469/,ORAS OU Winter Seasonal #7,Top 4
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-round-13.3763145/,ORAS OU Winter Seasonal #7,Loser Semifinals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-round-12.3762795/,ORAS OU Winter Seasonal #7,Top 8
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-round-11.3762408/,ORAS OU Winter Seasonal #7,Loser Quarterfinals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-7-round-10.3762049/,ORAS OU Winter Seasonal #7,Top 16
