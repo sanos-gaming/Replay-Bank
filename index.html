@@ -75,11 +75,11 @@
 <body>
   <!--<button onclick="lightMode()">Toggle light mode</button>-->
   <h1>Replay Bank</h1>
-  <button id="formatButton" onclick="revealFormatList()" class="row">Choose another format</button><table id="formatTable" hidden><thead></thead><tbody></tbody></table>
   <p>Welcome to the replay bank, a ressource that aims to render accessible all major games played in pokemon showdown.<br>
   For each row, the winning team is automatically put on the left, and the battler's names may be different from their smogon name.<br>
   You can filter through these replays by looking for pokemons or combinations of pokemons, pokemon matchups, players, teamstyles, tournaments and for replays featuring sample teams.</p>
-  
+  <button id="formatButton" onclick="revealFormatList()" class="row">Choose another format</button><table id="formatTable" hidden><thead></thead><tbody></tbody></table>
+  <span id="ifFormatChoosen">
 
   <div class="row"><div class="column">
     <table class="search" id="searchByMons">
@@ -170,15 +170,44 @@
   </table></td></tr>
   </table>
 
-
-<!------------------------------------------------------------------------------------------------------------------------------------------------------>
-
+  </span>
+</body>
 
 
 <script>
-  let format = window.location.hash.slice(1)||"gen7ou"
+  let format = window.location.hash.slice(1)||"none"
+  if (format=="none") {document.getElementById("ifFormatChoosen").hidden=true;revealFormatList();document.getElementById("formatButton").hidden=true;}
   let formats
-  fetch("./format-data/format-list.txt").then(resp=>resp.text()).then(x=>{formats=x.split(",");if (format!="none") start(format)})
+  fetch("./format-data/format-list.txt").then(resp=>resp.text()).then(x=>{formats=x.split(",");createFormatsTable();start(format)})
+
+  function createFormatsTable(){
+    const table=document.getElementById("formatTable")
+    
+    let subformatList=[...new Set(formats.map(x=>x.slice(4)))]
+
+    let gens=Array.from({ length: 10 }, (_, i)=>10-i)
+
+    let tableForm = []
+    gens.forEach(g=>{let curGen=[g,[]];subformatList.forEach(f=>{if (formats.includes("gen"+g+f)) curGen[1].push(f)});tableForm.push(curGen)})
+    console.log(tableForm)
+    tableForm=tableForm.filter(x=>x[1].length>0)
+    row=document.querySelector("#formatTable thead").insertRow()
+    tableForm.forEach(form=>{
+      row.insertCell().outerHTML="<th>Gen "+form[0]+"</th>"
+    })
+
+    for (var i=0;i<Math.max(...tableForm.map(x=>x[1].length));i++){
+      row=document.querySelector("#formatTable tbody").insertRow()
+      tableForm.forEach(forms=>{
+        if (!forms[1][i]) row.insertCell()
+        else {
+          f=forms[1][i]
+          gen=forms[0]
+          row.insertCell().outerHTML='<td onclick="start(this.dataset.f)" data-f="gen'+gen+f+'" style="cursor: pointer;">Gen '+gen+' <b>'+((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1)))+'</b></td>'
+        }
+      })
+    }
+  }
 
   createPokeSearch()
   function createPokeSearch(){
@@ -195,6 +224,9 @@
   
 
   function start(fromat){
+    console.log(fromat)
+    if (fromat=="none") return
+    document.getElementById("ifFormatChoosen").hidden=false
     clearFilters()
     switchReplaysUsage(true)
     format=fromat
@@ -226,7 +258,6 @@
       document.getElementById("switch").hidden=false
       const table=document.getElementById("myTable")
       const tbody = document.querySelector("#myTable tbody");
-      table.hidden = false
       tbody.innerHTML=""
       document.getElementById("temp").hidden = true
       
@@ -247,6 +278,7 @@
       })
       toggleSample(!data.every(x=>x["isASample"]==""))
       toggleStyles(!data.every(x=>x["style1"]==""))
+      table.hidden = false
     }
     function visual(dataLine){
       var string = '<a href="'+dataLine["url"]+'" target="_blank" ><span class="imTeam1">'
@@ -261,35 +293,6 @@
       return string+"</span></a>"
     }
     
-    createFormatsTable()
-    function createFormatsTable(){
-      const table=document.getElementById("formatTable")
-      
-      let subformatList=[...new Set(formats.map(x=>x.slice(4)))]
-
-      let gens=Array.from({ length: 10 }, (_, i)=>10-i)
-
-      let tableForm = []
-      gens.forEach(g=>{let curGen=[g,[]];subformatList.forEach(f=>{if (formats.includes("gen"+g+f)) curGen[1].push(f)});tableForm.push(curGen)})
-      console.log(tableForm)
-      tableForm=tableForm.filter(x=>x[1].length>0)
-      row=document.querySelector("#formatTable thead").insertRow()
-      tableForm.forEach(form=>{
-        row.insertCell().outerHTML="<th>Gen "+form[0]+"</th>"
-      })
-
-      for (var i=0;i<Math.max(...tableForm.map(x=>x[1].length));i++){
-        row=document.querySelector("#formatTable tbody").insertRow()
-        tableForm.forEach(forms=>{
-          if (!forms[1][i]) row.insertCell()
-          else {
-            f=forms[1][i]
-            gen=forms[0]
-            row.insertCell().outerHTML='<td onclick="start(this.value)" value="gen'+gen+f+'" style="cursor: pointer;">Gen '+gen+' <b>'+((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1)))+'</b></td>'
-          }
-        })
-      }
-    }
     toggleTourRound()
     tableFilter()
   }
@@ -305,6 +308,7 @@
 
   function revealFormatList(canShow=true){
     const button=document.getElementById("formatButton")
+    button.hidden=false
     const table=document.getElementById("formatTable")
     if (table.hidden&canShow){ 
       table.hidden=false;button.innerHTML="Cancel";
@@ -424,7 +428,7 @@
     const usageTable=document.getElementById("stats")
     if (replayTable.hidden||forceReplays){
       usageTable.hidden=true
-      replayTable.hidden=false
+      replayTable.hidden=!document.getElementById("temp").hidden
       document.getElementById("switch").innerHTML="Switch to usage stats"
     }
     else {
@@ -723,7 +727,6 @@
   }
   
 </script>
-</body>
 
 </html>
 
