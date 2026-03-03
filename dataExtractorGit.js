@@ -19,7 +19,8 @@ threadOK = function(data){
 //Functions relating to filling a line of the sheet from nothing but the replay url
 
 async function SingleReplayImport(url,db,tourName="",tourRound="",toururl="",fetchid=-1) {
-  const format = url.replace("https://","").replace("replay.pokemonshowdown.com/","").replace("smogtours-","").split("-")[0]
+  const format = url.replace("https://","").replace("replay.pokemonshowdown.com/","").replace("smogtours-","").replace("gold-","").split("-")[0]
+  if (format=="ou") format="gen6ou"
   
   await createTable(format,db)
   url="https://replay.pokemonshowdown.com/"+url.replace("https://","").replace("replay.pokemonshowdown.com/","")
@@ -285,4 +286,5 @@ async function useCSVFile(){
     console.log("Importing thread : "+infos[0])
     await SmogThreadImport(infos[0],infos[1],infos[2]||"")
   }
+
 }
