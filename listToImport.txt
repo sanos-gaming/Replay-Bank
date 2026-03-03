@@ -1,3 +1,45 @@
-https://www.smogon.com/forums/threads/the-retro-cup-of-pok%C3%A9mon-2025-replays.3770403/page-1,Retro CoP 2025,
-https://www.smogon.com/forums/threads/roapl-xi-replays-and-usage.3765514/page-1,RoAPL XI,
-https://www.smogon.com/forums/threads/ancient-lower-tiers-premier-league-iv-replays.3776296/page-1,ALTPL IV,
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2023-replays.3720595/,WCUP 2023
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2022-replays.3701428/,WCUP 2022
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2021-replays.3683340/,WCUP 2021
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2020-replays.3665144/,WCUP 2020
+https://www.smogon.com/forums/threads/the-world-cup-of-pokemon-2017-replays.3606412/,WCUP 2017
+https://www.smogon.com/forums/threads/world-cup-of-pokemon-xi-replays.3574596/,WCUP 2016
+https://www.smogon.com/forums/threads/world-cup-of-pokemon-x-logs-replays.3541298/,WCUP 2015
+https://www.smogon.com/forums/threads/world-cup-of-pokemon-ix-logs-replays.3509382/,WCUP 2014
+https://www.smogon.com/forums/threads/spl-viii-replays.3592101/,SPL VIII
+https://www.smogon.com/forums/threads/spl-vii-logs-replays.3560692/,SPL VII
+https://www.smogon.com/forums/threads/spl-vi-logs-replays.3526257/,SPL VI
+https://www.smogon.com/forums/threads/spl-v-logs-replays.3497301/,SPL V
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-xii-replay-thread.3770499/,OLT XII
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-xi-replay-thread.3750361/,OLT XI
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-x-replay-thread.3726937/,OLT X
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-ix-replay-thread.3707476/,OLT IX
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-viii-replay-thread.3689040/,OLT VIII
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vii-replay-thread.3670538/,OLT VII
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-finals-won-by-tricking.3655367/,OLT VI
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-semifinals.3655105/,OLT VI
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-quarterfinals.3654939/,OLT VI
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-round-of-16.3654717/,OLT VI
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-v-replay-thread.3640819/,OLT V
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-iv-replay-thread.3613986/,OLT IV
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-iii-logs-replays-usage-statistics.3582785/,OLT III
+https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-ii-logs-replays-usage-statistics.3554342/,OLT II
+https://www.smogon.com/forums/threads/smogon-classic-xi-playoffs-won-by-pdc.3771540/,Smogon Classic XI
+https://www.smogon.com/forums/threads/smogon-classic-x-playoffs-won-by-m-dragon.3752112/,Smogon Classic X
+https://www.smogon.com/forums/threads/smogon-classic-ix-playoffs-won-by-conflict.3728686/,Smogon Classic IX
+https://www.smogon.com/forums/threads/smogon-classic-viii-playoffs-won-by-august.3709064/,Smogon Classic VIII
+https://www.smogon.com/forums/threads/smogon-classic-vii-playoffs-won-by-abr.3692664/,Smogon Classic VII
+https://www.smogon.com/forums/threads/smogon-classic-vi-playoffs-won-by-soulwind.3665843/,Smogon Classic VI
+https://www.smogon.com/forums/threads/smogon-classic-v-playoffs-won-by-mcmeghan.3651396/,Smogon Classic V
+https://www.smogon.com/forums/threads/smogon-classic-iv-playoffs-no-winner.3636447/,Smogon Classic IV
+https://www.smogon.com/forums/threads/smogon-classic-iii-playoffs-won-by-giara.3606424/,Smogon Classic III
+https://www.smogon.com/forums/threads/smogon-classic-ii-playoffs-won-by-tsunami.3574552/,Smogon Classic II
+https://www.smogon.com/forums/threads/smogon-classic-i-playoffs-won-by-ojama.3544817/,Smogon Classic I
+https://www.smogon.com/forums/threads/scl-v-replays.3770676/,SCL V
+https://www.smogon.com/forums/threads/scl-iv-replays.3750816/,SCL IV
+https://www.smogon.com/forums/threads/scl-iii-replays.3728426/,SCL III
+https://www.smogon.com/forums/threads/scl-ii-replays.3707365/,SCL II
+https://www.smogon.com/forums/threads/scl-i-replays.3690429/,SCL I
+https://www.smogon.com/forums/threads/smogon-snake-draft-iv-replays.3669847/,Smogon Snake Draft IV
+https://www.smogon.com/forums/threads/smogon-snake-draft-i-logs-replays.3614673/,Smogon Snake Draft I
+https://www.smogon.com/forums/threads/chubbins-archive-of-restored-replays.3756803/,Restored Replays
