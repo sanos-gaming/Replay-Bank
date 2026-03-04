@@ -40,7 +40,7 @@ async function SingleReplayImport(url,db,tourName="",tourRound="",toururl="",fet
       log.forEach(line=>{
       for (var i=1;i<3;i++){
           if (line.includes("|switch|p"+i+"a:")){
-          var mon = line.split("|")[3].split(",")[0].trim().toLowerCase().replace(" ","-")
+          var mon = line.split("|")[3].split(",")[0].trim().toLowerCase().replace(" ","-").replace(".","")
           if (!teams[i].includes(mon)){teams[i].push(mon)}
       }}
       })
@@ -288,4 +288,5 @@ async function useCSVFile(){
   }
 
 }
+
 
