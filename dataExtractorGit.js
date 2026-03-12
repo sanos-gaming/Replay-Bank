@@ -1,28 +1,25 @@
 #!/usr/bin/env node
 
-const { resolve } = require('node:dns');
 const fs = require("node:fs");
 const path = require("node:path");
+const { exit } = require("node:process");
 const dir = path.join(__dirname, "format-data");
-const { format } = require('node:path');
 
 const sqlite3 = require('sqlite3').verbose();
 
 
-threadOK = function(data){
-  var n=0
-  cacheRefresh()
-  data.forEach(data => n+=SmogThreadImport(data[0],data[1],data[2]))  
+function cleanName(name){
+  if(!name) return
+  return name.trim().split(",")[0].replace(" ","-").toLowerCase().replace("-resolute","").replace("-*","").replace("%","").replace("-totem","").replace(".","")
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Functions relating to filling a line of the sheet from nothing but the replay url
 
-async function SingleReplayImport(url,db,tourName="",tourRound="",toururl="",fetchid=-1) {
-  const format = url.replace("https://","").replace("replay.pokemonshowdown.com/","").replace("smogtours-","").replace("gold-","").replace("netbattle-","").replace("shoddy-","").replace("pokemononline-","").replace("pokemonshowdown-","").split("-")[0]
+async function SingleReplayImport(url,db,toururl="",fetchid=-1,replace=false) {
+  let format = url.replace("https://","").replace("replay.pokemonshowdown.com/","").replace("smogtours-","").replace("gold-","").replace("netbattle-","").replace("shoddy-","").replace("pokemononline-","").replace("pokemonshowdown-","").split("-")[0]
   if (format=="ou") format="gen6ou"
   
-  await createTable(format,db)
   url="https://replay.pokemonshowdown.com/"+url.replace("https://","").replace("replay.pokemonshowdown.com/","")
   url = url.replace("?p2","").replace("#/","")
   let resp;
@@ -31,16 +28,15 @@ async function SingleReplayImport(url,db,tourName="",tourRound="",toururl="",fet
   if (resp.status===404) return format
   const data = await resp.json()
   var log = data["log"].split("\n")
-  var [play1,play2]= data["players"]
-  var pos = log.indexOf("|clearpoke")
-  if (pos==-1){
+
+  if (!log.includes("|clearpoke")){
       var team1=[]
       var team2=[]
       var teams=["lmao",team1,team2]
       log.forEach(line=>{
       for (var i=1;i<3;i++){
           if (line.includes("|switch|p"+i+"a:")){
-          var mon = line.split("|")[3].split(",")[0].trim().toLowerCase().replace(" ","-").replace(".","")
+          var mon = cleanName(line.split("|")[3])
           if (!teams[i].includes(mon)){teams[i].push(mon)}
       }}
       })
@@ -48,55 +44,86 @@ async function SingleReplayImport(url,db,tourName="",tourRound="",toururl="",fet
       while (team2.length<6){team2.push("")}
   }
   else {
-  var team1 = log.slice(pos+1,pos+7)
-  var team2 = log.slice(pos+7,pos+13)
-  for (var i =0; i<6;i++){
-      [team1,team2].forEach(team=>{
-      var txt = team[i]
-      var end=10
-      if (txt.includes(",",0)){end=txt.indexOf(",")}
-      else {end=txt.lastIndexOf("|")}
-      team[i]=txt.slice(9,end).replace(" ","-").toLowerCase().replace("-resolute","").replace("-*","").replace("%","").replace("-totem","")
-      } )
-  }}
-  var [mega1,mega2]=["",""]
-  var [mteam1,mteam2]=[[...team1],[...team2]]
-  if (data["log"].includes("|-mega|p1a:")){var temp=data["log"].slice(data["log"].indexOf("|-mega|p1a:")+11,-1);temp=temp.slice(temp.indexOf("|")+1,-1);mega1=temp.slice(0,temp.indexOf("|")).toLowerCase()+"-mega";if (mega1=="charizard-mega"){mega1+="-"+temp[temp.indexOf("Charizardite ")+13].toLowerCase()};mteam1[team1.indexOf(temp.slice(0,temp.indexOf("|")).toLowerCase())]=mega1}
-  mteam1=mteam1.map(mon=>{if(mon==""){return "unknown"} return mon})
-  mteam2=mteam2.map(mon=>{if(mon==""){return "unknown"} return mon})
-  
-  
-  if (data["log"].includes("|-mega|p2a:")){var temp=data["log"].slice(data["log"].indexOf("|-mega|p2a:")+11,-1);temp=temp.slice(temp.indexOf("|")+1,-1);mega2=temp.slice(0,temp.indexOf("|")).toLowerCase()+"-mega";if (mega2=="charizard-mega"){mega2+="-"+temp[temp.indexOf("Charizardite ")+13].toLowerCase()};mteam2[team2.indexOf(temp.slice(0,temp.indexOf("|")).toLowerCase())]=mega2}
-  
-  var [style1, style2]= [StyleGuesser(team1,log.filter(line=>line.includes("|move|p1a:")||line.includes("|switch|p1a:")),format),StyleGuesser(team2,log.filter(line=>line.includes("|move|p2a:")||line.includes("|switch|p2a:")),format)]
-  
-  if (log.includes("|win|"+play2)){[play1,play2,team1,team2,mteam1,mteam2,mega1,mega2,style1, style2]=[play2,play1,team2,team1,mteam2,mteam1,mega2,mega1,style2,style1];url+="?p2"}
-  
-  var toInsert = fetchid+',"'+[url,team1.concat(mega1).join("."),team2.concat(mega2).join("."),play1,play2,style1,style2].join('","')+'",'+data["uploadtime"]+',"'+IsASample([team1,team2],format)+'"'
+    var team1 = log.filter(x=>x.includes("|poke|p1|")).map(x=>cleanName(x.split("|")[3]))
+    var team2 = log.filter(x=>x.includes("|poke|p2|")).map(x=>cleanName(x.split("|")[3]))
+    while (team1.length<6){team1.push("")}
+    while (team2.length<6){team2.push("")}
+  }
 
+  let [info1,info2,turnCount]=getInfos(log)
+  
+  info1.player=data.players[0]
+  info2.player=data.players[1]
+  info1["style"]=StyleGuesser(team1,info1["moves"],format)
+  info2["style"]=StyleGuesser(team2,info2["moves"],format)
+  
+
+  
+  if (log.includes("|win|"+info2.player)){[team1,team2,info1,info2]=[team2,team1,info2,info1];url+="?p2"}
+  
+  var toInsert = [fetchid,url,format,team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),data["uploadtime"],IsASample([team1,team2],format),turnCount]
+  
   // console.log(`INSERT INTO `+format+" (fetchid,url,team1,team2,player1,player2,style1,style2,date,isASample) VALUE("+toInsert+");")
 
-  db.serialize(() => {db.run(`INSERT INTO `+format+" (fetchid,url,team1,team2,player1,player2,style1,style2,date,isASample) VALUES ("+toInsert+");",(err)=>{if (err&false) {console.error(err.message);}})});
-  // debugger
+  await db.serialize(() => {db.run("INSERT INTO replayData (fetchid,url,format,team1,team2,info1,info2,date,isASample,turnCount) VALUES (?,?,?,?,?,?,?,?,?,?);",toInsert,(err)=>{
+  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
+  debugger
   return format
 }
-async function createTable(format,db){
-  db.serialize(()=>{
-    db.get("SELECT name FROM sqlite_master WHERE type='table' AND name=?",[format],
-    (err, row) => {
-      if (err) {
-        console.error(err.message)
-        return
+
+function getInfos(log){
+  let out=[{},{}]
+  for (var i=1;i<3;i++){
+    let nicks = {}
+    let detailChange={}
+    log.filter(x=>x.includes("|switch|p"+i+"a: ")||x.includes("|drag|p"+i+"a: ")||x.includes("|switch|p"+i+"b: ")||x.includes("|drag|p"+i+"b: ")||x.includes("|replace|p"+i+"a:")||x.includes("|replace|p"+i+"b:"))
+      .forEach(x=>{if(!out[i-1]["lead"]) out[i-1]["lead"]=cleanName(x.split("|")[3]); if (!nicks[x.split("|")[2].slice(5)]) nicks[x.split("|")[2].slice(5)]=cleanName(x.split("|")[3])})
+    Object.entries(nicks).forEach(X=>{let x=X[1];let a=monsToUpdate.findIndex(y=>x.includes(y));if (a!=-1) {detailChange[monsToUpdate[a]]=x;nicks[X[0]]=monsToUpdate[a]}})
+    
+    let moves={}
+    log.filter(x=>x.includes("|move|p"+i)&!x.includes("[zeffect]")&!x.includes("[from] ability")).forEach(x=>{
+      let mon=nicks[x.slice(11).split("|")[0]]
+      let move=x.split("|")[3].replace("Z-","")
+      if (!moves[mon]) {moves[mon]=[[move,1]];return}
+      let a=moves[mon].map(x=>x[0]).indexOf(move)
+      if (a!=-1) moves[mon][a][1]+=1
+      else  moves[mon].push([move,1])
+    })
+    if (moves["ditto"]) moves["ditto"]=[]
+    out[i-1]["moves"]=moves
+    
+    let items={}
+    log.filter(x=>x.includes("p"+i+"a: ")||x.includes("p"+i+"b: ")).forEach(x=>{
+      if (x.includes("[from] item:")){
+        if (x.includes("|[of] p"+i)) {items[nicks[x.split("|[of] p"+i)[1].slice(3).replace("|","")]]=cleanName(x.split("|")[4].slice(13))}
+        else if (!x.includes("|[of] p"+(i%2+1))) items[nicks[x.split("|")[2].slice(5)]]=cleanName(x.split("|")[4].slice(13))
       }
+      else if (x.includes("|-enditem|p"+i)) items[nicks[x.split("|")[2].slice(5)]]=cleanName(x.split("|")[3])
+    })
     
-    const alreadyExists = !!row
-    
-    db.run('CREATE TABLE IF NOT EXISTS '+format+' (id INTEGER PRIMARY KEY AUTOINCREMENT,fetchid INTEGER,url TEXT UNIQUE,team1 TEXT,team2 TEXT,player1 TEXT,player2 TEXT,style1 TEXT,style2 TEXT,date INTEGER,isASample TEXT);',
-    function (err){
-      if (err) console.error(err.message)
-      else if (!alreadyExists) console.log("Created a table for the format "+format)
+    log.forEach((x,index)=>{if ((x.includes("|detailschange|p"+i+"a: ")||x.includes("|detailschange|p"+i+"b: "))&!x.includes("Mimikyu-Busted")){
+      detailChange[nicks[x.slice(20).split("|")[0]]]=cleanName(x.split("|")[3])
+      if ((log[index+1].includes("|-mega")||log[index+1].includes("|-primal"))&log[index+1].split("|").length>=4) items[nicks[x.slice(20).split("|")[0]]] = "formItem:"+cleanName(log[index+1].split("|")[3])
+      if (log[index+1].includes("|-burst")&log[index+1].split("|").length==5) items[nicks[x.slice(20).split("|")[0]]] = "Zmove:"+cleanName(log[index+1].split("|")[4])
+    }})
+  
+    if (log.some(line=>line.includes("|-zpower|"))){
+      let index=log.findIndex(x=>x.startsWith("|-zpower|p"+i+"a:"))
+      if (index!=-1) {
+        nick=log[index].slice(14)
+        items[nicks[nick]]="Zmove:"+(moveToZ[log[index+1].split("|")[3]]||moveToZ[log[index+2].split("|")[3]])
+      }
     }
-  )})})
+    if (Object.values(nicks).includes("giratina-origin")) items["giratina-origin"]="griseous-orb"
+    out[i-1]["items"]=items
+    out[i-1]["changes"]=detailChange
+
+    let line=log.filter(x=>x.startsWith("|-terastallize|p"+i))[0]
+    if (line) out[i-1]["tera"]=[nicks[line.split("|")[2].slice(5)],line.split("|")[3]]
+    debugger
+  }
+  out.push(+log.filter(x=>x.includes("|turn|")).at(-1).split("|")[2])
+  return out
 }
 
 
@@ -105,7 +132,7 @@ function StyleGuesser(team,moves,format){
 
   let values;
   try{
-  values = fs.readFileSync('./format-data/'+format+'/styleScores.csv',{ encoding: 'utf8', flag: 'r' }).split("\n").splice(1).map(line=>line.split(","))}catch(err){warnOnce('There are no style ratings for '+format); return ""}
+  values = fs.readFileSync('./format-data/'+format+'/styleScores.csv',{ encoding: 'utf8', flag: 'r' }).replace('"','').split("\r\n").splice(1).map(line=>line.split(","))}catch(err){warnOnce('There are no style ratings for '+format); return ""}
 
   //create an array of dictionnaries, where the keys are the pokemon's name
   var StyleScores=[{},{},{}]
@@ -116,19 +143,13 @@ function StyleGuesser(team,moves,format){
   var score = [0,0,0]
   for (var i = 0; i<6;i++){
     var mon=team[i].replace("-east","")
-    if (Object.keys(StyleScores[0]).includes(mon+".")){
-      var movesToSearch = []
-      Object.keys(StyleScores[0]).forEach(mons=>{if (mons.includes(mon)){movesToSearch.push(mons.split(".").splice(1).map(x=>x.trim().toLowerCase()))}})
-      var firstSwitch=moves.filter(turn=>turn.replace(" ","-").toLowerCase().includes(mon))[0]
-      if (firstSwitch){var nick=firstSwitch.split("|")[2].slice(5)
-      var movesUsed=[]
-      moves.forEach(turn=>{var modTurn= turn.split(nick);if (modTurn[0].includes("|move|")&modTurn[1]){if(modTurn[1].includes("|")){movesUsed.push(modTurn[1].split("|")[1].toLowerCase().trim())}}})
-      var overlap = movesToSearch.filter(moveList=>moveList.every(move=>movesUsed.includes(move)))
-      mon+=". " + (overlap.length>0?overlap.at(-1).join(". "):"")}
-      else {mon+=". "}
-      // debugger
+    if (Object.keys(StyleScores[0]).includes(mon+". ")){
+      let movesToSearch = []
+      Object.keys(StyleScores[0]).forEach(mons=>{if (mons.includes(mon)){movesToSearch.push(mons.split(".").splice(1).map(x=>cleanName(x)))}})
+      let overlap=[]
+      if(moves[mon]) overlap = movesToSearch.filter(moveList=>moveList.every(move=>cleanName(moves[mon].map(x=>x[0])[0]).includes(move)))
+      mon+=". " + (overlap.length>0?overlap.at(-1).join(". "):"")
     }
-
     for (j=0;j<3;j++){
       score[j]+=(2**StyleScores[j][mon]||0)
     }
@@ -203,12 +224,12 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = (await resp.text()).replace(/<aside class="message-signature">[\s\S]*?<\/aside>/g,'')
     // debugger
-    LinkList = LinkList.concat(ReplayFinderFromHTML(html))
+    LinkList = new Set([...LinkList, ...ReplayFinderFromHTML(html)])
   }
   debugger
   var formats=[]
-  console.log("About to import "+LinkList.length+" replays")
-  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,tourName,tourRound,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
+  console.log("About to import "+LinkList.size+" replays")
+  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
   db.close()
   formats = [...new Set(formats)]
   debugger
@@ -230,20 +251,20 @@ function addToThreadDB(url,tourName,tourRound,db){
   ) })
 }
 function ReplayFinderFromHTML(html){
-  var LinkList=[]
+  var LinkList=new Set([])
   while (html.includes('href="https://replay.pokemonshowdown.com/')){
     html=html.slice(html.indexOf('href="https://replay.pokemonshowdown.com/')+6)
     var replayLink = html.slice(0,html.indexOf('"'))
-    LinkList.push(replayLink)
+    LinkList.add(replayLink)
   }
   return(LinkList)
 }
-// exportData("gen7ou")
+
 async function exportData(format){
   console.log("Exporting data from the format "+format)
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READONLY)
   await fs.mkdir(path.join(dir,format),{ recursive: true },(err)=>{if(err) {console.error("Folder creation for "+format+" failed");return}})
-  db.all('SELECT '+format+'.*, t.url AS threadURL,t.threadName,t.threadRound FROM '+format+' JOIN fetchedThreads AS t ON fetchid=t.id ORDER BY date DESC ',(err,rows)=>{
+  db.all('SELECT replayData.*, t.url AS threadURL,t.threadName,t.threadRound FROM replayData JOIN fetchedThreads AS t ON fetchid=t.id WHERE format=="'+format+'" ORDER BY date DESC ',(err,rows)=>{
     if (err) {console.error(err.message);return}
     else {
       fs.writeFile(path.join(path.join(dir,format),'data.json'),JSON.stringify(rows), err => {if (err) {console.error(err);}})
@@ -265,8 +286,7 @@ async function exportData(format){
 // url="https://replay.pokemonshowdown.com/gen7ou-2000365211#/" //deleted replay
 // url="https://replay.pokemonshowdown.com/smogtours-gen3ou-56583"
 // const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
-// SingleReplayImport(url,db)
-// db.close()
+// SingleReplayImport("https://replay.pokemonshowdown.com/smogtours-gen7ubers-692184",db,undefined,undefined,false).then(()=>db.close())
 
 
 const warnedMessages = new Set();
@@ -279,7 +299,7 @@ function warnOnce(message) {
 
 }
 
-useCSVFile()
+// useCSVFile()
 async function useCSVFile(){
   const csv = await fs.readFileSync(path.join(__dirname, "listToImport.txt"),{ encoding: 'utf8', flag: 'r' }).split("\n").map(line=>line.replace("\r","").split(",")).filter(x=>x.length==3||x.length==2)
   for (infos of csv){
@@ -289,4 +309,52 @@ async function useCSVFile(){
 
 }
 
+let moveToZ
+createZmoveDic()//.then(()=>useCSVFile())
+async function createZmoveDic(){
+  moveToZ={}
+  let zmoveDic={
+  "Fighting":"fightiniu-z",
+  "Flying":"flyiniumz",
+  "Fire":"firiumz",
+  "Electric":"electriumz",
+  "Fairy":"fairiumz",
+  "Dark":"darkiniumz",
+  "Ice":"iciumz",
+  "Psychic":"psychiumz"
+  }
+  let text = await fs.readFileSync("./moves.ts",{ encoding: 'utf8', flag: 'r' })
+  text.split(/\n(?!\t|\n)/).filter(x=>x.length>10).filter(x=>x.includes("isZ")||x.includes('category: "Status",')).forEach(move=>{
+    let moveName=move.split("\n").filter(x=>x.includes("name: "))[0].split('"')[1]
+    if (move.includes("isZ: ")) moveToZ[moveName]=move.split("\n").filter(x=>x.includes("isZ: "))[0].split('"')[1]
+    else {
+      let type=move.split("\n").filter(x=>x.includes("\ttype: "))[0].split('"')[1]
+      moveToZ["Z-"+moveName]=zmoveDic[type]?zmoveDic[type]:(type.toLowerCase())+"iumz"
+    }
+  })
+  Object.keys(moveToZ).forEach(x=>{if (!moveToZ[x].includes("-")) moveToZ[x]=moveToZ[x].slice(0,-1)+"-z"})
+}
 
+let monsToUpdate=["arceus","silvally","zacian","zamazenta","urshifu"]
+
+// refreshData()
+async function refreshData(){
+  const { promisify } = require('util');
+  const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
+  const dbAll = promisify(db.all).bind(db);
+  const rows= await dbAll('SELECT url FROM replayData WHERE info1 LIKE "%mimikyu-busted%" OR info2 LIKE "%mimikyu-busted%"')
+  console.log(rows.length)
+  for (row of rows){
+    await SingleReplayImport(row.url,db,undefined,undefined,true)
+  }
+  ["gen7ou","gen6ubers"].forEach(format=>exportData(format))
+}
+
+redoJSONFiles()
+async function redoJSONFiles(){
+  const { promisify } = require('util');
+  const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
+  const dbAll = promisify(db.all).bind(db);
+  const rows= await dbAll('SELECT DISTINCT format FROM replayData')
+  Object.values(rows).forEach(x=>exportData(x.format))
+}
