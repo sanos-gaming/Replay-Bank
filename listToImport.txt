@@ -1,45 +1,49 @@
-https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2023-replays.3720595/,WCUP 2023
-https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2022-replays.3701428/,WCUP 2022
-https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2021-replays.3683340/,WCUP 2021
-https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2020-replays.3665144/,WCUP 2020
-https://www.smogon.com/forums/threads/the-world-cup-of-pokemon-2017-replays.3606412/,WCUP 2017
-https://www.smogon.com/forums/threads/world-cup-of-pokemon-xi-replays.3574596/,WCUP 2016
-https://www.smogon.com/forums/threads/world-cup-of-pokemon-x-logs-replays.3541298/,WCUP 2015
-https://www.smogon.com/forums/threads/world-cup-of-pokemon-ix-logs-replays.3509382/,WCUP 2014
-https://www.smogon.com/forums/threads/spl-viii-replays.3592101/,SPL VIII
-https://www.smogon.com/forums/threads/spl-vii-logs-replays.3560692/,SPL VII
-https://www.smogon.com/forums/threads/spl-vi-logs-replays.3526257/,SPL VI
-https://www.smogon.com/forums/threads/spl-v-logs-replays.3497301/,SPL V
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-xii-replay-thread.3770499/,OLT XII
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-xi-replay-thread.3750361/,OLT XI
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-x-replay-thread.3726937/,OLT X
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-ix-replay-thread.3707476/,OLT IX
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-viii-replay-thread.3689040/,OLT VIII
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vii-replay-thread.3670538/,OLT VII
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-finals-won-by-tricking.3655367/,OLT VI
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-semifinals.3655105/,OLT VI
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-quarterfinals.3654939/,OLT VI
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-vi-round-of-16.3654717/,OLT VI
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-v-replay-thread.3640819/,OLT V
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-iv-replay-thread.3613986/,OLT IV
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-iii-logs-replays-usage-statistics.3582785/,OLT III
-https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-ii-logs-replays-usage-statistics.3554342/,OLT II
-https://www.smogon.com/forums/threads/smogon-classic-xi-playoffs-won-by-pdc.3771540/,Smogon Classic XI
-https://www.smogon.com/forums/threads/smogon-classic-x-playoffs-won-by-m-dragon.3752112/,Smogon Classic X
-https://www.smogon.com/forums/threads/smogon-classic-ix-playoffs-won-by-conflict.3728686/,Smogon Classic IX
-https://www.smogon.com/forums/threads/smogon-classic-viii-playoffs-won-by-august.3709064/,Smogon Classic VIII
-https://www.smogon.com/forums/threads/smogon-classic-vii-playoffs-won-by-abr.3692664/,Smogon Classic VII
-https://www.smogon.com/forums/threads/smogon-classic-vi-playoffs-won-by-soulwind.3665843/,Smogon Classic VI
-https://www.smogon.com/forums/threads/smogon-classic-v-playoffs-won-by-mcmeghan.3651396/,Smogon Classic V
-https://www.smogon.com/forums/threads/smogon-classic-iv-playoffs-no-winner.3636447/,Smogon Classic IV
-https://www.smogon.com/forums/threads/smogon-classic-iii-playoffs-won-by-giara.3606424/,Smogon Classic III
-https://www.smogon.com/forums/threads/smogon-classic-ii-playoffs-won-by-tsunami.3574552/,Smogon Classic II
-https://www.smogon.com/forums/threads/smogon-classic-i-playoffs-won-by-ojama.3544817/,Smogon Classic I
-https://www.smogon.com/forums/threads/scl-v-replays.3770676/,SCL V
-https://www.smogon.com/forums/threads/scl-iv-replays.3750816/,SCL IV
-https://www.smogon.com/forums/threads/scl-iii-replays.3728426/,SCL III
-https://www.smogon.com/forums/threads/scl-ii-replays.3707365/,SCL II
-https://www.smogon.com/forums/threads/scl-i-replays.3690429/,SCL I
-https://www.smogon.com/forums/threads/smogon-snake-draft-iv-replays.3669847/,Smogon Snake Draft IV
-https://www.smogon.com/forums/threads/smogon-snake-draft-i-logs-replays.3614673/,Smogon Snake Draft I
-https://www.smogon.com/forums/threads/chubbins-archive-of-restored-replays.3756803/,Restored Replays
+https://www.smogon.com/forums/threads/sm-ou-global-championship-2025-round-6.3767657/page-1,SM OU Global Championship 2025,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-round-1-tb-404.3765495/,WCoP 2025,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-quarterfinals-tiebreak-76.3766819/,WCoP 2025,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-semifinals.3767402/,WCoP 2025,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-finals-won-by-team-italy.3767776/,WCoP 2025,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2024-round-1-tb-414.3744012/,WCoP 2024,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2024-quarterfinals.3745780/,WCoP 2024,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2024-semifinals-tb-77.3746147/,WCoP 2024,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2024-finals-won-by-team-us-midwest.3747004/,WCoP 2024,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2023-round-1-tbs-at-post-311-335.3722774/,WCoP 2023,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2023-quarterfinals-tb-post-111.3724240/,WCoP 2023,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2023-semifinals-tb-post-63.3724942/,WCoP 2023,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2023-finals-won-by-team-spain.3725731/,WCoP 2023,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2022-round-1-tb-post-317.3702538/,WCoP 2022,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2022-quarterfinals-tb-post-91.3703579/,WCoP 2022,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2022-semifinals.3704246/,WCoP 2022,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2022-finals-won-by-team-france.3704627/,WCoP 2022,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2021-round-1-tiebreakers-on-posts-323-331-352.3684465/,WCoP 2021,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2021-quarterfinals.3686115/,WCoP 2021,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2021-semifinals.3686718/,WCoP 2021,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2021-finals-won-by-team-us-south.3687205/,WCoP 2021,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2020-round-1-tiebreaker-see-post-380.3666311/,WCoP 2020,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2020-quarterfinals.3667504/,WCoP 2020,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2020-semifinals.3667863/,WCoP 2020,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2020-finals-won-by-team-italy.3668188/,WCoP 2020,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2019-finals-won-by-team-us-west.3652418/,WCoP 2019,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2019-semifinals.3651939/,WCoP 2019,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2019-quarterfinals.3651451/,WCoP 2019,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2019-round-1.3650434/,WCoP 2019,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2018-finals-won-by-team-us-northeast.3638861/,WCoP 2018,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2018-semifinals.3638563/,WCoP 2018,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2018-quarterfinals.3637563/,WCoP 2018,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2018-round-1.3635629/,WCoP 2018,Round 1
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2017-finals-won-by-team-usa-east.3610192/,WCoP 2017,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2017-semifinals.3609127/,WCoP 2017,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2017-quarterfinals.3608130/,WCoP 2017,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2017-round-1.3606401/,WCoP 2017,Round 1
+https://www.smogon.com/forums/threads/world-cup-of-pokemon-xi-finals-won-by-team-usa-east.3577894/,WCoP 2016,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-xi-semifinals.3577019/,WCoP 2016,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-xi-round-2.3576324/,WCoP 2016,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-xi-round-1-read-post-402.3574715/,WCoP 2016,Round 1
+https://www.smogon.com/forums/threads/world-cup-of-pokemon-x-finals-won-by-team-usa-east.3545324/,WCoP 2015,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-x-semifinals.3544218/,WCoP 2015,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-x-round-2.3543018/,WCoP 2015,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-x-round-1-read-post-800.3541256/,WCoP 2015,Round 1
+https://www.smogon.com/forums/threads/world-cup-of-pokemon-ix-finals-won-by-team-brazil.3508155/,WCoP 2014,Finals
+https://www.smogon.com/forums/threads/the-world-cup-of-pokemon-ix-semifinals.3512342/,WCoP 2014,Semifinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-ix-round-2-read-post-151.3511271/,WCoP 2014,Quarterfinals
+https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-ix-round-1.3509359/,WCoP 2014,Round 1

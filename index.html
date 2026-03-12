@@ -12,19 +12,19 @@
     background-color: white;
     color: black;
   }
-  table {  border-collapse: collapse;  width: max-content;table-layout:auto;}
+  table {border-collapse: collapse;  width: max-content;table-layout:auto;}
 
   #mainTable > td,th {border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:10px; } 
 
   #mainTable:hover{background-color:#6564AF}
   .search{border:1px solid currentColor}
 
-  #usage-all{border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:6px; } 
+  #usage-filtered,#usage-filtered-teams,#sillyStats>tbody>tr>td>table{border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:6px; } 
+
   #formatTable>tbody>tr>td:hover{background-color:#6564AF}
   #formatTable>tbody>tr,#formatTable>tbody>tr>td{border:1px solid currentColor;white-space:nowarp; padding:6px;}
 
   a{color:inherit;text-decoration:none;}
-  input[type="text"]{width:100px}
   #tourSearch{background-color:none}
   .searchTitle{font-size:30px}
 
@@ -70,6 +70,20 @@
     text-align: center;
     padding: 8px;
   }
+  input[type="search"]{
+    field-sizing: content;
+    min-width: 75px;
+  }
+
+  #popUpInfo{
+    position: absolute;
+    z-index: 9;
+    /* transform: translate(0,-50%); */
+    background-color: #000;
+    color: inherit;
+    text-align: center;
+    padding: 8px;
+    }
 </style>
 
 <body>
@@ -77,7 +91,8 @@
   <h1>Replay Bank</h1>
   <p>Welcome to the replay bank, a ressource that aims to render accessible all major games played in pokemon showdown.<br>
   For each row, the winning team is automatically put on the left, and the battler's names may be different from their smogon name.<br>
-  You can filter through these replays by looking for pokemons or combinations of pokemons, pokemon matchups, players, teamstyles, tournaments and for replays featuring sample teams.</p>
+  You can filter through these replays by looking for pokemons or combinations of pokemons, pokemon matchups, players, teamstyles, tournaments and for replays featuring sample teams.<br>
+  If you noticed a bug, have a suggestion for improvement or would like to see another format added to this ressource, do not hesitate to contact me on <a href="https://www.smogon.com/forums/members/sanos.598305/">smogon</a> or on discord (sanos3784)</p>
   <button id="formatButton" onclick="revealFormatList()" class="row">Choose another format</button><table id="formatTable" hidden><thead></thead><tbody></tbody></table>
   <span id="ifFormatChoosen">
 
@@ -92,12 +107,12 @@
         <th COLSPAN = 2><h class="searchTitle">Search by player</h></th>
       </tr>
       <tr>
-        <td> <select id="PlayerSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>
-        <td><input type="text" id="PlayerSearch1" onkeyup="tableFilter()" list="playerList"><datalist id="playerList"></datalist></td>
+        <td> <select id="PlayerSearchOption" onchange="tableFilter(true)"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>
+        <td><input type="select" id="PlayerSearch1" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="playerList"><datalist id="playerList"></datalist></td>
       </tr>
       <tr>
         <td > <b>VS</b> </td>
-        <td><input type="text" id="PlayerSearch2" onkeyup="tableFilter()" list="playerList"><datalist id="playerList"></datalist></td>
+        <td><input type="select" id="PlayerSearch2" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="playerList"><datalist id="playerList"></datalist></td>
       </tr>
     </table>
   </div>
@@ -107,12 +122,12 @@
         <th COLSPAN = 2><h class="searchTitle">Search by teamstyle</h></th>
       </tr>
       <tr>
-        <td> <select id="StyleSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>
-        <td><select id="StyleSearch1" onchange="tableFilter()" ><option value=""></option><option value="Offence">Offence</option><option value="Hyper Offence">Hyper Offence</option><option value="Defence">Defence</option><option value="Weather">Weather</option></td>
+        <td> <select id="StyleSearchOption" onchange="tableFilter(true)"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>
+        <td><select id="StyleSearch1" onchange="tableFilter(true)" ><option value=""></option><option value="Offence">Offence</option><option value="Hyper Offence">Hyper Offence</option><option value="Defence">Defence</option><option value="Weather">Weather</option></td>
       </tr>
       <tr>
         <td > <b>VS</b> </td>
-        <td><select id="StyleSearch2" onchange="tableFilter()" ><option value=""></option><option value="Offence">Offence</option><option value="Hyper Offence">Hyper Offence</option><option value="Defence">Defence</option><option value="Weather">Weather</option></td>
+        <td><select id="StyleSearch2" onchange="tableFilter(true)" ><option value=""></option><option value="Offence">Offence</option><option value="Hyper Offence">Hyper Offence</option><option value="Defence">Defence</option><option value="Weather">Weather</option></td>
       </tr>
     </table>
   </div></div>
@@ -131,12 +146,12 @@
   <br><b><div id="count"></div></b><button onclick="clearFilters()">Clear all filters</button><br>
   <input type="checkbox" onchange="seeOld()" id="seeOld"><label for="seeOld">Include older replays (pre 2022)</label><br>
   <!-- <input type="checkbox" onchange="togglePlayers()" id="seePlay"><label for="seePlay">Hide players (reduces the clutter on small screens)</label><br> -->
-  <input type="checkbox" onchange="toggleTourRound()" id="toggleRound"><label for="toggleRound">See tournament rounds (experimental)</label>
+  <input type="checkbox" onchange="toggleTourRound()" id="toggleRound"><label for="toggleRound">See tournament rounds (incomplete)</label>
 
   <br><div id="temp"></div>
   <span id="popUpSearchClick" hidden></span>
 
-  <button onclick="switchReplaysUsage()" id="switch" hidden>Show usage stats</button><br>
+  <button onclick="switchReplaysUsage()" id="switch" hidden>Show usage stats</button> <button onclick="showOtherUsage()" id="switchhaha" hidden></button><br>
   <table id="myTable" hidden>
     <thead><tr>
       <th>Link</th>
@@ -147,7 +162,7 @@
       <th>Date</th>
       <th>Tournament</th>
       <th>Tournament<br>round</th>
-      <th class="searchable"><select id="sampleSearch" onchange="tableFilter()"><option value="All">Features a sample team? ▼</option><option value="Yes">Yes (new) ▼</option><option value="Any">Yes ▼</option><option value="Yes (old)">Yes (old) ▼</option><option value="No">No ▼</option></th>
+      <th class="searchable"><select id="sampleSearch" onchange="tableFilter(true)"><option value="All">Features a sample team? ▼</option><option value="Yes">Yes (new) ▼</option><option value="Any">Yes ▼</option><option value="Yes (old)">Yes (old) ▼</option><option value="No">No ▼</option></th>
       </tr></thead>
       <tbody></tbody>
   </table>
@@ -159,17 +174,10 @@
   <tr><th id="numTeam"></th><th>Usage stats of <select onchange="tableFilter(true)" id="sizeCore"><option>6</option><option>5</option><option>4</option><option>3</option><option>2</option></select> pokemons cores.<button onclick="tableFilter(true)" id="refreshButton" hidden>Refresh</button></th></tr>
   <tr style="vertical-align:top"><td><table id="usage-filtered"></table></td>
   <td><table id="usage-filtered-teams"></table></td>
-  
-  <td><table id="usage-all" hidden>
-   <tr>
-    <th COLSPAN=7>Usage stats (all replays)</th>
-   </tr>
-   <tr>
-    <th>N°</th><th COLSPAN=2>Pokemon</th><th>Usage %</th><th>Raw Usage</th><th>Win %</th><th>Raw Wincount</th>
-   </tr>
-  </table></td></tr>
   </table>
+  <table id="sillyStats" hidden><thead><tr><td><b>Except for items, all of the use% is per team.</b></td></tr></thead><tr style="vertical-align:top"></tr></table>
 
+  <span id="popUpInfo" hidden>COUCOU</span>
   </span>
 </body>
 
@@ -189,7 +197,6 @@
 
     let tableForm = []
     gens.forEach(g=>{let curGen=[g,[]];subformatList.forEach(f=>{if (formats.includes("gen"+g+f)) curGen[1].push(f)});tableForm.push(curGen)})
-    console.log(tableForm)
     tableForm=tableForm.filter(x=>x[1].length>0)
     row=document.querySelector("#formatTable thead").insertRow()
     tableForm.forEach(form=>{
@@ -203,7 +210,7 @@
         else {
           f=forms[1][i]
           gen=forms[0]
-          row.insertCell().outerHTML='<td onclick="start(this.dataset.f)" data-f="gen'+gen+f+'" style="cursor: pointer;">Gen '+gen+' <b>'+((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1)))+'</b></td>'
+          row.insertCell().outerHTML='<td onclick="start(this.dataset.f)" data-f="gen'+gen+f+'" style="cursor: pointer;">Gen '+gen+' <b>'+(formatNameDic[f]||((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1))))+'</b></td>'
         }
       })
     }
@@ -213,93 +220,111 @@
   function createPokeSearch(){
     var string = '<tr><th COLSPAN = 7><h class="searchTitle">Search by pokemon</h></th> </tr> <tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>'
     for (let j=1;j<7;j++){
-      string+='<td><input type="text" id="PokeSearch1'+j+'" onkeyup="tableFilter()" list="pokeList"></td>'}
+      string+='<td><input type="search" id="PokeSearch1'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'}
     string +='</tr><tr><td> <b>VS</b> </td>'
     for (let j=1;j<7;j++){
-      string+='<td><input type="text" id="PokeSearch2'+j+'" onkeyup="tableFilter()" list="pokeList"></td>'}
+      string+='<td><input type="search" id="PokeSearch2'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'}
     string+= '</tr>'
     document.getElementById("searchByMons").innerHTML=string
   }
   
+  let [dic,dicMoves,dicItems,dicTeam,dicTera,dicLead]=[{},{},{},{},{},{}];
+  let isTera=false;
   
-
-  function start(fromat){
-    console.log(fromat)
+  function start(fromat=format){
     if (fromat=="none") return
     document.getElementById("ifFormatChoosen").hidden=false
+        funnyHaha()
+    document.getElementById("temp").hidden=false
     clearFilters()
     switchReplaysUsage(true)
     format=fromat
     revealFormatList(false)
     fetch("./format-data/"+fromat+"/data.json").then(response=>response.json()).then(data=>{
+      data.map(x=>{
+        x.info1=JSON.parse(x.info1)
+        x.info2=JSON.parse(x.info2)
+        x.team1=x.team1.split(".")
+        x.team2=x.team2.split(".")
+      })
       console.log(fromat,data)
       init(data)
   })}
 
   function init(data){
-  
-    document.getElementById("playerList").innerHTML=playerList(data,['player1',"player2"])
-    function playerList(data,ids){
-      var list=[]
-      var string=""
-      data.forEach(x=> {ids.forEach(i=>{if (!x[i]){return};let value=x[i].normalize('NFD').replace(/[\u0300-\u036f]/g, ''); if(!list.includes(value)){list.push(value);value=value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');string+='<option value="'+value+'">'+value+'</option>'}})})
-      return string
-    }
-    document.getElementById("pokeList").innerHTML=pokeList(data,['team1',"team2"])
+    createTable(data)
+    isTera=data.some(x=>x.info1.tera)
+    dic={}
+    dicMoves={}
+    dicItems={}
+    dicTeam={}
+    dicTera={}
+    dicLead={}
+
+    document.getElementById("pokeList").innerHTML=pokeList(Array.from(document.getElementById("myTable").rows),['team1',"team2"])
     function pokeList(data,ids){
       var list=[]
       var string=""
-      data.forEach(x=>{ids.forEach(i=>{if (!x[i]){return};x[i].split(".").filter(x=>x!="").forEach(value=>{if(!list.includes(value)){list.push(value);string+='<option value="'+makeCleanUpper(value)+'">'+makeCleanUpper(value)+'</option>'}})})})
+      data.forEach(x=>{ids.forEach(i=>{if (!x.dataset[i]){return};x.dataset[i].split(",").filter(x=>x!="").forEach(value=>{if(!list.includes(value)){list.push(value);string+='<option value="'+makeCleanUpper(value)+'">'+makeCleanUpper(value)+'</option>'}})})})
       return string
-    }
-
-    createTable(data)
-    function createTable(data){
-      document.getElementById("switch").hidden=false
-      const table=document.getElementById("myTable")
-      const tbody = document.querySelector("#myTable tbody");
-      tbody.innerHTML=""
-      document.getElementById("temp").hidden = true
-      
-      data.forEach(x => {
-        row=tbody.insertRow()
-        row.id="mainTable"
-        row.dataset.team1=x["team1"].split(".")
-        row.dataset.team2=x["team2"].split(".")
-        row.insertCell(0).innerHTML=visual(x)
-        row.insertCell(1).innerHTML="<span>"+x["player1"]+"</span>"
-        row.insertCell(2).innerHTML="<span>"+x["player2"]+"</span>"
-        row.insertCell(3).innerHTML="<span>"+x["style1"].replace("/","<br>(")+(x["style1"].includes("/")?")":"")+"</span>"
-        row.insertCell(4).innerHTML="<span>"+x["style2"].replace("/","<br>(")+(x["style2"].includes("/")?")":"")+"</span>"
-        row.insertCell(5).innerHTML=new Date(x["date"] * 1000).toLocaleDateString('en-GB',{day: '2-digit',month: '2-digit',year: '2-digit'})
-        row.insertCell(6).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadName"]+'</a>'
-        row.insertCell(7).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadRound"]+'</a>'
-        row.insertCell(8).innerHTML=x["isASample"]
-      })
-      toggleSample(!data.every(x=>x["isASample"]==""))
-      toggleStyles(!data.every(x=>x["style1"]==""))
-      table.hidden = false
-    }
-    function visual(dataLine){
-      var string = '<a href="'+dataLine["url"]+'" target="_blank" ><span class="imTeam1">'
-      for (var i=1;i<3;i++){
-        var mega=dataLine["team"+i].split(".")[6]
-        for (var j=0;j<6;j++){
-          var mon=dataLine["team"+i].split(".")[j]
-          string+='<img src="https://www.smogon.com/forums/media/minisprites/'+(mon==""?"unknown":(mega.includes(mon)?mega:mon))+'.png" loading="lazy">'
-        }
-        if (i==1) string+= "</span><b> VS </b><span class=imTeam2>"
-      }
-      return string+"</span></a>"
     }
     
     toggleTourRound()
     tableFilter()
   }
+  function createTable(data){
+    document.getElementById("switch").hidden=false
+    const table=document.getElementById("myTable")
+    const tbody = document.querySelector("#myTable tbody");
+    tbody.innerHTML=""
+    document.getElementById("temp").hidden = true
+    
+    data.forEach(x => {
+      row=tbody.insertRow()
+      row.id="mainTable"
+      row.dataset.team1=x.team1.concat(Object.values(x.info1.changes))
+      row.dataset.team2=x.team2.concat(Object.values(x.info2.changes))
+      row.dataset.items1=x.team1.map(mon=>x.info1.items[mon]||"")
+      row.dataset.items2=x.team2.map(mon=>x.info2.items[mon]||"")
+      row.dataset.moves1=x.team1.map(mon=>(x.info1.moves[mon]||[]).map(hihi=>hihi[0]).join("|"))
+      row.dataset.moves2=x.team2.map(mon=>(x.info2.moves[mon]||[]).map(hihi=>hihi[0]).join("|"))
+      if (x.info1.tera||x.info2.tera) row.dataset.tera=[(x.info1.tera||["",""]).join("|"),(x.info2.tera||["",""]).join("|")]
+      row.dataset.turnCount=x.turnCount
+      
+      row.insertCell(0).innerHTML=visual(x)
+      row.insertCell(1).innerHTML="<span>"+x.info1.player+"</span>"
+      row.insertCell(2).innerHTML="<span>"+x.info2.player+"</span>"
+      let a = x.info1.style
+      row.insertCell(3).innerHTML="<span>"+a.replace("/","<br>(")+(a.includes("/")?")":"")+"</span>"
+      a=x.info2.style
+      row.insertCell(4).innerHTML="<span>"+a.replace("/","<br>(")+(a.includes("/")?")":"")+"</span>"
+      row.insertCell(5).innerHTML=new Date(x["date"] * 1000).toLocaleDateString('en-GB',{day: '2-digit',month: '2-digit',year: '2-digit'})
+      row.insertCell(6).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadName"]+'</a>'
+      row.insertCell(7).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadRound"]+'</a>'
+      row.insertCell(8).innerHTML=x["isASample"]
+    })
+    toggleSample(!data.every(x=>x.isASample==""))
+    toggleStyles(!data.every(x=>x.info1.style==""))
+    table.hidden = false
+  }
+  function visual(dataLine){
+    var string = '<a href="'+dataLine.url+'" target="_blank" ><span class="imTeam1">'
+    for (var i=1;i<3;i++){
+      let changes=dataLine["info"+i].changes
+      let visuTeam = dataLine["team"+i].map(mon=>changes[mon]||mon)
+      // let items=dataLine["team"+i].map(mon=>dataLine["info"+i].items[mon]?.replace("formItem:","").replace('Zmove:','')||"")
+      visuTeam.forEach((mon,j)=>{
+        string+='<img src="https://www.smogon.com/forums/media/minisprites/'+(mon==""?"unknown":mon)+'.png" loading="lazy" '+((i==1&mon!="")?'style="transform:scaleX(-1)"':"")+'>'
+        // if (items[j]!="") string+='<img src="https://www.smogon.com/forums/media/minisprites/'+items[j]+'.png" loading="lazy">'
+        // string+='</span>'
+      })
+      if (i==1) string+= "</span><b> VS </b><span class=imTeam2>"
+    }
+    return string+"</span></a>"
+  }
 
-  function makeCleanUpper(string){return string[0].toUpperCase()+(string.includes("-")?(string.slice(1,string.indexOf("-")+1)+string[string.indexOf("-")+1].toUpperCase()+string.slice(string.indexOf("-")+2)):string.slice(1))}
+  function makeCleanUpper(stringa){let string=stringa.replace(" ","-"); string = string[0].toUpperCase()+(string.includes("-")?(string.slice(1,string.indexOf("-")+1)+string[string.indexOf("-")+1].toUpperCase()+string.slice(string.indexOf("-")+2)):string.slice(1)); return(stringa.includes(" ")?string.replace("-",' '):string)}
 
-  funnyHaha()
   function funnyHaha(){
     var images=["https://media1.tenor.com/m/QlgoisBpRZ4AAAAd/shroomish.gif","https://media1.tenor.com/m/-pTbEWFXCbQAAAAd/furret-pokemon.gif"]
 
@@ -307,6 +332,7 @@
   }
 
   function revealFormatList(canShow=true){
+    closeInfo()
     const button=document.getElementById("formatButton")
     button.hidden=false
     const table=document.getElementById("formatTable")
@@ -349,6 +375,7 @@
 
 
   function revealTourList(){
+    closeInfo()
     const div=document.getElementById("tourListTop")
     const button=document.getElementById("tourButton")
     if (div.innerHTML==""){
@@ -429,15 +456,33 @@
     if (replayTable.hidden||forceReplays){
       usageTable.hidden=true
       replayTable.hidden=!document.getElementById("temp").hidden
+      document.getElementById("switchhaha").hidden=true
+      document.getElementById("sillyStats").hidden=true
       document.getElementById("switch").innerHTML="Switch to usage stats"
     }
     else {
       usageTable.hidden=false
       replayTable.hidden=true
       document.getElementById("switch").innerHTML="Switch to replays"
+      document.getElementById("switchhaha").hidden=false
+      document.getElementById("switchhaha").innerHTML="More stats"
       tableFilter(true)
     }
+    closeInfo()
   }
+
+  function showOtherUsage(){
+    if (document.getElementById("stats").hidden){
+      document.getElementById("stats").hidden=false
+      document.getElementById("sillyStats").hidden=true
+    }
+    else{
+      document.getElementById("stats").hidden=true
+      document.getElementById("sillyStats").hidden=false
+    }
+    closeInfo()
+  }
+  
 
   function createUsageTable(data){
     //obsolete
@@ -558,57 +603,116 @@
     }
 
     document.getElementById("count").textContent =`${n} replay${n === 1 ? "" : "s"} found.`;
-    if (!document.getElementById("stats").hidden){
+    if (!document.getElementById("switchhaha").hidden){
     createUsageTableSearched(displayedRows,refreshCores)}
+    document.getElementById("playerList").innerHTML=playerList(displayedRows)
+    function playerList(data){
+      var list=[]
+      var string=""
+      data.map(x=>x[0].cells).forEach(x=> {[1,2].forEach(i=>{let value=x[i].textContent.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); if(!list.includes(value)){list.push(value);value=value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');string+='<option value="'+value+'">'+value+'</option>'}})})
+      return string
+    }
   }
-
+  
+  
   function createUsageTableSearched(data,refreshCores){
       const div=document.getElementById("usage-filtered")
       dic={}
-      dicTeam={}
+      dicItems={}
+      dicMoves={}
+      dicLead={}
+      dicTera={}
       teamNo=0
       winNo=0
       const n = document.getElementById("sizeCore").value
-      
+
       data.forEach(a=>{
-        [x,i]=a
-        var team1=x.dataset.team1.split(",").filter(x=>!x.includes("-mega")&x!="").sort()
-        var team2=x.dataset.team2.split(",").filter(x=>!x.includes("-mega")&x!="").sort()
+        let [x,i]=a
+        var team1=x.dataset.team1.split(",").slice(0,6)
+        var team2=x.dataset.team2.split(",").slice(0,6)
+        let moves1=x.dataset.moves1.split(",").map(y=>y.split("|"))
+        let moves2=x.dataset.moves2.split(",").map(y=>y.split("|"))
+        let items1=x.dataset.items1.split(",")
+        let items2=x.dataset.items2.split(",")
+        if(isTera) tera=(x.dataset.tera||"|,|").split(",").map(y=>y.split("|"))
+
         if (i==0||i==1){
-          team1.forEach(mon=>{if(dic[mon]){dic[mon][0]+=1;dic[mon][1]+=1}else{dic[mon]=[1,1]}});
+          let moveUsed={}
+          team1.forEach((mon,j)=>{
+            if(!dic[mon]) {dic[mon]={"usage":[1,1],"moves":{},"item":{}}; if (isTera) dic[mon].tera={}}
+            else {dic[mon].usage[0]+=1;dic[mon].usage[1]+=1;}
+            moves1[j].filter(ha=>ha!="").forEach(move=>{
+              if (!dic[mon].moves[move]) dic[mon].moves[move]=[1,1]; else {dic[mon].moves[move][0]+=1;dic[mon].moves[move][1]+=1;}
+              moveUsed[move]=(moveUsed[move]??=[]).concat(mon)
+            })
+            if (isTera){if (tera[0][0]==mon) {
+              if (!dic[mon].tera[tera[0][1]]) dic[mon].tera[tera[0][1]]=[1,1]; else {dic[mon].tera[tera[0][1]][0]+=1;dic[mon].tera[tera[0][1]][1]+=1;}
+              if (!dicTera[tera[0][1]]&&tera[0][1]!="") dicTera[tera[0][1]]=[[1,1],{[mon]:1}]; else {dicTera[tera[0][1]][0][0]+=1;dicTera[tera[0][1]][0][1]+=1; dicTera[tera[0][1]][1][mon]=(dicTera[tera[0][1]][1][mon]??0)+1} 
+            }}
+            if (items1[j]!=""){
+              if (!dic[mon].item[items1[j]]) dic[mon].item[items1[j]]=[1,1]; else {dic[mon].item[items1[j]][0]+=1;dic[mon].item[items1[j]][1]+=1}
+              if (!items1[j].includes("formItem")) {if (!dicItems[items1[j]]) dicItems[items1[j]]=[1,{[mon]:1}]; else {dicItems[items1[j]][0]+=1;dicItems[items1[j]][1][mon] = (dicItems[items1[j]][1][mon] ?? 0)+1}}}
+          });
+          Object.keys(moveUsed).forEach(move=>{
+            if (!dicMoves[move]) dicMoves[move]=[1,{}]; else {dicMoves[move][0]+=1}
+            moveUsed[move].forEach(mon=> dicMoves[move][1][mon]=(dicMoves[move][1][mon]??0)+1)
+          })          
           teamNo+=1;winNo+=1;
           if (team1.length>=n){
-          var cores1=combi(n,team1)
+          var cores1=combi(n,team1.sort())
           cores1.forEach(core=>{
           if(dicTeam[core]){dicTeam[core][0]+=1;dicTeam[core][1]+=1}else{dicTeam[core]=[1,1]}})}
         }
         if (i==0||i==2){
-          team2.forEach(mon=>{if(dic[mon]){dic[mon][0]+=1}else{dic[mon]=[1,0]}});
+          let moveUsed={}
+          team2.forEach((mon,j)=>{
+            if(!dic[mon]) {dic[mon]={"usage":[1,0],"moves":{},"item":{}}; if (isTera) dic[mon].tera={}}
+            else {dic[mon].usage[0]+=1;}
+            moves2[j].filter(ha=>ha!="").forEach(move=>{
+              if (!dic[mon].moves[move]) dic[mon].moves[move]=[1,0]; else {dic[mon].moves[move][0]+=1}
+              moveUsed[move]=(moveUsed[move]??=[]).concat(mon)
+            })
+            if (isTera){if (tera[1][0]==mon) {
+              if (!dic[mon].tera[tera[1][1]]) dic[mon].tera[tera[1][1]]=[1,0]; else {dic[mon].tera[tera[1][1]][0]+=1}
+              if (!dicTera[tera[1][1]]&&tera[1][1]!="") dicTera[tera[1][1]]=[[1,0],{[mon]:1}]; else {dicTera[tera[1][1]][0][0]+=1;dicTera[tera[1][1]][1][mon]=(dicTera[tera[1][1]][1][mon]??0)+1} 
+            }}
+            if (items2[j]!=""){
+              if (!dic[mon].item[items2[j]]) dic[mon].item[items2[j]]=[1,0]; else {dic[mon].item[items2[j]][0]+=1}
+              if (!items2[j].includes("formItem")) {if (!dicItems[items2[j]]) dicItems[items2[j]]=[1,{[mon]:1}]; else {dicItems[items2[j]][0]+=1;dicItems[items2[j]][1][mon] = (dicItems[items2[j]][1][mon]??0)+1}}}
+          });
+          Object.keys(moveUsed).forEach(move=>{
+            if (!dicMoves[move]) dicMoves[move]=[1,{}]; else {dicMoves[move][0]+=1}
+            moveUsed[move].forEach(mon=> dicMoves[move][1][mon]=(dicMoves[move][1][mon]??0)+1)
+          })
           teamNo+=1
           if (team2.length>=n){
-          var cores2=combi(n,team2)
+          var cores2=combi(n,team2.sort())
           cores2.forEach(core=>{
           if(dicTeam[core]){dicTeam[core][0]+=1}else{dicTeam[core]=[1,0]}})}
         }
       })
-      if (data[0][1]!=0){document.getElementById("totWinrate").innerHTML="Winrate of the search : "+(winNo*100/(teamNo)).toFixed(1)+"%"}
+      console.log(dic)
+      console.log("Items usage stats : ",dicItems)
+      console.log("Moves usage stats : ",dicMoves)
+      console.log("Tera usage stats : ",dicTera)
+      if (data[0][1]!=0){document.getElementById("totWinrate").innerHTML="Winrate of the search : "+(winNo*100/(teamNo)).toFixed(1)+"% (<b>"+winNo+"</b>/"+teamNo+")"}
       else{document.getElementById("totWinrate").innerHTML=""}
       document.getElementById("numTeam").innerHTML="Usage stats over the "+teamNo+" searched teams"
-      string='<tr><th>N°</th><th COLSPAN=2>Pokemon</th><th onclick="clickSortMon(this.innerHTML)">Usage %</th><th onclick="clickSortMon(this.innerHTML)">Raw Usage</th><th onclick="clickSortMon(this.innerHTML)">Win %</th><th onclick="clickSortMon(this.innerHTML)">Raw Wincount</th></tr>'
+      string='<tr><th>N°</th><th COLSPAN=3>Pokemon</th><th onclick="clickSortMon(this.innerHTML)">Usage %</th><th onclick="clickSortMon(this.innerHTML)">Raw Usage</th><th onclick="clickSortMon(this.innerHTML)">Win %</th><th onclick="clickSortMon(this.innerHTML)">Raw Wincount</th></tr>'
+
       Object.keys(dic).forEach(mon=>{
         string+='<tr><td></td>'
         mon2=mon.replace("-totem","").replace("-*","")
-        var monUpper=mon2[0].toUpperCase()+(mon2.includes("-")?(mon2.slice(1,mon.indexOf("-")+1)+mon2[mon2.indexOf("-")+1].toUpperCase()+mon2.slice(mon2.indexOf("-")+2)):mon2.slice(1))
+        var monUpper=makeCleanUpper(mon2)
         string+='<td onclick="searchImage(this)" style="cursor:pointer"><img src="https://www.smogon.com/forums/media/minisprites/'+mon2.replace("%","")+'.png" alt="'+mon2.replace("%","")+'" ></td>'
-        string+='<td>'+(mon.includes("tapu")?monUpper.replace("-"," "):monUpper)+'</td>';
-        string+='<td>'+(dic[mon][0]*100/(teamNo)).toFixed(1)+"%</td>";
-        string+='<td>'+dic[mon][0]+'</td>'
-        string+='<td>'+(dic[mon][1]*100/dic[mon][0]).toFixed(1)+"%</td>";
-        string+='<td><b>'+dic[mon][1]+'</b>/'+dic[mon][0]+"</td>"
+        string+='<td>'+(mon.includes("tapu")?monUpper.replace("-"," "):monUpper)+'</td><td data-mon="'+mon2+'" onclick="showInfoMon(this)" style="cursor:pointer"><b class="infoButton">+</b></td>';
+        string+='<td>'+(dic[mon].usage[0]*100/(teamNo)).toFixed(1)+"%</td>";
+        string+='<td>'+dic[mon].usage[0]+'</td>'
+        string+='<td>'+(dic[mon].usage[1]*100/dic[mon].usage[0]).toFixed(1)+"%</td>";
+        string+='<td><b>'+dic[mon].usage[1]+'</b>/'+dic[mon].usage[0]+"</td>"
       });
       div.innerHTML=string+"</tr>"
       sortTable("usage-filtered",[4,5,2],true)
-      console.log(dic)
 
       if (refreshCores){
         var dicNoTeam={}
@@ -634,6 +738,57 @@
         document.getElementById("refreshButton").hidden=true
       }
       else{document.getElementById("refreshButton").hidden=false}
+
+      // silly table bleh :3
+      let sillyTables=document.getElementById("sillyStats")
+      sillyTables.rows[1].innerHTML=""
+      string='<table id="moveUsage"><tr><th>N°</th><th COLSPAN=2>Move Name</th><th>Usage %</th><th>Raw Usage</th>'
+      Object.keys(dicMoves).forEach(move=>{
+        string+="<tr><td></td><td><b>"+move+'</b></td><td data-thing="move:'+move+'" onclick="showInfoElse(this)" style="cursor:pointer"><b class="infoButton">+</b></td>'
+        string+='<td>'+(dicMoves[move][0]*100/(teamNo)).toFixed(1)+"%</td>";
+        string+='<td>'+dicMoves[move][0]+'</td></tr>'
+      })
+      sillyTables.rows[1].insertCell().innerHTML=string+'</table>'
+      sortTable("moveUsage",[3],true)
+
+      let items=Object.keys(dicItems)
+      if (items.length>0){
+        string='<table id="itemUsage"><tr><th>N°</th><th COLSPAN=3>Item'+(items.some(x=>x.includes("Zmove:"))?" (no Z cristals)":"")+'</th><th>Usage %</th><th>Raw Usage</th>'
+        items.filter(x=>!x.includes("Zmove:")).forEach(item=>{
+          string+='<tr><td></td><td><img src="https://www.smogon.com/forums/media/minisprites/'+item+'.png" loading="lazy"></td>'
+          string+='<td><b>'+makeCleanUpper(item.replace("-"," "))+'</b></td><td data-thing="item:'+item+'" onclick="showInfoElse(this)" style="cursor:pointer"><b class="infoButton">+</b></td>'
+          string+='<td>'+(dicItems[item][0]*100/(teamNo*6)).toFixed(1)+"%</td>";
+          string+='<td>'+dicItems[item][0]+'</td></tr>'
+        })
+        sillyTables.rows[1].insertCell().innerHTML=string+'</table>'
+        sortTable("itemUsage",[4],true)
+
+        if (items.some(x=>x.includes("Zmove:"))){
+          string='<table id="zUsage"><tr><th>N°</th><th COLSPAN=3>Z-cristal</th><th>Usage %</th><th>Raw Usage</th>'
+          items.filter(x=>x.includes("Zmove:")).map(x=>x.replace("Zmove:","")).forEach(item=>{
+            string+='<tr><td></td><td><img src="https://www.smogon.com/forums/media/minisprites/'+item+'.png" loading="lazy"></td>'
+            string+='<td><b>'+makeCleanUpper(item)+'</b></td><td data-thing="item:'+item+'" onclick="showInfoElse(this)" style="cursor:pointer"><b class="infoButton">+</b></td>'
+            string+='<td>'+(dicItems["Zmove:"+item][0]*100/(teamNo)).toFixed(1)+"%</td>";
+            string+='<td>'+dicItems["Zmove:"+item][0]+'</td></tr>'
+          })
+          sillyTables.rows[1].insertCell().innerHTML=string+'</table>'
+          sortTable("zUsage",[4],true)
+        }
+      }
+
+      if (Object.keys(dicTera).length>0){
+        string='<table id="teraUsage"><tr><th>N°</th><th COLSPAN=3>Tera Type</th><th onclick="clickSortCore(this.innerHTML)">Usage %</th><th onclick="clickSortCore(this.innerHTML)">Raw Usage</th><th onclick="clickSortCore(this.innerHTML)">Win %</th><th onclick="clickSortCore(this.innerHTML)">Raw Wincount</th></tr>'
+        Object.keys(dicTera).forEach(tera=>{
+          string+='<tr><td></td><td><img src="https://play.pokemonshowdown.com/sprites/types/Tera'+tera+'.png" loading="lazy" width=24px></td>'
+          string+='<td><b>Tera '+tera+'</b></td><td data-thing="tera:'+tera+'" onclick="showInfoElse(this)" style="cursor:pointer"><b class="infoButton">+</b></td>'
+          string+='<td>'+(dicTera[tera][0][0]*100/(teamNo)).toFixed(1)+"%</td>";
+          string+='<td>'+dicTera[tera][0][0]+'</td>'
+          string+='<td>'+(dicTera[tera][0][1]*100/dicTera[tera][0][0]).toFixed(1)+"%</td>";
+          string+='<td><b>'+dicTera[tera][0][1]+'</b>/'+dicTera[tera][0][0]+"</td></tr>"
+        })
+        sillyTables.rows[1].insertCell().innerHTML=string+'</table>'
+        sortTable("teraUsage",[4],true)
+      }
     }
     function combi(n,arr) {
       const res = [];
@@ -673,14 +828,13 @@
     while (changes!=0){
       changes=0
       for (var i=0;i<core.length-1;i++){
-        if ((usage[newCore[i]][0]<usage[newCore[i+1]][0])||((usage[newCore[i]][0]==usage[newCore[i+1]][1])&(usage[newCore[i]][1]<usage[newCore[i+1]][1]))) 
+        if ((usage[newCore[i]].usage[0]<usage[newCore[i+1]].usage[0])||((usage[newCore[i]].usage[0]==usage[newCore[i+1]].usage[1])&(usage[newCore[i]].usage[1]<usage[newCore[i+1]].usage[1]))) 
           { changes=1
             let a=newCore[i]
             newCore[i]=newCore[i+1]
             newCore[i+1]=a
             }
       }
-      console.log(newCore)
     }
     return newCore
   }
@@ -725,10 +879,105 @@
     tableFilter()
     switchReplaysUsage()
   }
+
+  function showInfoMon(obj){
+    let mon = obj.dataset.mon
+    pos = obj.querySelector(".infoButton").getBoundingClientRect()
+    posRef=document.querySelector("body").getBoundingClientRect()
+
+    span = document.getElementById("popUpInfo")
+    string='<button onclick="closeInfo()">x</button><table><tr><th>Moves</th><th>Items</th>'+(isTera?"<th>Tera</th>":"")+'</tr><tr style="vertical-align:top"><td>'
+    string+='<table id="moveUsagePlus"><tr><th>N°</th><th>Move</th><th>Usage %</th><th>Raw Usage</th><th>Win %</th><th>Raw winrate</th></tr>'
+    Object.keys(dic[mon].moves).forEach(move=>{
+      string+="<tr><td></td><td><b>"+move+"</b></td>"
+      string+='<td>'+(dic[mon].moves[move][0]*100/(dic[mon].usage[0])).toFixed(1)+"%</td>";
+      string+='<td>'+dic[mon].moves[move][0]+'</td>'
+      string+='<td>'+(dic[mon].moves[move][1]*100/(dic[mon].moves[move][0])).toFixed(1)+"%</td>";
+      string+='<td><b>'+dic[mon].moves[move][1]+'</b>/'+dic[mon].moves[move][0]+'</td></tr>'
+    })
+    string+="</table></td><td>"
+
+    string+='<table id="itemUsagePlus"><tr><th>N°</th><th COLSPAN=2>Item</th><th>Usage %</th><th>Raw Usage</th><th>Win %</th><th>Raw winrate</th></tr>'
+    Object.keys(dic[mon].item).forEach(item=>{
+      string+='<tr><td></td><td><img src="https://www.smogon.com/forums/media/minisprites/'+item.replace("Zmove:","").replace("formItem:","")+'.png" loading="lazy"></td>'
+      string+="<td><b>"+makeCleanUpper(item.replace("Zmove:","").replace("formItem:","").replace("-"," "))+"</b></td>"
+      string+='<td>'+(dic[mon].item[item][0]*100/(dic[mon].usage[0])).toFixed(1)+"%</td>";
+      string+='<td>'+dic[mon].item[item][0]+'</td>'
+      string+='<td>'+(dic[mon].item[item][1]*100/(dic[mon].item[item][0])).toFixed(1)+"%</td>";
+      string+='<td><b>'+dic[mon].item[item][1]+'</b>/'+dic[mon].item[item][0]+'</td></tr>'
+    })
+    string+="</table></td><td>"
+
+    if (isTera){
+      string+='<table id="teraUsagePlus"><tr><th>N°</th><th COLSPAN=2>Tera</th><th>Usage %</th><th>Raw Usage</th><th>Win %</th><th>Raw winrate</th></tr>'
+      Object.keys(dic[mon].tera).forEach(tera=>{
+        string+='<tr><td></td><td><img src="https://play.pokemonshowdown.com/sprites/types/Tera'+tera+'.png" loading="lazy" width=24px></td>'
+        string+="<td><b>Tera "+tera+"</b></td>"
+        string+='<td>'+(dic[mon].tera[tera][0]*100/(dic[mon].usage[0])).toFixed(1)+"%</td>";
+        string+='<td>'+dic[mon].tera[tera][0]+'</td>'
+        string+='<td>'+(dic[mon].tera[tera][1]*100/(dic[mon].tera[tera][0])).toFixed(1)+"%</td>";
+        string+='<td><b>'+dic[mon].tera[tera][1]+'</b>/'+dic[mon].tera[tera][0]+'</td></tr>'
+      })
+      string+="</table></td><td>"
+    }
+    
+    span.innerHTML=string+"</tr></table>"
+    sortTable("itemUsagePlus",[4,5],true)
+    sortTable("moveUsagePlus",[3,4],true)
+    if (isTera) sortTable("teraUsagePlus",[4,5],true)
+
+    span.style.left=(20+pos.right)+"px"
+    span.style.top=(pos.top-posRef.top)+"px"
+    span.hidden=false
+  }
+
+  function showInfoElse(obj){
+    let [what,thing] = obj.dataset.thing.split(":")
+    if (what=="move") dico=dicMoves
+    if (what=="item") dico=dicItems
+    if (what=="tera") dico=dicTera
+    pos = obj.querySelector(".infoButton").getBoundingClientRect()
+    posRef=document.querySelector("body").getBoundingClientRect()
+
+    span = document.getElementById("popUpInfo")
+    string='<button onclick="closeInfo()">x</button><span style="vertical-align:top">'
+    string+='<table id="thingUsage"><tr><th>N°</th><th COLSPAN=2>Pokemon</th><th>Usage %</th><th>Raw Usage</th>'
+    if (dico["Zmove:"+thing]) thing="Zmove:"+thing
+    if (dico["formItem:"+thing]) thing="formItem:"+thing
+    Object.keys(dico[thing][1]).forEach(mon=>{
+      string+='<tr><td></td><td><img src="https://www.smogon.com/forums/media/minisprites/'+mon+'.png" loading="lazy"></td>'
+      string+='<td><b>'+makeCleanUpper(mon)+'</b></td>'
+      string+='<td>'+(dico[thing][1][mon]*100/(dico[thing][0][0]||dico[thing][0])).toFixed(1)+"%</td>";
+      string+='<td>'+dico[thing][1][mon]+'</td></tr>'
+    })
+
+    span.innerHTML=string+"</table></span>"
+    sortTable("thingUsage",[4],true)
+    span.style.left=(20+pos.right)+"px"
+    span.style.top=(pos.top-posRef.top)+"px"
+    span.hidden=false
+  }
+
+  function closeInfo(){
+    document.getElementById("popUpInfo").hidden=true
+  }
+  addEventListener("click",event=>{
+    if(!document.getElementById("popUpInfo").contains(event.target)&event.target.className!="infoButton") closeInfo()
+  })
+
+  let formatNameDic={
+    "doublesou":"Doubles OU",
+    "dlc1ou":"DLC 1 OU",
+    "oudlc1":"DLC 1 OU",
+    "customgame":"Custom Game",
+    "predlcou":"Pre-DLC 1 OU",
+    "dlc1doublesou":"DLC  Doubles OU",
+    "doublesubers":"Doubles Ubers",
+    "orrecolosseum":"Orre Colosseum",
+    "vgc2012":"VGC 2012"
+  }
   
 </script>
-<script data-goatcounter="https://sanos.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
 
 </html>
 
