@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@v5
         with:
           lfs: true
-      - run: |
-          git lfs pull
+      - run: git lfs checkout --force
+      - name: Check DB file type
+        run: file data.db
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
