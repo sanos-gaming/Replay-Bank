@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          lfs: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          lfs: true
       - run: npm install
       - run: node dataExtractorGit.js
       - name: Commit changes
