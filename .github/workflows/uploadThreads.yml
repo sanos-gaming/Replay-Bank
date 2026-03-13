@@ -12,7 +12,7 @@ jobs:
         with:
           lfs: true
           fetch-depth: 0
-      - run: git lfs push
+      - run: git lfs push origin main
       - name: Check DB file type
         run: file data.db
       - uses: actions/setup-node@v4
