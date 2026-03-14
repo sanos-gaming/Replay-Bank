@@ -210,7 +210,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
     var url="https://www.smogon.com"+url1
     const id= await addToThreadDB(url,tourName,tourRound,db)
-    console.log(id)
+    console.log(id,post)
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
     var LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
