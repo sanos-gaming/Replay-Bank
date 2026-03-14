@@ -204,13 +204,12 @@ function closeness(array){
 
 async function SmogThreadImport(url1,tourName,tourRound) {
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
-
+  let id=-1
   if (RegExp('(?:#)?post-[0-9]*$').test(url1)){
     let post=url1.split("/").at(-1).split("#").at(-1)
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
     var url="https://www.smogon.com"+url1
-    const id= await addToThreadDB(url,tourName,tourRound,db)
-    console.log(id,post)
+    id= await addToThreadDB(url,tourName,tourRound,db)
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
     var LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
@@ -222,8 +221,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     var DomainLink = url1+"page-"
     var baseurl=DomainLink+String(page)
     var url="https://www.smogon.com"+baseurl
-    const id= await addToThreadDB(url,tourName,tourRound,db)
-    console.log(id)
+    id= await addToThreadDB(url,tourName,tourRound,db)
     let resp;
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
@@ -264,10 +262,10 @@ function addToThreadDB(url,tourName,tourRound,db){
 }
 function ReplayFinderFromHTML(html){
   var LinkList=new Set([])
-  let modHTML=html.replace('href="http://replay.pokemonshowdown.com/','href="https://replay.pokemonshowdown.com/')
-  while (modHTML.includes('href="https://replay.pokemonshowdown.com/')){
-    modHTML=modHTML.slice(modHTML.indexOf('href="https://replay.pokemonshowdown.com/')+6)
-    var replayLink = modHTML.slice(0,modHTML.indexOf('"'))
+  html=html.replaceAll('href="http://replay.pokemonshowdown.com/','href="https://replay.pokemonshowdown.com/')
+  while (html.includes('href="https://replay.pokemonshowdown.com/')){
+    html=html.slice(html.indexOf('href="https://replay.pokemonshowdown.com/')+6)
+    var replayLink = html.slice(0,html.indexOf('"'))
     LinkList.add(replayLink)
   }
   return(LinkList)
