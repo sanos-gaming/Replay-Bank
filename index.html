@@ -628,8 +628,8 @@
 
       data.forEach(a=>{
         let [x,i]=a
-        var team1=x.dataset.team1.split(",").slice(0,6)
-        var team2=x.dataset.team2.split(",").slice(0,6)
+        var team1=x.dataset.team1.split(",").slice(0,6).filter(x=>x!="")
+        var team2=x.dataset.team2.split(",").slice(0,6).filter(x=>x!="")
         let moves1=x.dataset.moves1.split(",").map(y=>y.split("|"))
         let moves2=x.dataset.moves2.split(",").map(y=>y.split("|"))
         let items1=x.dataset.items1.split(",")
