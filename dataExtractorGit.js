@@ -264,10 +264,10 @@ function addToThreadDB(url,tourName,tourRound,db){
 }
 function ReplayFinderFromHTML(html){
   var LinkList=new Set([])
-  html=html.replace('href="http://replay.pokemonshowdown.com/','href="https://replay.pokemonshowdown.com/')
-  while (html.includes('href="https://replay.pokemonshowdown.com/')){
-    html=html.slice(html.indexOf('href="https://replay.pokemonshowdown.com/')+6)
-    var replayLink = html.slice(0,html.indexOf('"'))
+  let modHTML=html.replace('href="http://replay.pokemonshowdown.com/','href="https://replay.pokemonshowdown.com/')
+  while (modHTML.includes('href="https://replay.pokemonshowdown.com/')){
+    modHTML=modHTML.slice(modHTML.indexOf('href="https://replay.pokemonshowdown.com/')+6)
+    var replayLink = modHTML.slice(0,modHTML.indexOf('"'))
     LinkList.add(replayLink)
   }
   return(LinkList)
