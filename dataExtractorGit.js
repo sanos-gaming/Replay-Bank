@@ -205,27 +205,37 @@ function closeness(array){
 async function SmogThreadImport(url1,tourName,tourRound) {
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
 
-  url1=url1.split("#")[0].replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","").replace(/page-\d+\/?$/, "")
-
-  var page=1
-  var DomainLink = url1+"page-"
-  var baseurl=DomainLink+String(page)
-  var url="https://www.smogon.com"+baseurl
-  const id= await addToThreadDB(url,tourName,tourRound,db)
-  let resp;
-  try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
-  var html = await resp.text()
-  var LinkList = ReplayFinderFromHTML(html)
-  while(html.includes(DomainLink+String(page+1))){
-    page+=1
-    console.log("Page "+String(page)+" exists!")
-    baseurl=DomainLink+String(page)
-    url="https://www.smogon.com"+baseurl
+  if (RegExp('(?:#)?post-[0-9]*$').test(url1)){
+    let post=url1.split("/").at(-1).split("#").at(-1)
+    url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
+    var url="https://www.smogon.com"+url1
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
-    var html = (await resp.text()).replace(/<aside class="message-signature">[\s\S]*?<\/aside>/g,'')
-    // debugger
-    LinkList = new Set([...LinkList, ...ReplayFinderFromHTML(html)])
+    var html = await resp.text()
+    var LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
+    console.log(LinkList)
   }
+  else{
+    url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","").replace(/page-\d+\/?$/, "")
+
+    var page=1
+    var DomainLink = url1+"page-"
+    var baseurl=DomainLink+String(page)
+    var url="https://www.smogon.com"+baseurl
+    const id= await addToThreadDB(url,tourName,tourRound,db)
+    let resp;
+    try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
+    var html = await resp.text()
+    var LinkList = ReplayFinderFromHTML(html)
+    while(html.includes(DomainLink+String(page+1))){
+      page+=1
+      console.log("Page "+String(page)+" exists!")
+      baseurl=DomainLink+String(page)
+      url="https://www.smogon.com"+baseurl
+      try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
+      var html = (await resp.text()).replace(/<aside class="message-signature">[\s\S]*?<\/aside>/g,'')
+      // debugger
+      LinkList = new Set([...LinkList, ...ReplayFinderFromHTML(html)])
+  }}
   debugger
   var formats=[]
   console.log("About to import "+LinkList.size+" replays")
