@@ -269,6 +269,7 @@ function ReplayFinderFromHTML(html){
     var replayLink = html.slice(0,html.indexOf('"'))
     LinkList.add(replayLink)
   }
+  console.log(LinkList,html)
   return(LinkList)
 }
 
