@@ -205,6 +205,7 @@ function closeness(array){
 async function SmogThreadImport(url1,tourName,tourRound) {
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
   let id=-1
+  let LinkList
   if (RegExp('(?:#)?post-[0-9]*$').test(url1)){
     let post=url1.split("/").at(-1).split("#").at(-1)
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
@@ -212,7 +213,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     id= await addToThreadDB(url,tourName,tourRound,db)
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
-    var LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
+    LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
   }
   else{
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","").replace(/page-\d+\/?$/, "")
@@ -225,7 +226,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     let resp;
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
-    var LinkList = ReplayFinderFromHTML(html)
+    LinkList = ReplayFinderFromHTML(html)
     while(html.includes(DomainLink+String(page+1))){
       page+=1
       console.log("Page "+String(page)+" exists!")
