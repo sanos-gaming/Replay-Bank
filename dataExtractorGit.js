@@ -213,7 +213,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     id= await addToThreadDB(url,tourName,tourRound,db)
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
-    if (html.includes('<body data-template="error" style="">')) {console.error("The thread "+url+" was not found.");return}
+    if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
     LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
   }
   else{
@@ -227,7 +227,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     let resp;
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
-    if (html.includes('<body data-template="error" style="">')) {console.error("The thread "+url+" was not found.");return}
+    if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
     LinkList = ReplayFinderFromHTML(html)
     while(html.includes(DomainLink+String(page+1))){
       page+=1
