@@ -1,1 +1,75 @@
-https://www.smogon.com/forums/threads/spl-xvii-replays-and-usage-stats.3776148/,SPL XVII,
+https://www.smogon.com/forums/threads/ss-ou-ladder-tournament-ii-won-by-spookyz.3778621/,SS Ladder Tournament II,Playoffs
+https://www.smogon.com/forums/threads/swsh-ou-2025-circuit-championship-finals-won-by-hazardeur.3774304/,SS OU 2025 Circuit Championship,
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2024-finals-128-man-won-by-entrocefalo.3742301,SS OU Global Championship 2024,
+https://www.smogon.com/forums/threads/ss-ou-2023-circuit-championship-finals-won-by-vert.3731888/,SS OU 2023 Circuit Championship,
+https://www.smogon.com/forums/threads/ss-ou-2024-circuit-championship-finals-won-by-raizen1704.3755579/,SS OU 2024 Circuit Championship,
+https://www.smogon.com/forums/threads/ss-ou-last-chance-2-finals-256-man-won-by-lacks.3773272/,SS OU Last Chance #2,Finals
+https://www.smogon.com/forums/threads/ss-ou-last-chance-2-semifinals.3772986/,SS OU Last Chance #2,Semifinals
+https://www.smogon.com/forums/threads/ss-ou-last-chance-2-round-6.3772669/,SS OU Last Chance #2,Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-last-chance-2-round-5.3772351/,SS OU Last Chance #2,Top 16
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-grand-finals-256-man-won-by-kustavan.3773123/,SS OU Summer Seasonal #3,Grand Finals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-round-15.3772684/,SS OU Summer Seasonal #3,Loser Finals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-round-14.3772440/,SS OU Summer Seasonal #3,Top 4
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-round-13.3772121/,SS OU Summer Seasonal #3,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-round-12.3771794/,SS OU Summer Seasonal #3,Top 8
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-round-11.3771460/,SS OU Summer Seasonal #3,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-3-round-10.3771103/,SS OU Summer Seasonal #3,Top 16
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2025-finals-256-man-won-by-hazardeur.3768672/,SS OU Global Championship 2025,Finals
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2025-round-7.3767937/,SS OU Global Championship 2025,Semifinals
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2025-round-6.3767142/,SS OU Global Championship 2025,Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2025-round-5.3766523/,SS OU Global Championship 2025,Top 16
+https://www.smogon.com/forums/threads/ss-cup-iii-finals-256-man-won-by-ampha.3768568/,SS Cup III,Finals
+https://www.smogon.com/forums/threads/ss-cup-iii-round-7.3768256/,SS Cup III,Semifinals
+https://www.smogon.com/forums/threads/ss-cup-iii-round-6.3767803/,SS Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/ss-cup-iii-round-5.3767485/,SS Cup III,Top 16
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-grand-finals-256-man-won-by-zokuru.3763967/,SS OU Winter Seasonal #4,Grand Finals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-round-15.3763410/,SS OU Winter Seasonal #4,Loser Finals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-round-14.3763222/,SS OU Winter Seasonal #4,Top 4
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-round-13.3762803/,SS OU Winter Seasonal #4,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-round-12.3762456/,SS OU Winter Seasonal #4,Top 8
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-round-11.3762034/,SS OU Winter Seasonal #4,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-3-round-10.3761707/,SS OU Winter Seasonal #4,Top 16
+https://www.smogon.com/forums/threads/ss-ou-last-chance-1-finals-128-man-won-by-devin.3753854/,SS OU Last Chance #1,Finals
+https://www.smogon.com/forums/threads/ss-ou-last-chance-1-round-6.3753716/,SS OU Last Chance #1,Semifinals
+https://www.smogon.com/forums/threads/ss-ou-last-chance-1-round-5.3753548/,SS OU Last Chance #1,Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-last-chance-1-round-4.3753357/,SS OU Last Chance #1,Top 16
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-grand-finals-128-man-won-by-baddy.3753065/,SS OU Summer Seasonal #2,Grand Finals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-round-13.3752617/,SS OU Summer Seasonal #2,Loser Finals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-round-12.3752169/,SS OU Summer Seasonal #2,Top 4
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-round-11.3751699/,SS OU Summer Seasonal #2,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-round-10.3751198/,SS OU Summer Seasonal #2,Top 8
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-round-9.3750846/,SS OU Summer Seasonal #2,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-2-round-8.3750424/,SS OU Summer Seasonal #2,Top 16
+https://www.smogon.com/forums/threads/ss-cup-ii-finals-192-man-won-by-entrocefalo.3746939/,SS Cup II,Finals
+https://www.smogon.com/forums/threads/ss-cup-ii-semifinals.3746620/,SS Cup II,Semifinals
+https://www.smogon.com/forums/threads/ss-cup-ii-round-5.3746168/,SS Cup II,Quarterfinals
+https://www.smogon.com/forums/threads/ss-cup-ii-round-4.3745866/,SS Cup II,Top 24
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-grand-finals-256-man-won-by-larry.3742080/,SS OU Winter Seasonal #3,Grand Finals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-round-15.3741680/,SS OU Winter Seasonal #3,Loser Finals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-round-14.3741218/,SS OU Winter Seasonal #3,Top 4
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-round-13.3740711/,SS OU Winter Seasonal #3,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-round-12.3740160/,SS OU Winter Seasonal #3,Top 8
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-round-11.3739723/,SS OU Winter Seasonal #3,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-2-round-10.3739180/,SS OU Winter Seasonal #3,Top 16
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-grand-finals-256-man-won-by-pikachuzappyzap.3727615/,SS OU Summer Seasonal #1,Grand Finals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-round-15.3727393/,SS OU Summer Seasonal #1,Loser Finals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-round-14.3726918/,SS OU Summer Seasonal #1,Top 4
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-round-13.3726599/,SS OU Summer Seasonal #1,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-round-12.3726172/,SS OU Summer Seasonal #1,Top 8
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-round-11.3725773/,SS OU Summer Seasonal #1,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-summer-seasonal-1-round-10.3725382/,SS OU Summer Seasonal #1,Top 16
+https://www.smogon.com/forums/threads/ss-cup-i-finals-192-man-won-by-zaza.3727512/,SS Cup I,Finals
+https://www.smogon.com/forums/threads/ss-cup-i-round-6.3727048/,SS Cup I,Semifinals
+https://www.smogon.com/forums/threads/ss-cup-i-round-5.3726608/,SS Cup I,Quarterfinals
+https://www.smogon.com/forums/threads/ss-cup-i-round-4.3726266/,SS Cup I,Top 24
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2023-finals-192-man-won-by-fc.3723999/,SS OU Global Championship 2023,Finals
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2023-round-6.3723239/,SS OU Global Championship 2023,Semifinals
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2023-round-5.3722548/,SS OU Global Championship 2023,Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-global-championship-2023-round-4.3721821/,SS OU Global Championship 2023,Top 24
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-grand-finals-256-man-won-by-vert.3720492/,SS OU Winter Seasonal #3,Grand Finals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-round-15.3720143/,SS OU Winter Seasonal #3,Loser Finals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-round-14.3720019/,SS OU Winter Seasonal #3,Top 4
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-round-13.3719469/,SS OU Winter Seasonal #3,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-round-12.3719134/,SS OU Winter Seasonal #3,Top 8
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-round-11.3718690/,SS OU Winter Seasonal #3,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-ou-winter-seasonal-1-round-10.3718422/,SS OU Winter Seasonal #3,Top 16
