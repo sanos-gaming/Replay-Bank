@@ -1,65 +1,78 @@
-https://www.smogon.com/forums/threads/gsc-ou-2025-circuit-championship-finals-won-by-rubyblood.3774299/,GSC OU 2025 Circuit Championship,
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-2-finals-64-man-won-by-tylerkehne.3773877/,GSC OU Last Chance #2,Finals
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-2-round-5.3773723/,GSC OU Last Chance #2,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-2-round-4.3773559/,GSC OU Last Chance #2,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-2-round-3.3773391/,GSC OU Last Chance #2,Top 16
-https://www.smogon.com/forums/threads/gsc-ladder-tournament-i-finals-won-by-mrsoup.3769972/,GSC Ladder Tournament I,Playoffs
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2025-finals-64-man-won-by-melancholy0.3768621/,GSC OU Global Championship 2025,Finals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2025-round-5.3767802/,GSC OU Global Championship 2025,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2025-round-4.3767178/,GSC OU Global Championship 2025,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2025-round-3.3766549/,GSC OU Global Championship 2025,Top 16
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-grand-finals-128-man-won-by-rubyblood.3764400/,GSC OU Winter Seasonal #7,Grand Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-round-13.3764041/,GSC OU Winter Seasonal #7,Loser Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-round-12.3763627/,GSC OU Winter Seasonal #7,Top 4
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-round-11.3763277/,GSC OU Winter Seasonal #7,Loser Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-round-10.3762830/,GSC OU Winter Seasonal #7,Top 8
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-round-9.3762487/,GSC OU Winter Seasonal #7,Loser Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-7-round-8.3762076/,GSC OU Winter Seasonal #7,Top 16
-https://www.smogon.com/forums/threads/gsc-ou-2024-circuit-championship-finals-won-by-bihi.3755573/,GSC OU 2024 Circuit Championship,
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-1-finals-48-man-won-by-aliss.3754307/,GSC OU Last Chance #1,Finals
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-1-round-4.3754016/,GSC OU Last Chance #1,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-last-chance-1-round-3.3753804/,GSC OU Last Chance #1,Top 12
-https://www.smogon.com/forums/threads/gsc-ou-swiss-i-finals-56-man-won-by-hellpowna.3753044/,GSC OU Swiss I,Finals
-https://www.smogon.com/forums/threads/gsc-ou-swiss-i-round-9-top-cut.3752621/,GSC OU Swiss I,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-swiss-i-round-8-top-cut.3752180/,GSC OU Swiss I,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-swiss-i-round-7-top-cut.3751780/,GSC OU Swiss I,Top 16
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2024-finals-96-man-won-by-mrsoup.3747058/,GSC OU Global Championship 2024,Finals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2024-round-5.3746213/,GSC OU Global Championship 2024,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2024-round-4.3745449/,GSC OU Global Championship 2024,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-grand-finals-128-man-won-by-glfgno7.3742580/,GSC OU Winter Seasonal #6,Grand Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-round-13.3742360/,GSC OU Winter Seasonal #6,Loser Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-round-12.3741870/,GSC OU Winter Seasonal #6,Top 4
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-round-11.3741323/,GSC OU Winter Seasonal #6,Loser Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-round-10.3740765/,GSC OU Winter Seasonal #6,Top 8
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-round-9.3740340/,GSC OU Winter Seasonal #6,Loser Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-6-round-8.3739761/,GSC OU Winter Seasonal #6,Top 16
-https://www.smogon.com/forums/threads/gsc-ou-2023-circuit-championship-finals-won-by-conflict.3731876/,GSC OU 2023 Circuit Championship,
-https://www.smogon.com/forums/threads/gsc-majors-i-finals-won-by-realjester.3730033/,GSC Majors I,Finals
-https://www.smogon.com/forums/threads/gsc-majors-i-round-4.3729686/,GSC Majors I,Semifinals
-https://www.smogon.com/forums/threads/gsc-majors-i-round-3.3729361/,GSC Majors I,Top 12
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2023-finals-96-man-won-by-susciety.3724674/,GSC OU Global Championship 2023,Finals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2023-round-5.3723843/,GSC OU Global Championship 2023,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2023-round-4.3723218/,GSC OU Global Championship 2023,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-grand-finals-128-man-won-by-vileman.3720704/,GSC OU Winter Seasonal #5,Grand Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-round-13.3720601/,GSC OU Winter Seasonal #5,Loser Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-round-12.3720090/,GSC OU Winter Seasonal #5,Top 4
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-round-11.3719890/,GSC OU Winter Seasonal #5,Loser Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-round-10.3719456/,GSC OU Winter Seasonal #5,Top 8
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-round-9.3719090/,GSC OU Winter Seasonal #5,Loser Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-5-round-8.3718799/,GSC OU Winter Seasonal #5,Top 16
-https://www.smogon.com/forums/threads/gsc-ou-2022-circuit-championship-finals-won-by-siatam.3711168/,GSC OU 2022 Circuit Championship,
-https://www.smogon.com/forums/threads/gsc-ou-summer-seasonal-4-grand-finals-64-man-won-by-vani.3707129/,GSC OU Summer Seasonal #4,Grand Finals
-https://www.smogon.com/forums/threads/gsc-ou-summer-seasonal-4-round-11.3707012/,GSC OU Summer Seasonal #4,Loser Finals
-https://www.smogon.com/forums/threads/gsc-ou-summer-seasonal-4-round-10.3706660/,GSC OU Summer Seasonal #4,Top 4
-https://www.smogon.com/forums/threads/gsc-ou-summer-seasonal-4-round-9.3706368/,GSC OU Summer Seasonal #4,Loser Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-summer-seasonal-4-round-8.3705956/,GSC OU Summer Seasonal #4,Top 8
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2022-finals-48-man-won-by-friendofmrgolem120.3704680/,GSC OU Global Championship 2022,Finals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2022-round-4.3703630/,GSC OU Global Championship 2022,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2022-round-3.3702635/,GSC OU Global Championship 2022,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-grand-finals-128-man-won-by-d4-repertoire.3701951/,GSC OU Winter Seasonal #4,Grand Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-round-13.3701657/,GSC OU Winter Seasonal #4,Loser Finals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-round-12.3701436/,GSC OU Winter Seasonal #4,Top 4
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-round-11.3701101/,GSC OU Winter Seasonal #4,Loser Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-round-10.3700784/,GSC OU Winter Seasonal #4,Top 8
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-round-9.3700478/,GSC OU Winter Seasonal #4,Loser Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-4-round-8.3700154/,GSC OU Winter Seasonal #4,Top 16
+https://www.smogon.com/forums/threads/rby-ou-2025-circuit-championship-finals-won-by-kaz.3774316/,RBY OU 2025 Circuit Championship,
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-7-grand-finals-64-man-won-by-girlsseeghosts.3773286/,RBY OU Summer Seasonal #7,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-7-round-11.3773022/,RBY OU Summer Seasonal #7,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-7-round-10.3772809/,RBY OU Summer Seasonal #7,Top 4
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-7-round-9.3772444/,RBY OU Summer Seasonal #7,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-7-round-8.3772056/,RBY OU Summer Seasonal #7,Top 8
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2025-finals-128-man-won-by-serpi.3768412/,RBY OU Global Championship 2025,Finals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2025-round-6.3767870/,RBY OU Global Championship 2025,Semifinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2025-round-5.3767018/,RBY OU Global Championship 2025,Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2025-round-4.3766507/,RBY OU Global Championship 2025,Top 16
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-grand-finals-128-man-won-by-vileman.3763033/,RBY OU Winter Seasonal #7,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-round-13.3762752/,RBY OU Winter Seasonal #7,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-round-12.3762355/,RBY OU Winter Seasonal #7,Top 4
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-round-11.3762124/,RBY OU Winter Seasonal #7,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-round-10.3761604/,RBY OU Winter Seasonal #7,Top 8
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-round-9.3761270/,RBY OU Winter Seasonal #7,Loser Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-7-round-8.3760962/,RBY OU Winter Seasonal #7,Top 16
+https://www.smogon.com/forums/threads/rby-ladder-tournament-ii-finals-won-by-serpi.3761235/,RBY Ladder Tournament II,Playoffs
+https://www.smogon.com/forums/threads/rby-ou-2024-circuit-championship-finals-won-by-laroxyl.3756696/,RBY OU 2024 Circuit Championship,Finals
+https://www.smogon.com/forums/threads/rby-ou-2024-circuit-championship-semifinals.3756346/,RBY OU 2024 Circuit Championship,Semifinals
+https://www.smogon.com/forums/threads/rby-ou-2024-circuit-championship-round-2.3755947/,RBY OU 2024 Circuit Championship,Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-2024-circuit-championship-round-1.3755550/,RBY OU 2024 Circuit Championship,Top 16
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-6-grand-finals-96-man-won-by-serpi.3754946/,RBY OU Summer Seasonal #6,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-6-round-11.3754505/,RBY OU Summer Seasonal #6,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-6-round-10.3754166/,RBY OU Summer Seasonal #6,Top 6
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-6-round-9.3753645/,RBY OU Summer Seasonal #6,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-6-round-8.3753241/,RBY OU Summer Seasonal #6,Top 12
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2024-finals-96-man-won-by-peasounay.3747186/,RBY OU Global Championship 2024,Finals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2024-round-5.3746636/,RBY OU Global Championship 2024,Semifinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2024-round-4.3745769/,RBY OU Global Championship 2024,Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-grand-finals-256-man-won-by-serpi.3741533/,RBY OU Winter Seasonal #6,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-round-15.3741401/,RBY OU Winter Seasonal #6,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-round-14.3740682/,RBY OU Winter Seasonal #6,Top 4
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-round-13.3740241/,RBY OU Winter Seasonal #6,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-round-12.3739792/,RBY OU Winter Seasonal #6,Top 8
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-round-11.3739223/,RBY OU Winter Seasonal #6,Loser Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-6-round-10.3738677/,RBY OU Winter Seasonal #6,Top 16
+https://www.smogon.com/forums/threads/rby-ladder-tournament-i-finals-won-by-serpi.3738070/,RBY Ladder Tournament I,Playoffs
+https://www.smogon.com/forums/threads/rby-ou-2023-circuit-championship-finals-won-by-abr.3732841/,RBY OU 2023 Circuit Championship,Finals
+https://www.smogon.com/forums/threads/rby-ou-2023-circuit-championship-semifinals.3732451/,RBY OU 2023 Circuit Championship,Semifinals
+https://www.smogon.com/forums/threads/rby-ou-2023-circuit-championship-round-two.3732178/,RBY OU 2023 Circuit Championship,Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-2023-circuit-championship-round-one.3731890/,RBY OU 2023 Circuit Championship,Top 16
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-5-grand-finals-64-man-won-by-nicole7735.3730579/,RBY OU Summer Seasonal #5,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-5-round-11.3729989/,RBY OU Summer Seasonal #5,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-5-round-10.3729801/,RBY OU Summer Seasonal #5,Top 4
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-5-round-9.3729385/,RBY OU Summer Seasonal #5,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-5-round-8.3728932/,RBY OU Summer Seasonal #5,Top 8
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2023-finals-128-man-won-by-serpi.3726214/,RBY OU Global Championship 2023,Finals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2023-round-6.3725667/,RBY OU Global Championship 2023,Semifinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2023-round-5.3725091/,RBY OU Global Championship 2023,Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2023-round-4.3724235/,RBY OU Global Championship 2023,Top 16
+https://www.smogon.com/forums/threads/rby-majors-i-finals-won-by-green-on-fire.3721880/,RBY Majors,Finals
+https://www.smogon.com/forums/threads/rby-majors-i-semifinals.3721365/,RBY Majors,Semifinals
+https://www.smogon.com/forums/threads/rby-majors-playoffs-r3-top-12.3721098/,RBY Majors,Top 12
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-grand-finals-256-man-won-by-sadisticnarwhal.3720204/,RBY OU Winter Seasonal #5,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-round-15.3719956/,RBY OU Winter Seasonal #5,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-round-14.3719568/,RBY OU Winter Seasonal #5,Top 4
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-round-13.3719201/,RBY OU Winter Seasonal #5,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-round-12.3718814/,RBY OU Winter Seasonal #5,Top 8
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-round-11.3718427/,RBY OU Winter Seasonal #5,Loser Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-5-round-10.3717947/,RBY OU Winter Seasonal #5,Top 16
+https://www.smogon.com/forums/threads/rby-ou-2022-circuit-championship-finals-won-by-green-on-fire.3710894/,RBY OU 2022 Circuit Championship,
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-4-grand-finals-64-man-won-by-gef%C3%A4hrlicher-random.3707578/,RBY OU Summer Seasonal #4,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-4-round-11.3707423/,RBY OU Summer Seasonal #4,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-4-round-10.3707067/,RBY OU Summer Seasonal #4,Top 4
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-4-round-9.3706647/,RBY OU Summer Seasonal #4,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-summer-seasonal-4-round-8.3706355/,RBY OU Summer Seasonal #4,Top 8
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2022-finals-64-man-won-by-sadisticnarwhal.3705483/,RBY OU Global Championship 2022,Finals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2022-round-5.3704992/,RBY OU Global Championship 2022,Semifinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2022-round-4.3703927/,RBY OU Global Championship 2022,Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-global-championship-2022-round-3.3702965/,RBY OU Global Championship 2022,Top 16
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-grand-finals-128-man-won-by-chuva-de-perereca.3702170/,RBY OU Winter Seasonal #4,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-round-13.3701894/,RBY OU Winter Seasonal #4,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-round-12.3701551/,RBY OU Winter Seasonal #4,Top 4
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-round-11.3701353/,RBY OU Winter Seasonal #4,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-round-10.3700978/,RBY OU Winter Seasonal #4,Top 8
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-round-9.3700705/,RBY OU Winter Seasonal #4,Loser Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-4-round-8.3700454/,RBY OU Winter Seasonal #4,Top 16
