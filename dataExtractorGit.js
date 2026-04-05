@@ -318,7 +318,7 @@ async function useCSVFile(){
   const csv = await fs.readFileSync(path.join(__dirname, "listToImport.txt"),{ encoding: 'utf8', flag: 'r' }).split("\n").map(line=>line.replace("\r","").split(",")).filter(x=>x.length==3||x.length==2)
   for (infos of csv){
     console.log("Importing thread : "+infos[0])
-    await SmogThreadImport((infos[0]+"/").replace("//","/"),infos[1],infos[2]||"")
+    await SmogThreadImport(infos[0]+(infos[0].endsWith("/")?"":"/"),infos[1],infos[2]||"")
   }
 
 }
