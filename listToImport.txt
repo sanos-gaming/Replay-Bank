@@ -1,1 +1,9 @@
-https://www.smogon.com/forums/threads/spl-xvii-replays-and-usage-stats.3776148,SPL XVII,
+https://www.smogon.com/forums/threads/oupl-ix-replays-and-usage-stats.3773361/,OUPL IX
+https://www.smogon.com/forums/threads/oupl-viii-replays.3754001/,OUPL VIII
+https://www.smogon.com/forums/threads/oupl-vii-replays-and-usage-statistics.3731530/,OUPL VII
+https://www.smogon.com/forums/threads/oupl-vi-replays-usage-statistics.3662181/,OUPL VI
+https://www.smogon.com/forums/threads/oupl-v-logs-and-replays.3648568/,OUPL V
+https://www.smogon.com/forums/threads/oupl-iv-logs-and-replays.3632292/,OUPL IV
+https://www.smogon.com/forums/threads/oupl-iii-replays.3602097/,OUPL III
+https://www.smogon.com/forums/threads/oupl-ii-replays.3571969/,OUPL II
+https://www.smogon.com/forums/threads/oupl-logs-and-replays.3536417/,OUPL I
