@@ -1,9 +1,60 @@
-https://www.smogon.com/forums/threads/oupl-ix-replays-and-usage-stats.3773361/,OUPL IX
-https://www.smogon.com/forums/threads/oupl-viii-replays.3754001/,OUPL VIII
-https://www.smogon.com/forums/threads/oupl-vii-replays-and-usage-statistics.3731530/,OUPL VII
-https://www.smogon.com/forums/threads/oupl-vi-replays-usage-statistics.3662181/,OUPL VI
-https://www.smogon.com/forums/threads/oupl-v-logs-and-replays.3648568/,OUPL V
-https://www.smogon.com/forums/threads/oupl-iv-logs-and-replays.3632292/,OUPL IV
-https://www.smogon.com/forums/threads/oupl-iii-replays.3602097/,OUPL III
-https://www.smogon.com/forums/threads/oupl-ii-replays.3571969/,OUPL II
-https://www.smogon.com/forums/threads/oupl-logs-and-replays.3536417/,OUPL I
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-grand-finals-won-by-unowndragon.3781751/,RBY OU Winter Seasonal #8,Grand Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-round-13-top-3-losers-only.3781489/,RBY OU Winter Seasonal #8,Loser Finals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-round-12-top-4.3781048/,RBY OU Winter Seasonal #8,Top 4
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-round-11-losers.3780685/,RBY OU Winter Seasonal #8,Loser Semifinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-round-10.3780185/,RBY OU Winter Seasonal #8,Top 8
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-round-9-losers.3779882/,RBY OU Winter Seasonal #8,Loser Quarterfinals
+https://www.smogon.com/forums/threads/rby-ou-winter-seasonal-8-round-8.3779612/,RBY OU Winter Seasonal #8,Top 16
+https://www.smogon.com/forums/threads/rby-ladder-tournament-iii-won-by-lnumbers.3778864/page-4,RBY Ladder Tournament II,Playoffs
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-final-replays-required-won-by-underlying.3781939/,GSC OU Winter Seasonal #8,Grand Finals
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-round-13-losers-bracket-replays-required.3781520/,GSC OU Winter Seasonal #8,Loser Finals
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-round-12-replays-required.3781144/,GSC OU Winter Seasonal #8,Top 4
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-round-11-replays-required-losers-bracket.3780697/,GSC OU Winter Seasonal #8,Loser Semifinals
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-round-10-replays-required.3780264/,GSC OU Winter Seasonal #8,Top 8
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-round-9-replays-required-losers-bracket.3779865/,GSC OU Winter Seasonal #8,Loser Quarterfinals
+https://www.smogon.com/forums/threads/gsc-ou-winter-seasonal-8-round-8-replays-required.3779555/,GSC OU Winter Seasonal #8,Top 16
+https://www.smogon.com/forums/threads/gsc-ladder-tournament-ii-won-by-coco.3780742/,GSC Ladder Tournament II,Playoffs
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-16-won-by-hydreigonthechild.3781888/,ADV OU Winter Seasonal #8,Grand Finals
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-15-replays-required.3781589/,ADV OU Winter Seasonal #8,Loser Finals
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-14-replays-required.3781039/,ADV OU Winter Seasonal #8,Top 4
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-13-replays-required.3780688/,ADV OU Winter Seasonal #8,Loser Semifinals
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-12-replays-required.3780180/,ADV OU Winter Seasonal #8,Top 8
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-11-replays-required.3779794/,ADV OU Winter Seasonal #8,Loser Quarterfinals
+https://www.smogon.com/forums/threads/adv-ou-winter-seasonal-8-round-10-replays-required.3779580/,ADV OU Winter Seasonal #8,Top 16
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-16-grands-finals-won-by-emeral.3782355/#post-10990314,DPP OU Winter Seasonal #8,Grand Finals
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-15-losers-finals-replays-required.3781977/,DPP OU Winter Seasonal #8,Loser Finals
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-14-winners-finals-replays-required.3781648/,DPP OU Winter Seasonal #8,Top 4
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-13-losers-only-replays-required.3781201/,DPP OU Winter Seasonal #8,Loser Semifinals
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-12-replays-required.3780647/,DPP OU Winter Seasonal #8,Top 8
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-11-losers-bracket-replays-required.3780257/,DPP OU Winter Seasonal #8,Loser Quarterfinals
+https://www.smogon.com/forums/threads/dpp-ou-winter-seasonal-8-round-10-replays-required.3779897/,DPP OU Winter Seasonal #8,Top 16
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-finals-won-by-gei.3781597/,BW OU Winter Seasonal #8,Grand Finals
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-round-15.3781198/,BW OU Winter Seasonal #8,Loser Finals
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-round-14.3780797/,BW OU Winter Seasonal #8,Top 4
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-round-13-losers-bracket.3780299/,BW OU Winter Seasonal #8,Loser Semifinals
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-round-12.3779906/,BW OU Winter Seasonal #8,Top 8
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-round-11-losers-bracket.3779576/,BW OU Winter Seasonal #8,Loser Quarterfinals
+https://www.smogon.com/forums/threads/bw-ou-winter-seasonal-8-round-10.3779205/,BW OU Winter Seasonal #8,Top 16
+https://www.smogon.com/forums/threads/bw-ladder-tournament-ii-won-by-posho.3779495/page-5,BW Ladder Tournament II,Playoffs
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-finals-won-by-le-lliolae.3782301/,ORAS OU Winter Seasonal #8,Grand Finals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-round-17.3782043/,ORAS OU Winter Seasonal #8,Loser Finals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-round-16.3781567/,ORAS OU Winter Seasonal #8,Top 4
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-round-15-replays-required.3781167/,ORAS OU Winter Seasonal #8,Loser Semifinals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-round-14-replays-required.3780790/,ORAS OU Winter Seasonal #8,Top 8
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-round-13-losers-only.3780243/,ORAS OU Winter Seasonal #8,Loser Quarterfinals
+https://www.smogon.com/forums/threads/oras-ou-winter-seasonal-8-round-12-replays-required.3779814/,ORAS OU Winter Seasonal #8,Top 16
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-grand-finals-won-by-stratdkt.3782576/#post-11003130,SM OU Winter Seasonal #7,Grand Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-losers-finals.3782304/#post-10993514,SM OU Winter Seasonal #7,Loser Finals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-round-16.3781983/,SM OU Winter Seasonal #7,Top 4
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-round-15-losers-only.3781626/,SM OU Winter Seasonal #7,Loser Semifinals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-round-14.3781143/,SM OU Winter Seasonal #7,Top 8
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-round-13-losers-only.3780704/,SM OU Winter Seasonal #7,Loser Quarterfinals
+https://www.smogon.com/forums/threads/sm-ou-winter-seasonal-7-round-12-replays-required.3780329/,SM OU Winter Seasonal #7,Top 16
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-grand-finals.3782296/,SS OU Winter Seasonal #4,Grand Finals
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-losers-finals.3781820/,SS OU Winter Seasonal #4,Loser Finals
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-round-14-replays-required.3781537/,SS OU Winter Seasonal #4,Top 4
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-round-13-replays-required.3781187/,SS OU Winter Seasonal #4,Loser Semifinals
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-round-12-replays-required.3780561/,SS OU Winter Seasonal #4,Top 8
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-round-11-replays-required.3780271/,SS OU Winter Seasonal #4,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ss-winter-seasonal-4-round-10-replays-required.3779779/,SS OU Winter Seasonal #4,Top 16
+https://www.smogon.com/forums/threads/ss-ou-ladder-tournament-ii-won-by-spookyz.3778621/,SS Ladder Tournament II,Playoffs
