@@ -207,7 +207,8 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   let id=-1
   let LinkList
   console.log([...url1].map(c => c.charCodeAt(0)));
-  if (RegExp('(?:#)?post-[0-9]*$').test(url1)){
+  if (RegExp('(?:#)?post-[0-9]*\/$').test(url1)){
+    url=url..slice(0, -1)
     let post=url1.split("/").at(-1).split("#").at(-1)
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
     var url="https://www.smogon.com"+url1
@@ -215,10 +216,6 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
     if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
-    console.log(html.split('data-content="'+post+'"')[1].split("</article>")[0])
-    console.log("the full html is : ")
-    console.log("html")
-    
     LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
   }
   else{
@@ -247,7 +244,6 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   debugger
   var formats=[]
   console.log("About to import "+LinkList.size+" replays")
-  return
   for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
   db.close()
   formats = [...new Set(formats)]
