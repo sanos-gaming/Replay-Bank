@@ -244,7 +244,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   debugger
   var formats=[]
   console.log("About to import "+LinkList.size+" replays")
-  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
+  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id,true))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
   db.close()
   formats = [...new Set(formats)]
   debugger
