@@ -206,7 +206,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
   let id=-1
   let LinkList
-  console.log(JSON.stringify(url1))
+  console.log([...url1].map(c => c.charCodeAt(0)));
   if (RegExp('(?:#)?post-[0-9]*$').test(url1)){
     let post=url1.split("/").at(-1).split("#").at(-1)
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
