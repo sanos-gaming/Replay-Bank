@@ -214,6 +214,10 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
     if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
+    console.log(html.split('data-content="'+post+'"')[1].split("</article>")[0])
+    console.log("the full html is : ")
+    console.log("html")
+    a()
     LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
   }
   else{
