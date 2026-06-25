@@ -66,7 +66,7 @@ async function SingleReplayImport(url,db,toururl="",fetchid=-1,replace=false) {
   // console.log(`INSERT INTO `+format+" (fetchid,url,team1,team2,player1,player2,style1,style2,date,isASample) VALUE("+toInsert+");")
 
   await db.serialize(() => {db.run("INSERT INTO replayData (fetchid,url,format,team1,team2,info1,info2,date,isASample,turnCount) VALUES (?,?,?,?,?,?,?,?,?,?);",toInsert,(err)=>{
-  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
+  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET fetchid=?, team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[fetchid,team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
   debugger
   return format
 }
@@ -243,7 +243,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   debugger
   var formats=[]
   console.log("About to import "+LinkList.size+" replays")
-  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id,true))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
+  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
   db.close()
   formats = [...new Set(formats)]
   debugger
