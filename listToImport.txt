@@ -1,96 +1,23 @@
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-replays.3777860/,Chinese PL II,
-https://www.smogon.com/forums/threads/teamballo-v-replays.3777283/,Teamballo V,
-https://www.smogon.com/forums/threads/fcpl-v-replays-usage-stats.3772596/,FCPL V,
-https://www.smogon.com/forums/threads/npl-i-replays.3769175/,NPL I,
-https://www.smogon.com/forums/threads/teamballo-iii-replays-usage-stats.3730421/,Teamballo III,
-https://www.smogon.com/forums/threads/ptpl-vii-final-won-by-analytical-starmies.3773004/,PTPL VII,Finals
-https://www.smogon.com/forums/threads/ptpl-vii-semifinals.3772427/,PTPL VII,Semifinals
-https://www.smogon.com/forums/threads/ptpl-vii-week-7.3772050/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vii-week-6.3771742/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vii-week-5.3771380/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vii-week-4.3771040/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vii-week-3.3770706/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vii-week-2.3770300/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vii-week-1.3769965/,PTPL VII,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-final-won-by-dazzling-diancies.3754757/,PTPL VI,Finals
-https://www.smogon.com/forums/threads/ptpl-vi-semifinals.3754429/,PTPL VI,Semifinals
-https://www.smogon.com/forums/threads/ptpl-vi-week-7.3753961/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-week-6.3753534/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-week-5.3753088/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-week-4.3752673/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-week-3.3752208/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-week-2.3751719/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-vi-week-1.3751249/,PTPL VI,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-finals-won-by-lilycove-city-jirachis.3735469/,PTPL V,Finals
-https://www.smogon.com/forums/threads/ptpl-v-semifinals.3734962/,PTPL V,Semifinals
-https://www.smogon.com/forums/threads/ptpl-v-week-7.3734481/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-week-6.3733996/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-week-5.3733501/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-week-4.3733149/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-week-3.3732834/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-week-2.3732428/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-v-week-1.3732131/,PTPL V,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-finals-won-by-dazzling-diancies.3711151/,PTPL IV,Finals
-https://www.smogon.com/forums/threads/ptpl-iv-semifinals.3710690/,PTPL IV,Semifinals
-https://www.smogon.com/forums/threads/ptpl-iv-week-7.3710357/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-week-6.3710024/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-week-5.3709748/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-week-4.3709413/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-week-3.3709066/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-week-2.3708691/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/ptpl-iv-week-1.3708437/,PTPL IV,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-finals-won-by-seven-nights-stardust.3780761/,CPL II,Finals
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-semifinals.3779920/,CPL II,Semifinals
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-7.3779505/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-6.3779162/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-5.3778847/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-4.3778518/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-3.3778184/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-2.3777851/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-ii-round-1.3777532/,CPL II,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-finals%E3%80%90won-by-dawn-of-lightning%E3%80%91.3762436/,CPL I,Finals
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-semifinal-tiebreak.3762097/,CPL I,Semis Tiebreak
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-semifinal.3761713/,CPL I,Semifinals
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week7.3761347/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week6.3760986/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week5.3760549/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week4.3760057/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week3.3759707/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week2.3759311/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/chinese-premier-league-%E4%B8%80-week1.3758878/,CPL I,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-grand-finals-won-by-mymensingh-mausholds.3771758/,BDPL X,Finals
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-semifinals.3771434/,BDPL X,Semifinals
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-7.3771142/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-6.3770728/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-5.3770337/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-4.3769989/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-3.3769656/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-2.3769329/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bangladesh-premier-league-bdpl-x-week-1.3769050/,BDPL X,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-grand-final-won-by-dhaka-diancies.3752419/,BDPL IX,Finals
-https://www.smogon.com/forums/threads/bdpl-ix-semi-finals.3751824/,BDPL IX,Semifinals
-https://www.smogon.com/forums/threads/bdpl-ix-week-7.3751245/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-week-6.3750814/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-week-5.3750406/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-week-4.3749846/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-week-3.3749473/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-week-2.3749000/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/bdpl-ix-rosters-and-week-1.3748064/,BDPL IX,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-finals-won-by-anna-pepe-ponytas.3758521/,Teamballo IV,Finals
-https://www.smogon.com/forums/threads/teamballo-iv-semifinals.3758144/,Teamballo IV,Semifinals
-https://www.smogon.com/forums/threads/teamballo-iv-week-seven.3757765/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-week-six.3757031/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-week-five.3756697/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-week-four.3756369/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-week-three.3755956/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-week-two.3755564/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-iv-week-one.3755204/,Teamballo IV,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-finals-won-by-the-tyrannical-tinkatons.3716182/,Teamballo II,Finals
-https://www.smogon.com/forums/threads/teamballo-ii-semifinals.3715331/,Teamballo II,Semifinals
-https://www.smogon.com/forums/threads/teamballo-ii-week-7.3714947/,Teamballo II,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-week-6.3714564/,Teamballo II,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-week-5.3714174/,Teamballo II,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-week-4.3713753/,Teamballo II,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-week-3.3713006/,Teamballo II,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-week-2.3712507/,Teamballo II,Regular Season
-https://www.smogon.com/forums/threads/teamballo-ii-week-1.3711912/,Teamballo II,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-grand-finals-won-by-liberty-marshadows.3772754/,,Finals
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-semi-finals.3772423/,,Semifinals
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-week-5.3772102/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-week-4.3771759/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-week-3.3771413/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-week-2.3771078/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iv-week-1.3770743/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-grand-final-won-by-avaluggs-ice-chest.3753581/,,Finals
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-semifinals.3753155/,,Semifinals
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-week-5.3752741/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-week-4.3752247/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-week-3.3751791/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-week-2.3751326/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-iii-week-1.3750865/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-grand-final-won-by-real-aegislash.3730739/,,Finals
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-semi-finals.3730129/,,Semifinals
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-quarter-finals.3729769/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-round-of-16.3729362/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-week-5.3728907/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-week-4.3728480/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-week-3.3728106/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-week-2.3727693/,,Regular Season
+https://www.smogon.com/forums/threads/espa%C3%B1ol-premier-league-week-1.3727391/,,Regular Season
