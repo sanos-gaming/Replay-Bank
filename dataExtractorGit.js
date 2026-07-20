@@ -314,7 +314,7 @@ function warnOnce(message) {
 
 }
 
-//useCSVFile()
+useCSVFile()
 async function useCSVFile(){
   const csv = await fs.readFileSync(path.join(__dirname, "listToImport.txt"),{ encoding: 'utf8', flag: 'r' }).split("\n").map(line=>line.replace("\r","").split(",")).filter(x=>x.length==3||x.length==2)
   for (infos of csv){
@@ -365,7 +365,7 @@ async function refreshData(){
   ["gen7ou","gen6ubers"].forEach(format=>exportData(format))
 }
 
-redoJSONFiles()
+//redoJSONFiles()
 async function redoJSONFiles(){
   const { promisify } = require('util');
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
