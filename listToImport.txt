@@ -1,1 +1,58 @@
-https://www.smogon.com/forums/threads/smpl-v-replays-and-usage-stats.3783559,SMPL V,
+https://www.smogon.com/forums/threads/lcpl-xi-finals-won-by-skitty-committee.3706291/,LCPL XI,Finals
+https://www.smogon.com/forums/threads/lcpl-xi-semifinals.3705983/,LCPL XI,Semifinals
+https://www.smogon.com/forums/threads/lcpl-xi-week-seven.3705638/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xi-week-seven.3705638/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xi-week-five.3704974/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xi-week-four.3704659/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xi-week-three.3704307/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xi-week-2.3703932/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xi-week-one.3703549/,LCPL XI,Regular Season
+https://www.smogon.com/forums/threads/lcwc-iii-week-1.3694485/,LCWC III,Regular Season
+https://www.smogon.com/forums/threads/lcwc-iii-week-2.3694799/,LCWC III,Regular Season
+https://www.smogon.com/forums/threads/lcwc-iii-week-3.3695012/,LCWC III,Regular Season
+https://www.smogon.com/forums/threads/lcwc-iii-week-4.3695291/,LCWC III,Regular Season
+https://www.smogon.com/forums/threads/lcwc-iii-week-5.3695662/,LCWC III,Regular Season
+https://www.smogon.com/forums/threads/lcwc-iii-qualifying-elimination-finals.3695995/,LCWC III,Quarterfinals
+https://www.smogon.com/forums/threads/lcwc-iii-semifinals.3696475/,LCWC III,Semifinals
+https://www.smogon.com/forums/threads/lcwc-iii-grand-final-won-by-us-central.3697645/,LCWC III,Finals
+https://www.smogon.com/forums/threads/lcpl-x-week-1.3686137/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-week-2.3686461/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-week-3.3686794/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-week-4.3687219/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-week-5.3687548/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-week-6.3687923/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-week-7.3688318/,LCPL X,Regular Season
+https://www.smogon.com/forums/threads/lcpl-x-semifinals.3688671/,LCPL X,Semifinals
+https://www.smogon.com/forums/threads/lcpl-x-finals-won-by-the-roly-kohlis.3689037/,LCPL X,Finals
+https://www.smogon.com/forums/threads/lcwc-ii-week-1.3673105/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-week-2.3673386/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-week-3.3673708/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-week-4.3673990/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-week-5.3674419/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-week-6.3674754/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-week-7.3675094/,LCWC II ,Regular Season
+https://www.smogon.com/forums/threads/lcwc-ii-semi-finals.3675393/,LCWC II ,Semifinals
+https://www.smogon.com/forums/threads/lcwc-ii-finals-won-by-east.3675745/,LCWC II ,Finals
+https://www.smogon.com/forums/threads/lcpl-ix-week-1.3662459/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-week-2.3662831/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-week-3.3663141/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-week-4.3663592/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-week-5.3664096/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-week-6.3664514/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-week-7.3664900/,LCPL IX,Regular Season
+https://www.smogon.com/forums/threads/lcpl-ix-semifinals.3665720/,LCPL IX,Semifinals
+https://www.smogon.com/forums/threads/lcpl-ix-finals-won-by-pakistani-phanpys.3666025/,LCPL IX,Finals
+https://www.smogon.com/forums/threads/lcpl-xv-week-one.3782983/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xv-week-two.3783265/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xv-week-three.3783607/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xv-week-four.3783931/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xv-week-five.3784295/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xv-week-six.3784585/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xiv-week-seven.3784906/,LCPL XV,Regular Season
+https://www.smogon.com/forums/threads/lcpl-xv-semifinals.3785159/,LCPL XV,Semifinals
+https://www.smogon.com/forums/threads/lcpl-xv-finals.3785803/,LCPL XV,Finals
+https://www.smogon.com/forums/threads/smpl-v-finals.3785948/,SMPL V,Finals
+https://www.smogon.com/forums/threads/smpl-v-week-five.3784588/,SMPL V,Regular Season
+https://www.smogon.com/forums/threads/smpl-v-week-six.3784897/,SMPL V,Regular Season
+https://www.smogon.com/forums/threads/smpl-v-week-seven.3785165/,SMPL V,Regular Season
+https://www.smogon.com/forums/threads/smpl-v-semifinals.3785561/,SMPL V,Semifinals
