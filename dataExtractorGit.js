@@ -10,7 +10,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 function cleanName(name){
   if(!name) return
-  return name.trim().split(",")[0].replace(" ","-").toLowerCase().replace("-resolute","").replace("-*","").replace("%","").replace("-totem","").replace(".","")
+  return name.trim().split(",")[0].replace(" ","-").toLowerCase().replace("-resolute","").replace("-*","").replace("%","").replace("-totem","").replace(".","").replace("'","").replace("palafin-hero",'palafin').replace("mimikyu-busted","mimikyu").replace("terapagos-terastal","terapagos")
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -4,7 +4,8 @@
 
 <style> 
   body {
-    background-color: #1C1C1D;
+    --class-item-bg: #1C1C1D;
+    background-color: var(--class-item-bg);
     color: #ABA8BF;
     border: #ABA8BF;
   }
@@ -14,7 +15,13 @@
   }
   table {border-collapse: collapse;  width: max-content;table-layout:auto;}
 
-  #mainTable > td,th {border-bottom:1px solid currentColor;border-collapse: collapse; text-align:center; white-space:nowarp; padding:10px; } 
+  #mainTable > td,th {
+    border-bottom:1px solid currentColor;
+    border-collapse: collapse;
+    text-align:center;
+    white-space:nowarp;
+    padding:10px;
+  } 
 
   #mainTable:hover{background-color:#6564AF}
   .search{border:1px solid currentColor}
@@ -38,6 +45,13 @@
     content: "";
     clear: both;
     display: table;
+  }
+  #myTable>thead>tr>th{
+    position: sticky;
+    top: 0;
+    background: var(--class-item-bg);
+    z-index: 1;
+    box-shadow: 0 1px 0 #ABA8BF ;
   }
 
   th.searchable {
@@ -84,6 +98,32 @@
     text-align: center;
     padding: 8px;
     }
+  .imTeam1,.imTeam2{
+    --columns:3;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 32px);
+    grid-auto-rows: 32px;
+    gap: 2px;
+    align-items: center;
+  }
+  .vsText{
+    text-align: center;
+    text-justify: center;
+  }
+  .replayLink{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .im_box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
 
 <body>
@@ -144,9 +184,11 @@
 
 
   <br><b><div id="count"></div></b><button onclick="clearFilters()">Clear all filters</button><br>
+    <input type="checkbox" onchange="team1row(this)" id="1row"><label for="1row">Display teams in a single row</label><br>
   <input type="checkbox" onchange="seeOld()" id="seeOld"><label for="seeOld">Include older replays (pre 2022)</label><br>
-  <!-- <input type="checkbox" onchange="togglePlayers()" id="seePlay"><label for="seePlay">Hide players (reduces the clutter on small screens)</label><br> -->
-  <input type="checkbox" onchange="toggleTourRound()" id="toggleRound" checked /><label for="toggleRound">See tournament rounds (incomplete)</label>
+  <input type="checkbox" onchange="toggleStyles(true)" id="seeStyles"><label for="seeStyles">Show the (guessed) team styles</label><br>
+  <!-- <input type="checkbox" onchange="teams1col(this)" id="1col"><label for="1col">Display all teams in a single column, regardless of who won</label><br> -->
+  <!-- <input type="checkbox" onchange="toggleTourRound()" id="toggleRound" checked /><label for="toggleRound">See tournament rounds (incomplete)</label> -->
 
   <br><div id="temp"></div>
   <span id="popUpSearchClick" hidden></span>
@@ -160,9 +202,9 @@
       <th>Winning<br>team style</th>
       <th>Losing<br>team style</th>
       <th>Date</th>
-      <th>Tournament</th>
-      <th>Tournament<br>round</th>
-      <th class="searchable"><select id="sampleSearch" onchange="tableFilter(true)"><option value="All">Features a sample team? ▼</option><option value="Yes">Yes (new) ▼</option><option value="Any">Yes ▼</option><option value="Yes (old)">Yes (old) ▼</option><option value="No">No ▼</option></th>
+      <th>Tournament<br>(Round)</th>
+      <!-- <th>Tournament<br>round</th> -->
+      <th class="searchable"><select id="sampleSearch" onchange="tableFilter(true)"><option value="All">Sample team? ▼</option><option value="Yes">Yes (new) ▼</option><option value="Any">Yes ▼</option><option value="Yes (old)">Yes (old) ▼</option><option value="No">No ▼</option></th>
       </tr></thead>
       <tbody></tbody>
   </table>
@@ -218,7 +260,8 @@
 
   createPokeSearch()
   function createPokeSearch(){
-    var string = '<tr><th COLSPAN = 7><h class="searchTitle">Search by pokemon</h></th> </tr> <tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>'
+    advSearch=false
+    var string = '<tr><th COLSPAN = 7><h class="searchTitle">Search by pokemon</h></th><th COLSPAN=2><button onclick="createPokeSearchAdv()" hidden>Advanced search</button></th> </tr> <tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>'
     for (let j=1;j<7;j++){
       string+='<td><input type="search" id="PokeSearch1'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'}
     string +='</tr><tr><td> <b>VS</b> </td>'
@@ -226,6 +269,33 @@
       string+='<td><input type="search" id="PokeSearch2'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'}
     string+= '</tr>'
     document.getElementById("searchByMons").innerHTML=string
+  }
+
+  function createPokeSearchAdv(){
+    advSearch=true
+    var string = '<tr><th COLSPAN = 3><h class="searchTitle">Advanced</h></th><th COLSPAN=1><button onclick="createPokeSearch()">Normal search</button></th> </tr>'
+    for (let j=1;j<7;j++){
+      string+='<tr class="advSearchRow"><td><input type="search" id="PokeSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" id="OtherSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'}
+    string+='<tr><td><button onclick="advAddRow(this)" data-j='+7+'>+</button></td></tr>'
+    document.getElementById("searchByMons").innerHTML=string
+  }
+  function advAddCol(obj,j){
+    let row=obj.parentElement.parentElement
+    if (obj.textContent=='+'){
+      let newcell=row.insertCell(row.cells.length-2)
+      newcell.innerHTML='<td><input type="search" id="PokeSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'
+    }
+    if (obj.textContent=='-'){
+      row.deleteCell(row.cells.length-3)
+    }
+    row.cells[row.cells.length-1].hidden=row.cells.length<=4
+  }
+  function advAddRow(obj){
+    let table=obj.parentElement.parentElement.parentElement
+    let newRow=table.insertRow(table.rows.length-1)
+    let j=+obj.dataset.j
+    newRow.outerHTML='<tr class="advSearchRow"><td><input type="search" id="PokeSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" id="OtherSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'
+    obj.dataset.j=j+1
   }
   
   let [dic,dicMoves,dicItems,dicTeam,dicTera,dicLead]=[{},{},{},{},{},{}];
@@ -269,7 +339,7 @@
       return string
     }
     
-    toggleTourRound()
+    // toggleTourRound()
     tableFilter()
   }
   function createTable(data){
@@ -299,28 +369,28 @@
       a=x.info2.style
       row.insertCell(4).innerHTML="<span>"+a.replace("/","<br>(")+(a.includes("/")?")":"")+"</span>"
       row.insertCell(5).innerHTML=new Date(x["date"] * 1000).toLocaleDateString('en-GB',{day: '2-digit',month: '2-digit',year: '2-digit'})
-      row.insertCell(6).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadName"]+'</a>'
-      row.insertCell(7).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadRound"]+'</a>'
-      row.insertCell(8).innerHTML=x["isASample"]
+      row.insertCell(6).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x.threadName+(x.threadRound==""?"":"<br>("+x.threadRound+")")+'</a>'
+      // row.insertCell(7).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadRound"]+'</a>'
+      row.insertCell(7).innerHTML=x.isASample
     })
     toggleSample(!data.every(x=>x.isASample==""))
     toggleStyles(!data.every(x=>x.info1.style==""))
     table.hidden = false
   }
   function visual(dataLine){
-    var string = '<a href="'+dataLine.url+'" target="_blank" ><span class="imTeam1">'
+    var string = '<a href="'+dataLine.url+'" target="_blank" class="replayLink"><div class="imTeam1">'
     for (var i=1;i<3;i++){
       let changes=dataLine["info"+i].changes
-      let visuTeam = dataLine["team"+i].map(mon=>changes[mon]||mon)
+      let visuTeam = dataLine["team"+i].map(mon=>(changes[mon]||mon))
       // let items=dataLine["team"+i].map(mon=>dataLine["info"+i].items[mon]?.replace("formItem:","").replace('Zmove:','')||"")
       visuTeam.forEach((mon,j)=>{
-        string+='<img src="https://www.smogon.com/forums/media/minisprites/'+(mon==""?"unknown":mon)+'.png" loading="lazy" '+((i==1&mon!="")?'style="transform:scaleX(-1)"':"")+'>'
+        string+='<div class="im_box"><img src='+(mon==""?'"https://www.smogon.com/__assets/sprites/forumsprites/unknown-4Q5LITQE.png"':'"https://www.smogon.com/forums/media/minisprites/'+mon+'.png"') +' loading="lazy" '+((i==1&mon!="")?'style="transform:scaleX(-1)"':"")+' width="auto" height="auto"></div>'
         // if (items[j]!="") string+='<img src="https://www.smogon.com/forums/media/minisprites/'+items[j]+'.png" loading="lazy">'
         // string+='</span>'
       })
-      if (i==1) string+= "</span><b> VS </b><span class=imTeam2>"
+      if (i==1) string+= '</div><div class="vsText"><b>VS</b></div><div class="imTeam2">'
     }
-    return string+"</span></a>"
+    return string+"</div></a>"
   }
 
   function makeCleanUpper(stringa){let string=stringa.replace(" ","-"); string = string[0].toUpperCase()+(string.includes("-")?(string.slice(1,string.indexOf("-")+1)+string[string.indexOf("-")+1].toUpperCase()+string.slice(string.indexOf("-")+2)):string.slice(1)); return(stringa.includes(" ")?string.replace("-",' '):string)}
@@ -352,13 +422,17 @@
     rows.forEach(row=>row.cells[7].style.display=(document.getElementById("toggleRound").checked?"":"none"))
   }
   function toggleStyles(value){
+    const checkbox=document.getElementById("seeStyles")
+    checkbox.hidden=!value
+    checkbox.labels[0].hidden=!value
+    value=value&checkbox.checked
     const rows = Array.from(document.getElementById("myTable").rows)
     rows.forEach(row=>{row.cells[3].style.display=(value?"":"none");row.cells[4].style.display=(value?"":"none")})
     document.getElementById("styleSearch").hidden=!value
   }
   function toggleSample(value){
     const rows = Array.from(document.getElementById("myTable").rows)
-    rows.forEach(row=>{row.cells[8].style.display=(value?"":"none")})
+    rows.forEach(row=>{row.cells[7].hidden=!value})
   }
   function togglePlayers(){
     const rows = Array.from(document.getElementById("myTable").rows)
@@ -385,7 +459,7 @@
     table = document.getElementById("myTable");
     rows=Array.from(table.rows).slice(1).reverse()
     rows.forEach(row=> {
-      const value=row.cells[6].textContent; var annee="20"+row.cells[5].textContent.slice(6).trim();
+      const value=row.cells[6].textContent.split("(")[0]; var annee="20"+row.cells[5].textContent.slice(6).trim();
       if(!list.includes(value)){list.push(value);if (!dic[annee]){dic[annee]=[value]} else{dic[annee]=dic[annee].concat([value])}}
       })
     //console.log(dic)
@@ -558,7 +632,7 @@
       var truth_style=(option=="Either" & ((truth_style1)||(truth_style2)))||(option=="Winner"&truth_style1)||(option=="Loser"&truth_style2)
 
       var truth_tour=tourSearch.some(tour=>row.cells[6].textContent==tour)||(document.getElementById("tourListTop").innerHTML=="")
-      var sample=row.cells[8].textContent.trim()
+      var sample=row.cells[7].textContent.trim()
       var truth_sample=sampleSearch=="All"||sampleSearch==sample||(sampleSearch=="Any"&sample.includes("Yes"))
       var truth_old=seeOld||(row.cells[5].textContent.trim().slice(6,8)>=22)
 
@@ -583,7 +657,7 @@
     })
 
     function coloring(row,color,i){
-      Array.from(row.querySelectorAll(".imTeam"+i)[0].getElementsByTagName("img")).forEach(im=>im.style.backgroundColor=color)
+      Array.from(row.querySelectorAll(".imTeam"+i)[0].getElementsByTagName("div")).forEach(im=>im.style.backgroundColor=color)
       row.cells[i].getElementsByTagName("span")[0].style.backgroundColor= color
       row.cells[2+i].getElementsByTagName("span")[0].style.backgroundColor= color
     }
@@ -972,24 +1046,27 @@
     "oudlc1":"DLC 1 OU",
     "customgame":"Custom Game",
     "predlcou":"Pre-DLC 1 OU",
-    "dlc1doublesou":"DLC  Doubles OU",
+    "dlc1doublesou":"DLC 1 Doubles OU",
     "doublesubers":"Doubles Ubers",
     "orrecolosseum":"Orre Colosseum",
-    "vgc2012":"VGC 2012"
+    "vgc2012":"VGC 2012",
+    "anythinggoes":"AG",
+    "nationaldex":"National Dex",
+    "nationaldexou":"National Dex",
+    "nationaldexubers":"National Dex Ubers",
+    "nationaldexuu":"National Dex UU",
+    "lcuu":"LC UU",
+    "doubleslc":"Doubles LC",
+    "randombattle":"Random Battle"
+  }
+
+  function team1row(check){
+    document.querySelectorAll(".imTeam1, .imTeam2").forEach(x=>x.style.setProperty('--columns', check.checked?'6':'3'));
+  }
+  function teams1col(check){
+    Array.from(document.getElementsByClassName('imTeam2')).forEach(x=>x.style.gridcolumn=check.checked?'1':'-1')
   }
   
 </script>
 <script data-goatcounter="https://sanos.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
