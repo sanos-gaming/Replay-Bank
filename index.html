@@ -631,7 +631,7 @@
       var truth_style2=style1.includes(styleSearch2)&style2.includes(styleSearch1)
       var truth_style=(option=="Either" & ((truth_style1)||(truth_style2)))||(option=="Winner"&truth_style1)||(option=="Loser"&truth_style2)
 
-      var truth_tour=tourSearch.some(tour=>row.cells[6].textContent==tour)||(document.getElementById("tourListTop").innerHTML=="")
+      var truth_tour=tourSearch.some(tour=>row.cells[6].textContent.split('(')[0]==tour)||(document.getElementById("tourListTop").innerHTML=="")
       var sample=row.cells[7].textContent.trim()
       var truth_sample=sampleSearch=="All"||sampleSearch==sample||(sampleSearch=="Any"&sample.includes("Yes"))
       var truth_old=seeOld||(row.cells[5].textContent.trim().slice(6,8)>=22)
