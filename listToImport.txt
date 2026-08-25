@@ -1,1 +1,151 @@
-https://www.smogon.com/forums/threads/smpl-iv-replays-and-usage-statistics.3766509/,SMPL IV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-finals-won-by-team-raiders.3779781/,SPL XVII,Finals
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-semifinals.3779122/,SPL XVII,Semifinals
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-9.3778834/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-8.3778512/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-7.3778180/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-6.3777848/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-5.3777540/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-4.3777228/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-3.3776877/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-2.3776596/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvii-week-1.3776147/,SPL XVII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-finals-won-by-congregation-of-the-classiest.3762388/,SPL XVI,Finals
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-semifinals.3761682/,SPL XVI,Semifinals
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-9.3761275/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-8.3760929/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-7.3760523/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-6.3760062/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-5.3759704/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-4.3759274/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-3.3758882/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-2.3758461/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xvi-week-1.3758077/,SPL XVI,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-finals-won-by-dragonspiral-tyrants.3740165/,SPL XV,Finals
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-semifinals-tiebreaker-post-63.3739170/,SPL XV,Semifinals
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-9.3738636/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-8.3738106/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-7.3737518/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-6.3736971/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-5.3736457/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-4.3735961/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-3.3735484/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-2.3734975/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xv-week-1.3734443/,SPL XV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-finals-won-by-team-raiders.3718716/,SPL XIV,Finals
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-semifinals.3718348/,SPL XIV,Semifinals
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-9.3717915/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-8.3717447/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-7.3716989/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-6.3716590/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-5.3716114/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-4.3715628/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-3.3715282/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-2.3714890/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiv-week-1.3714485/,SPL XIV,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-finals-won-by-team-raiders.3699347/,SPL XIII,Finals
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-semifinals.3698695/,SPL XIII,Semifinals
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-9.3698322/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-8.3698000/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-7.3697650/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-6.3697278/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-5.3696960/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-4.3696633/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-3.3696316/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-2.3695985/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-premier-league-xiii-week-1.3695656/,SPL XIII,Regular Season
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/#post-11052244,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/#post-11057388,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11057678,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11058674,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11058819,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11059184,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11059270,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11059422,Smogon Tour 38,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11060516,Smogon Tour 38,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11065340,Smogon Tour 38,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11065640,Smogon Tour 38,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-2#post-11067625,Smogon Tour 38,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-3#post-11069297,Smogon Tour 38,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-3#post-11069550,Smogon Tour 38,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-38-playoffs-won-by-michaelderbeste2.3784722/page-4#post-11083731,Smogon Tour 38,Finals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10578743,Smogon Tour 37,Play-Ins
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10579212,Smogon Tour 37,Play-Ins
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10579230,Smogon Tour 37,Play-Ins
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10583514,Smogon Tour 37,Play-Ins
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10584759,Smogon Tour 37,Play-Ins
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10591691,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10591946,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10592368,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10592809,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10593008,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10593187,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/#post-10593698,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10595047,Smogon Tour 37,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10600626,Smogon Tour 37,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10601096,Smogon Tour 37,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10601186,Smogon Tour 37,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10601868,Smogon Tour 37,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10608209,Smogon Tour 37,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-2#post-10608518,Smogon Tour 37,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-37-playoffs-won-by-santu.3765427/page-3#post-10624719,Smogon Tour 37,Finals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10125726,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10128394,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10128356,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10128653,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10129223,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10129255,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10129259,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-2#post-10129590,Smogon Tour 36,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-3#post-10135764,Smogon Tour 36,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-3#post-10136056,Smogon Tour 36,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-3#post-10136199,Smogon Tour 36,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-3#post-10136814,Smogon Tour 36,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-3#post-10143428,Smogon Tour 36,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-3#post-10145824,Smogon Tour 36,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-36-playoffs-won-by-empo.3743596/page-5#post-10157812,Smogon Tour 36,Finals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9626620,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9627880,Smogon Tour 35,Play-Ins
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9630449,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9634547,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9634726,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9635163,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9635911,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9636324,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9636344,Smogon Tour 35,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9645591,Smogon Tour 35,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-3#post-9645680,Smogon Tour 35,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-4#post-9647750,Smogon Tour 35,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-4#post-9648889,Smogon Tour 35,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-4#post-9656074,Smogon Tour 35,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-4#post-9663004,Smogon Tour 35,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-35-playoffs-won-by-michaelderbeste2.3721426/page-5#post-9678675,Smogon Tour 35,Finals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-2#post-9398845,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-2#post-9402836,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-2#post-9402892,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-2#post-9404468,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-2#post-9404738,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9404926,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9405032,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9405074,Smogon Tour 34,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9412547,Smogon Tour 34,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9413966,Smogon Tour 34,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9414370,Smogon Tour 34,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9415843,Smogon Tour 34,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9422402,Smogon Tour 34,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-3#post-9422713,Smogon Tour 34,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-34-playoffs-no-winner.3710685/page-5#post-9431922,Smogon Tour 34,Finals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9215002,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9216101,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9216115,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9216171,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9216679,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9216820,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9217247,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-4#post-9218238,Smogon Tour 33,Top 16
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-5#post-9221218,Smogon Tour 33,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-5#post-9222390,Smogon Tour 33,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-5#post-9222468,Smogon Tour 33,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-5#post-9222572,Smogon Tour 33,Quarterfinals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-5#post-9229478,Smogon Tour 33,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-5#post-9229545,Smogon Tour 33,Semifinals
+https://www.smogon.com/forums/threads/smogon-tour-season-33-playoffs-won-by-empo.3701675/page-7#post-9236434,Smogon Tour 33,Finals
