@@ -1,29 +1,240 @@
-https://www.smogon.com/forums/threads/adv-ou-global-championship-2026-finals-won-by-pak.3784869/,ADV OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/adv-ou-global-championship-2026-round-7-replays-required.3784555/,ADV OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/adv-ou-global-championship-2026-round-6-replays-required.3783849/,ADV OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/adv-ou-global-championship-2026-round-5-replays-required.3783224/,ADV OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/dpp-ou-global-championship-2026-finals-won-by-le-lliolae.3786174/,DPP OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/dpp-ou-global-championship-2026-round-7.3785432/,DPP OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/dpp-ou-global-championship-2026-round-6.3784847/,DPP OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/dpp-ou-global-championship-2026-round-5.3784316/,DPP OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/bw-ou-global-championship-2026-finals-replays-required-won-by-xurkiyee.3785487/,BW OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/bw-ou-global-championship-2026-round-7-no-extensions-replays-required.3784892/,BW OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/bw-ou-global-championship-2026-round-6-no-extensions-replays-required-phase-2-post-14.3784243/,BW OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/bw-ou-global-championship-2026-round-5-no-extensions-replays-required-phase-2-post-23.3783598/,BW OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/oras-cup-ix-finals-won-by-destro16.3782937/,ORAS CUP IX,Finals
-https://www.smogon.com/forums/threads/oras-cup-ix-round-7-semi-finals.3782528/,ORAS CUP IX,Semifinals
-https://www.smogon.com/forums/threads/oras-cup-ix-round-6.3782346/,ORAS CUP IX,Quarterfinals
-https://www.smogon.com/forums/threads/oras-cup-ix-round-5.3782013/,ORAS CUP IX,Top 16
-https://www.smogon.com/forums/threads/sm-ou-global-championship-2026-round-8-finals-won-by-sasageyo.3786163/,SM OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/sm-ou-global-championship-2026-round-7-stage-1.3785486/,SM OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/sm-ou-global-championship-2026-round-6-stage-1.3784900/,SM OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/sm-ou-global-championship-2026-round-5-stage-1.3784260/,SM OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2026-finals-won-by-siatam.3786122/,GSC OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2026-round-6-stage-2-replays-required.3785463/,GSC OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2026-round-5-stage-2-replays-required.3784972/,GSC OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/gsc-ou-global-championship-2026-round-4-stage-2-replays-required.3784308/,GSC OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/rby-ou-global-championship-2026-finals-won-by-girlsseeghosts.3785788/,RBY OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/rby-ou-global-championship-2026-round-6-phase-2.3785237/,RBY OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/rby-ou-global-championship-2026-round-5-phase-2.3784886/,RBY OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/rby-ou-global-championship-2026-round-4-phase-2.3784257/,RBY OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/rby-ladder-tournament-iii-won-by-lnumbers.3778864/,RBY Ladder Tournament III,Playoffs
+https://www.smogon.com/forums/threads/gsc-cup-xii-finals-won-by-coco.3787030/,GSC Cup XII,Finals
+https://www.smogon.com/forums/threads/gsc-cup-xii-round-8.3786635/,GSC Cup XII,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-xii-round-7.3786214/,GSC Cup XII,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-xii-round-6.3785814/,GSC Cup XII,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-xi-finals-won-by-skarpherim.3770689/,GSC Cup XI,Finals
+https://www.smogon.com/forums/threads/gsc-cup-xi-semifinals.3770395/,GSC Cup XI,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-xi-quarterfinals.3770008/,GSC Cup XI,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-xi-round-6.3769675/,GSC Cup XI,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-x-finals-won-by-glfgno7.3750850/,GSC Cup X,Finals
+https://www.smogon.com/forums/threads/gsc-cup-x-semifinals.3750369/,GSC Cup X,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-x-quarterfinals.3749902/,GSC Cup X,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-x-round-5.3749461/,GSC Cup X,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-ix-finals-won-by-malekith.3727837/,GSC Cup IX,Finals
+https://www.smogon.com/forums/threads/gsc-cup-ix-semifinals.3727317/,GSC Cup IX,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-ix-quarterfinals.3726888/,GSC Cup IX,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-ix-round-5.3726531/,GSC Cup IX,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-viii-finals-won-by-sulcata.3707893/,GSC Cup VIII,Finals
+https://www.smogon.com/forums/threads/gsc-cup-viii-semifinals.3707327/,GSC Cup VIII,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-viii-quarterfinals.3707065/,GSC Cup VIII,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-viii-round-5.3706637/,GSC Cup VIII,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-vii-finals-won-by-altina.3692083/,GSC Cup VII,Finals
+https://www.smogon.com/forums/threads/gsc-cup-vii-semifinals.3691756/,GSC Cup VII,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-vii-quarterfinals.3691442/,GSC Cup VII,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-vii-round-5.3691163/,GSC Cup VII,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-vi-finals-won-by-sulcata.3665252/,GSC Cup VI,Finals
+https://www.smogon.com/forums/threads/gsc-cup-vi-semifinals.3664891/,GSC Cup VI,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-vi-quarterfinals.3664508/,GSC Cup VI,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-vi-round-5.3664074/,GSC Cup VI,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-v-finals-won-by-lavos.3651230/,GSC Cup V,Finals
+https://www.smogon.com/forums/threads/gsc-cup-v-semifinals.3650926/,GSC Cup V,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-v-quarterfinals.3650677/,GSC Cup V,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-v-round-5.3650425/,GSC Cup V,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-iv-finals-won-by-jimmy-turtwig.3636024/,GSC Cup IV,Finals
+https://www.smogon.com/forums/threads/gsc-cup-iv-semifinals.3635615/,GSC Cup IV,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-iv-quarterfinals.3635230/,GSC Cup IV,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-iv-round-5.3634753/,GSC Cup IV,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-iii-final-won-by-lavos-spawn.3605748/,GSC Cup III,Finals
+https://www.smogon.com/forums/threads/gsc-cup-iii-semifinals.3605064/,GSC Cup III,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-iii-quarterfinals.3604419/,GSC Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-iii-round-5.3603859/,GSC Cup III,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-ii-finals-won-by-tsunami.3573950/,GSC Cup II,Finals
+https://www.smogon.com/forums/threads/gsc-cup-ii-semifinals.3573692/,GSC Cup II,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-ii-quarterfinals.3573058/,GSC Cup II,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-ii-round-5.3572506/,GSC Cup II,Top 16
+https://www.smogon.com/forums/threads/gsc-cup-i-finals-won-by-malekith.3542609/,GSC Cup I,Finals
+https://www.smogon.com/forums/threads/gsc-cup-i-semifinals.3542054/,GSC Cup I,Semifinals
+https://www.smogon.com/forums/threads/gsc-cup-i-quarterfinals.3541384/,GSC Cup I,Quarterfinals
+https://www.smogon.com/forums/threads/gsc-cup-i-round-4.3540692/,GSC Cup I,Top 16
+https://www.smogon.com/forums/threads/adv-cup-xii-finals-won-by-star.3786520/,ADV Cup XII,Finals
+https://www.smogon.com/forums/threads/adv-cup-xii-semifinals.3786154/,ADV Cup XII,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-xii-quarterfinals.3785816/,ADV Cup XII,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-xii-round-6.3785475/,ADV Cup XII,Top 16
+https://www.smogon.com/forums/threads/adv-cup-xi-finals-won-by-skarpherim.3770688/,ADV Cup XI,Finals
+https://www.smogon.com/forums/threads/adv-cup-xi-semifinals.3770258/,ADV Cup XI,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-xi-quarterfinals.3769954/,ADV Cup XI,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-xi-round-6.3769641/,ADV Cup XI,Top 16
+https://www.smogon.com/forums/threads/adv-cup-x-finals-won-by-sapientia.3750810/,ADV Cup X,Finals
+https://www.smogon.com/forums/threads/adv-cup-x-semifinals.3750308/,ADV Cup X,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-x-quarterfinals.3749832/,ADV Cup X,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-x-round-6.3749431/,ADV Cup X,Top 16
+https://www.smogon.com/forums/threads/adv-cup-ix-finals-won-by-mcmeghan.3727845/,ADV Cup IX,Finals
+https://www.smogon.com/forums/threads/adv-cup-ix-semifinals.3727318/,ADV Cup IX,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-ix-quarterfinals.3726943/,ADV Cup IX,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-ix-round-6.3726563/,ADV Cup IX,Top 16
+https://www.smogon.com/forums/threads/adv-cup-viii-finals-won-by-pohjis.3707635/,ADV Cup VIII,Finals
+https://www.smogon.com/forums/threads/adv-cup-viii-semifinals.3707340/,ADV Cup VIII,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-viii-quarterfinals.3707020/,ADV Cup VIII,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-viii-round-6.3706600/,ADV Cup VIII,Top 16
+https://www.smogon.com/forums/threads/adv-cup-vii-finals-won-by-mcmeghan.3691783/,ADV Cup VII,Finals
+https://www.smogon.com/forums/threads/adv-cup-vii-semifinals.3691452/,ADV Cup VII,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-vii-quarterfinals.3691124/,ADV Cup VII,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-vii-round-5.3690795/,ADV Cup VII,Top 16
+https://www.smogon.com/forums/threads/adv-cup-vi-finals-won-by-tamahome.3665229/,ADV Cup VI,Finals
+https://www.smogon.com/forums/threads/adv-cup-vi-semifinals.3664863/,ADV Cup VI,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-vi-quarterfinals.3664481/,ADV Cup VI,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-vi-round-6.3664081/,ADV Cup VI,Top 16
+https://www.smogon.com/forums/threads/adv-cup-v-finals-won-by-mcmeghan.3651216/,ADV Cup V,Finals
+https://www.smogon.com/forums/threads/adv-cup-v-semifinals.3650923/,ADV Cup V,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-v-quarterfinals.3650640/,ADV Cup V,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-v-round-6.3650431/,ADV Cup V,Top 16
+https://www.smogon.com/forums/threads/adv-cup-iv-finals-won-by-astamatitos.3636116/,ADV Cup IV,Finals
+https://www.smogon.com/forums/threads/adv-cup-iv-semifinals.3635507/,ADV Cup IV,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-iv-quarterfinals.3635232/,ADV Cup IV,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-iv-round-6.3634684/,ADV Cup IV,Top 16
+https://www.smogon.com/forums/threads/adv-cup-iii-finals-won-by-zf.3605585/,ADV Cup III,Finals
+https://www.smogon.com/forums/threads/adv-cup-iii-semifinals.3605004/,ADV Cup III,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-iii-quarterfinals.3604417/,ADV Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-iii-round-5.3603824/,ADV Cup III,Top 16
+https://www.smogon.com/forums/threads/adv-cup-ii-finals-won-by-undisputed.3573703/,ADV Cup II,Finals
+https://www.smogon.com/forums/threads/adv-cup-ii-semifinals.3573040/,ADV Cup II,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-ii-quarterfinals.3572672/,ADV Cup II,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-ii-round-5.3572139/,ADV Cup II,Top 16
+https://www.smogon.com/forums/threads/adv-cup-i-finals-won-by-danilo.3542850/,ADV Cup I,Finals
+https://www.smogon.com/forums/threads/adv-cup-i-semifinals.3541695/,ADV Cup I,Semifinals
+https://www.smogon.com/forums/threads/adv-cup-i-quarterfinals.3541006/,ADV Cup I,Quarterfinals
+https://www.smogon.com/forums/threads/adv-cup-i-round-5.3540174/,ADV Cup I,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-xii-finals-won-by-sergio-aguero.3786285/,DPP Cup XII,Finals
+https://www.smogon.com/forums/threads/dpp-cup-xii-semifinals.3785820/,DPP Cup XII,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-xii-round-7.3785473/,DPP Cup XII,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-xii-round-6.3785151/,DPP Cup XII,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-xi-finals-won-by-elodin.3770401/,DPP Cup XI,Finals
+https://www.smogon.com/forums/threads/dpp-cup-xi-semifinals.3769947/,DPP Cup XI,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-xi-quarterfinals.3769611/,DPP Cup XI,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-xi-round-6.3769328/,DPP Cup XI,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-x-finals-won-by-m-dragon.3750309/,DPP Cup X,Finals
+https://www.smogon.com/forums/threads/dpp-cup-x-semifinals.3749850/,DPP Cup X,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-x-quarterfinals.3749541/,DPP Cup X,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-x-round-6.3748990/,DPP Cup X,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-ix-finals-won-by-twash.3727167/,DPP Cup IX,Finals
+https://www.smogon.com/forums/threads/dpp-cup-ix-semifinals.3726919/,DPP Cup IX,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-ix-quarterfinals.3726596/,DPP Cup IX,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-ix-round-6.3726155/,DPP Cup IX,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-viii-finals-won-by-gilbert-arenas.3707605/,DPP Cup VIII,Finals
+https://www.smogon.com/forums/threads/dpp-cup-viii-semifinals.3706994/,DPP Cup VIII,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-viii-quarterfinals.3706613/,DPP Cup VIII,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-viii-round-6.3706268/,DPP Cup VIII,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-vii-finals-won-by-star.3692052/,DPP Cup VII,Finals
+https://www.smogon.com/forums/threads/dpp-cup-vii-semifinals.3691798/,DPP Cup VII,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-vii-quarterfinals.3691439/,DPP Cup VII,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-vii-round-6.3691140/,DPP Cup VII,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-vi-finals-won-by-soulwind.3665140/,DPP Cup VI,Finals
+https://www.smogon.com/forums/threads/dpp-cup-vi-semifinals.3664833/,DPP Cup VI,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-vi-quarterfinals.3664446/,DPP Cup VI,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-vi-round-6.3664084/,DPP Cup VI,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-v-finals-won-by-bkc.3650722/,DPP Cup V,Finals
+https://www.smogon.com/forums/threads/dpp-cup-v-semifinals.3650639/,DPP Cup V,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-v-quarterfinals.3650419/,DPP Cup V,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-v-round-6.3650192/,DPP Cup V,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-iv-finals-won-by-jimmy-turtwig.3636025/,DPP Cup IV,Finals
+https://www.smogon.com/forums/threads/dpp-cup-iv-semifinals.3635620/,DPP Cup IV,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-iv-quarterfinals.3635233/,DPP Cup IV,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-iv-round-6.3634751/,DPP Cup IV,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-iii-finals-won-by-energy.3605003/,DPP Cup III,Finals
+https://www.smogon.com/forums/threads/dpp-cup-iii-semifinals.3604345/,DPP Cup III,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-iii-quarterfinals.3603796/,DPP Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-iii-round-5.3603197/,DPP Cup III,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-ii-finals-won-by-philip7086.3573964/,DPP Cup II,Finals
+https://www.smogon.com/forums/threads/dpp-cup-ii-semifinals.3573259/,DPP Cup II,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-ii-quarterfinals.3572523/,DPP Cup II,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-ii-round-5.3571970/,DPP Cup II,Top 16
+https://www.smogon.com/forums/threads/dpp-cup-i-finals-won-by-babidi1998.3542774/,DPP Cup I,Finals
+https://www.smogon.com/forums/threads/dpp-cup-i-semifinals.3541880/,DPP Cup I,Semifinals
+https://www.smogon.com/forums/threads/dpp-cup-i-quarterfinals.3541236/,DPP Cup I,Quarterfinals
+https://www.smogon.com/forums/threads/dpp-cup-i-round-5.3540516/,DPP Cup I,Top 16
+https://www.smogon.com/forums/threads/bw-cup-xii-finals-won-by-garythegengar.3785831/,BW Cup XII,Finals
+https://www.smogon.com/forums/threads/bw-cup-xii-semifinals.3785493/,BW Cup XII,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-xii-round-7.3785157/,BW Cup XII,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-xii-round-6.3784877/,BW Cup XII,Top 16
+https://www.smogon.com/forums/threads/bw-cup-xi-finals-won-by-garythegengar.3769558/,BW Cup XI,Finals
+https://www.smogon.com/forums/threads/bw-cup-xi-semifinals.3769272/,BW Cup XI,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-xi-quarterfinals.3768923/,BW Cup XI,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-xi-round-6.3768581/,BW Cup XI,Top 16
+https://www.smogon.com/forums/threads/bw-cup-x-finals-won-by-luthier.3749836/,BW Cup X,Finals
+https://www.smogon.com/forums/threads/bw-cup-x-semifinals.3749385/,BW Cup X,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-x-quarterfinals.3748892/,BW Cup X,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-x-round-6.3748434/,BW Cup X,Top 16
+https://www.smogon.com/forums/threads/bw-cup-ix-finals-won-by-mako.3726889/,BW Cup IX,Finals
+https://www.smogon.com/forums/threads/bw-cup-ix-semifinals.3726503/,BW Cup IX,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-ix-quarterfinals.3726126/,BW Cup IX,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-ix-round-6.3725738/,BW Cup IX,Top 16
+https://www.smogon.com/forums/threads/bw-cup-viii-finals-won-by-garythegengar.3706931/,BW Cup VIII,Finals
+https://www.smogon.com/forums/threads/bw-cup-viii-semifinals.3706603/,BW Cup VIII,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-viii-quarterfinals.3706288/,BW Cup VIII,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-viii-round-6.3705996/,BW Cup VIII,Top 16
+https://www.smogon.com/forums/threads/bw-cup-vii-finals-won-by-august.3691730/,BW Cup VII,Finals
+https://www.smogon.com/forums/threads/bw-cup-vii-semifinals.3691482/,BW Cup VII,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-vii-quarterfinals.3691122/,BW Cup VII,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-vii-round-6.3690781/,BW Cup VII,Top 16
+https://www.smogon.com/forums/threads/bw-cup-vi-finals-won-by-mana.3664880/,BW Cup VI,Finals
+https://www.smogon.com/forums/threads/bw-cup-vi-semifinals.3664407/,BW Cup VI,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-vi-quarterfinals.3664008/,BW Cup VI,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-vi-round-6.3663576/,BW Cup VI,Top 16
+https://www.smogon.com/forums/threads/bw-cup-v-finals-won-by-dice.3650884/,BW Cup V,Finals
+https://www.smogon.com/forums/threads/bw-cup-v-semifinals.3650644/,BW Cup V,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-v-quarterfinals.3650391/,BW Cup V,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-v-round-6.3650182/,BW Cup V,Top 16
+https://www.smogon.com/forums/threads/bw-cup-iv-finals-won-by-posho.3636023/,BW Cup IV,Finals
+https://www.smogon.com/forums/threads/bw-cup-iv-semifinals.3635621/,BW Cup IV,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-iv-quarterfinals.3635225/,BW Cup IV,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-iv-round-6.3634733/,BW Cup IV,Top 16
+https://www.smogon.com/forums/threads/bw-cup-iii-finals-won-by-soulwind.3604347/,BW Cup III,Finals
+https://www.smogon.com/forums/threads/bw-cup-iii-semifinals.3603767/,BW Cup III,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-iii-quarterfinals.3603188/,BW Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-iii-round-5.3602603/,BW Cup III,Top 16
+https://www.smogon.com/forums/threads/bw-cup-ii-finals-won-by-giara.3573207/,BW Cup II,Finals
+https://www.smogon.com/forums/threads/bw-cup-ii-semifinals.3572433/,BW Cup II,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-ii-quarterfinals.3571871/,BW Cup II,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-ii-round-5.3571376/,BW Cup II,Top 16
+https://www.smogon.com/forums/threads/bw-cup-i-finals-won-by-m-dragon.3540756/,BW Cup I,Finals
+https://www.smogon.com/forums/threads/bw-cup-i-semifinals.3539862/,BW Cup I,Semifinals
+https://www.smogon.com/forums/threads/bw-cup-i-quarterfinals.3539237/,BW Cup I,Quarterfinals
+https://www.smogon.com/forums/threads/bw-cup-i-round-5.3538724/,BW Cup I,Top 16
+https://www.smogon.com/forums/threads/rby-cup-xii-finals.3787230/,RBY Cup XII,Finals
+https://www.smogon.com/forums/threads/rby-cup-xii-semifinals.3786927/,RBY Cup XII,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-xii-round-7.3786605/,RBY Cup XII,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-xii-round-6.3786215/,RBY Cup XII,Top 16
+https://www.smogon.com/forums/threads/rby-cup-xi-finals-won-by-peasounay.3770993/,RBY Cup XI,Finals
+https://www.smogon.com/forums/threads/rby-cup-xi-semifinals.3770674/,RBY Cup XI,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-xi-quarterfinals.3770274/,RBY Cup XI,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-xi-round-6.3769988/,RBY Cup XI,Top 16
+https://www.smogon.com/forums/threads/rby-cup-x-finals-won-by-excal.3751267/,RBY Cup X,Finals
+https://www.smogon.com/forums/threads/rby-cup-x-semifinals.3750804/,RBY Cup X,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-x-quarterfinals.3750333/,RBY Cup X,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-x-round-5.3749855/,RBY Cup X,Top 16
+https://www.smogon.com/forums/threads/rby-cup-ix-finals-won-by-abr.3728267/,RBY Cup IX,Finals
+https://www.smogon.com/forums/threads/rby-cup-ix-semifinals.3727609/,RBY Cup IX,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-ix-quarterfinals.3727315/,RBY Cup IX,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-ix-round-5.3726898/,RBY Cup IX,Top 16
+https://www.smogon.com/forums/threads/rby-cup-viii-finals-won-by-shiloh.3708011/,RBY Cup VIII,Finals
+https://www.smogon.com/forums/threads/rby-cup-viii-semifinals.3707674/,RBY Cup VIII,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-viii-quarterfinals.3707363/,RBY Cup VIII,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-viii-round-5.3707000/,RBY Cup VIII,Top 16
+https://www.smogon.com/forums/threads/rby-cup-vii-finals-won-by-spies.3692350/,RBY Cup VII,Finals
+https://www.smogon.com/forums/threads/rby-cup-vii-semifinals.3692071/,RBY Cup VII,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-vii-quarterfinals.3691787/,RBY Cup VII,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-vii-round-5.3691481/,RBY Cup VII,Top 16
+https://www.smogon.com/forums/threads/rby-cup-vi-finals-won-by-smb.3665238/,RBY Cup VI,Finals
+https://www.smogon.com/forums/threads/rby-cup-vi-semifinals.3664930/,RBY Cup VI,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-vi-quarterfinals.3664500/,RBY Cup VI,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-vi-round-5.3664113/,RBY Cup VI,Top 16
+https://www.smogon.com/forums/threads/rby-cup-v-finals-won-by-soulwind.3650930/,RBY Cup V,Finals
+https://www.smogon.com/forums/threads/rby-cup-v-semifinals.3650642/,RBY Cup V,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-v-quarterfinals.3650426/,RBY Cup V,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-v-round-5.3650196/,RBY Cup V,Top 16
+https://www.smogon.com/forums/threads/rby-cup-iv-finals-won-by-alexander.3636033/,RBY Cup IV,Finals
+https://www.smogon.com/forums/threads/rby-cup-iv-semifinals.3635623/,RBY Cup IV,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-iv-quarterfinals.3635241/,RBY Cup IV,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-iv-round-5.3634760/,RBY Cup IV,Top 16
+https://www.smogon.com/forums/threads/rby-cup-iii-finals-won-by-we-three-kings.3605727/,RBY Cup III,Finals
+https://www.smogon.com/forums/threads/rby-cup-iii-semifinals.3605065/,RBY Cup III,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-iii-quarterfinals.3604422/,RBY Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-iii-round-5.3603858/,RBY Cup III,Top 16
+https://www.smogon.com/forums/threads/rby-cup-ii-finals-won-by-ciele.3573551/,RBY Cup II,Finals
+https://www.smogon.com/forums/threads/rby-cup-ii-semifinals.3573276/,RBY Cup II,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-ii-quarterfinals.3573034/,RBY Cup II,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-ii-round-5.3572440/,RBY Cup II,Top 16
+https://www.smogon.com/forums/threads/rby-cup-i-finals-won-by-reyscarface.3542478/,RBY Cup I,Finals
+https://www.smogon.com/forums/threads/rby-cup-i-semifinals.3541902/,RBY Cup I,Semifinals
+https://www.smogon.com/forums/threads/rby-cup-i-quarterfinals.3541259/,RBY Cup I,Quarterfinals
+https://www.smogon.com/forums/threads/rby-cup-i-round-4.3540534/,RBY Cup I,Top 16
