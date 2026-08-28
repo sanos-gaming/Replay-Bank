@@ -124,6 +124,13 @@
     align-items: center;
     justify-content: center;
   }
+  .imTeam{
+    display: grid;
+    grid-template-columns: repeat(6, 32px);
+    grid-auto-rows: 32px;
+    gap: 2px;
+    align-items: center;
+  }
 </style>
 
 <body>
@@ -801,9 +808,9 @@
           if (dicTeam[tea][0]>=lim){
             team=tea.split(",")
             teamOrd=sortByUsage(dic,team)
-            string2+='<tr><td></td><td onclick="searchImage(this)" style="cursor:pointer">'
-            teamOrd.forEach(mon=>string2+='<img src="https://www.smogon.com/forums/media/minisprites/'+mon.replace("%","").replace("-totem","").replace("-*","")+'.png" loading="lazy" alt="'+mon.replace("%","").replace("-totem","").replace("-*","")+'" onclick="searchImage(this.alt)">')
-            string2+='<td>'+(dicTeam[team][0]*100/(teamNo)).toFixed(1)+"%</td>";
+            string2+='<tr><td></td><td onclick="searchImage(this)" style="cursor:pointer"><div class="imTeam">'
+            teamOrd.forEach(mon=>string2+='<div class="im_box"><img src="https://www.smogon.com/forums/media/minisprites/'+mon.replace("%","").replace("-totem","").replace("-*","")+'.png" loading="lazy" alt="'+mon.replace("%","").replace("-totem","").replace("-*","")+'" onclick="searchImage(this.alt)"></div>')
+            string2+='</div></td><td>'+(dicTeam[team][0]*100/(teamNo)).toFixed(1)+"%</td>";
             string2+='<td>'+dicTeam[team][0]+'</td>'
             string2+='<td>'+(dicTeam[team][1]*100/dicTeam[team][0]).toFixed(1)+"%</td>";
             string2+='<td><b>'+dicTeam[team][1]+'</b>/'+dicTeam[team][0]+"</td>"
