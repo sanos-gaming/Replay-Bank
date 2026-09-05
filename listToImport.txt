@@ -1,24 +1,6 @@
-https://www.smogon.com/forums/threads/sun-and-moon-invitational-1-play-ins-round-1.3786943/,SM Invitational 1,Play-Ins
-https://www.smogon.com/forums/threads/sun-and-moon-invitational-1-play-ins-round-2.3787229/,SM Invitational 1,Play-Ins
-https://www.smogon.com/forums/threads/ndpl-iv-finals-won-by-galarian-phoenix.3730885/,NDPL IV,Finals
-https://www.smogon.com/forums/threads/ndpl-iv-semifinals-tiebreaker-post-29.3730125/,NDPL IV,Semifinals
-https://www.smogon.com/forums/threads/ndpl-iv-replays-and-usage-stats.3727527/,NDPL IV,Regular Season 
-https://www.smogon.com/forums/threads/ndpl-iii-finals-won-by-galarian-phoenix.3710327/,NDPL III,Finals
-https://www.smogon.com/forums/threads/ndpl-iii-semifinals.3709747/,NDPL III,Semifinals
-https://www.smogon.com/forums/threads/ndpl-iii-replays-and-usage-statistics.3707567/,NDPL III,Regular Season 
-https://www.smogon.com/forums/threads/ndpl-ii-finals-won-by-crying-cubchoos.3694154/,NDPL II,Finals
-https://www.smogon.com/forums/threads/ndpl-ii-semifinals-tiebreaker.3693655/,NDPL II,Semifinals
-https://www.smogon.com/forums/threads/ndpl-ii-replays-and-usage-stats.3691460/,NDPL II,Regular Season 
-https://www.smogon.com/forums/threads/ndpl-i-finals-won-by-the-pogging-pexes.3672290/,NDPL I,Finals
-https://www.smogon.com/forums/threads/ndpl-i-semifinals.3672014/,NDPL I,Semifinals
-https://www.smogon.com/forums/threads/ndpl-i-replays-usage-stats.3670643/,NDPL I,Regular Season 
-https://www.smogon.com/forums/threads/ndpl-vi-finals-won-by-wealthy-weaviles.3773311/,NDPL VI,Finals
-https://www.smogon.com/forums/threads/ndpl-vi-semifinals.3772715/,NDPL VI,Semifinals
-https://www.smogon.com/forums/threads/ndpl-vi-replays-and-usage-stats.3770541/,NDPL VI,Regular Season 
-https://www.smogon.com/forums/threads/ndpl-v-finals-won-by-galarian-phoenix.3753985/,NDPL V,Finals
-https://www.smogon.com/forums/threads/ndpl-v-semifinals.3753551/,NDPL V,Semifinals
-https://www.smogon.com/forums/threads/ndpl-v-replays-and-usage-stats.3750862/,NDPL V,Regular Season 
-https://www.smogon.com/forums/threads/rby-cup-xii-finals-won-by-phoopes.3787230/,RBY Cup XII,Finals
-https://www.smogon.com/forums/threads/rby-cup-xii-semifinals.3786927/,RBY Cup XII,Semifinals
-https://www.smogon.com/forums/threads/rby-cup-xii-round-7.3786605/,RBY Cup XII,Quarterfinals
-https://www.smogon.com/forums/threads/rby-cup-xii-round-6.3786215/,RBY Cup XII,Top 16
+https://www.smogon.com/forums/threads/ssndpl-i-finals-won-by-gangster-darumakas.3768269/,SSNDPL I,Finals
+https://www.smogon.com/forums/threads/ssndpl-i-semifinals.3767846/,SSNDPL I,Semifinals
+https://www.smogon.com/forums/threads/ssndpl-i-replays-usage-stats.3765478/,SSNDPL I,Regular Season 
+https://www.smogon.com/forums/threads/ssndpl-ii-finals-won-by-the-main-event-mafia.3786227/,SSNDPL II,Finals
+https://www.smogon.com/forums/threads/ssndpl-ii-semifinals.3785887/,SSNDPL II,Semifinals
+https://www.smogon.com/forums/threads/ssndpl-ii-replays-and-usage-stats.3783959/,SSNDPL II,Regular Season 
