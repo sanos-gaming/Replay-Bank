@@ -1,6 +1,371 @@
-https://www.smogon.com/forums/threads/ssndpl-i-finals-won-by-gangster-darumakas.3768269/,SSNDPL I,Finals
-https://www.smogon.com/forums/threads/ssndpl-i-semifinals.3767846/,SSNDPL I,Semifinals
-https://www.smogon.com/forums/threads/ssndpl-i-replays-usage-stats.3765478/,SSNDPL I,Regular Season 
-https://www.smogon.com/forums/threads/ssndpl-ii-finals-won-by-the-main-event-mafia.3786227/,SSNDPL II,Finals
-https://www.smogon.com/forums/threads/ssndpl-ii-semifinals.3785887/,SSNDPL II,Semifinals
-https://www.smogon.com/forums/threads/ssndpl-ii-replays-and-usage-stats.3783959/,SSNDPL II,Regular Season 
+https://www.smogon.com/forums/threads/2024-doubles-invitationals-finals-won-by-madaraaaa.3755938/,2024 Doubles Invitationals,
+https://www.smogon.com/forums/threads/2024-lc-circuit-championships-finals-won-by-envy.3757000/,2024 LC Circuit Championships,
+https://www.smogon.com/forums/threads/2024-nu-circuit-playoffs-won-by-elias-psy.3757409/,2024 NU Circuit Playoffs,
+https://www.smogon.com/forums/threads/2024-ou-championship-finals-won-by-yovan.3756343/,2024 OU Championship,
+https://www.smogon.com/forums/threads/2024-pu-circuit-playoffs-finals-won-by-xiri.3757413/,2024 PU Circuit Playoffs,Finals
+https://www.smogon.com/forums/threads/pu-2024-pu-circuit-playoffs-semifinals.3757153/,2024 PU Circuit Playoffs,Semifinals
+https://www.smogon.com/forums/threads/2024-pu-circuit-playoffs-round-one.3756329/,2024 PU Circuit Playoffs,Top 16
+https://www.smogon.com/forums/threads/2024-pu-circuit-playoffs-round-two.3756684/,2024 PU Circuit Playoffs,Quarterfinals
+https://www.smogon.com/forums/threads/2024-ru-circuit-playoffs-finals-won-by-thefranklin.3756795/,2024 RU Circuit Playoffs,Finals
+https://www.smogon.com/forums/threads/2024-ru-circuit-playoffs-round-two.3755970/,2024 RU Circuit Playoffs,Quarterfinals
+https://www.smogon.com/forums/threads/2024-ru-circuit-playoffs-semifinals.3756500/,2024 RU Circuit Playoffs,Semifinals
+https://www.smogon.com/forums/threads/2024-ru-circuit-playoffs-round-one.3755570/,2024 RU Circuit Playoffs,Top 16
+https://www.smogon.com/forums/threads/2024-uu-circuit-championship-playoff-tiebreak.3758540/,2024 UU Circuit Playoffs,Play-Ins
+https://www.smogon.com/forums/threads/2024-uu-circuit-playoffs-finals-won-by-lily.3759543/,2024 UU Circuit Playoffs,
+https://www.smogon.com/forums/threads/2025-doubles-invitationals-finals-won-by-bagel.3775135/,2025 Doubles Invitationals,
+https://www.smogon.com/forums/threads/2025-doubles-ladder-tournament-finals-won-by-madaraaaa.3757795/,2025 Doubles Ladder Tournament,Playoffs
+https://www.smogon.com/forums/threads/2025-lc-circuit-playoffs-finals-won-by-hacker.3776142/,2025 LC Circuit Playoffs,
+https://www.smogon.com/forums/threads/2025-nu-circuit-playoffs-finals-won-by-esteb4n.3774542/,2025 NU Circuit Playoffs,
+https://www.smogon.com/forums/threads/2025-ou-championship-finals-won-by-sunsets.3774910/,2025 OU Championship,
+https://www.smogon.com/forums/threads/2025-pu-circuit-playoffs-finals-won-by-etern.3774801/,2025 PU Circuit Playoffs,
+https://www.smogon.com/forums/threads/ru-circuit-playoffs-finals-won-by-esteb4n.3775215/,RU Circuit Playoffs 2025,Finals
+https://www.smogon.com/forums/threads/ru-circuit-playoffs-semifinals-lilligant-hisui-is-banned-this-round.3774978/,RU Circuit Playoffs 2025,Semifinals
+https://www.smogon.com/forums/threads/ru-circuit-playoffs-round-2.3774609/,RU Circuit Playoffs 2025,Quarterfinals
+https://www.smogon.com/forums/threads/2025-ru-circuit-playoffs-round-1.3774280/,RU Circuit Playoffs 2025,Top 16
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-10.3772798/,SV DOU Fall Seasonal 2025,Top 16
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-11-losers-only.3773077/,SV DOU Fall Seasonal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-12.3773439/,SV DOU Fall Seasonal 2025,Top 8
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-13-losers-only.3773711/,SV DOU Fall Seasonal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-14-winners-finals.3773988/,SV DOU Fall Seasonal 2025,Top 4
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-15-loser-finals.3774348/,SV DOU Fall Seasonal 2025,Loser Finals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-fall-seasonal-round-16-grand-finals-won-by-code.3774613/,SV DOU Fall Seasonal 2025,Grand Finals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-summer-seasonal-grand-finals-won-by-zee.3768864/,SV DOU Summer Seasonal 2025,Grand Finals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-summer-seasonal-round-12.3768319/,SV DOU Summer Seasonal 2025,Top 4
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-summer-seasonal-round-11-losers-only.3767906/,SV DOU Summer Seasonal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-summer-seasonal-round-10.3767483/,SV DOU Summer Seasonal 2025,Top 8
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-summer-seasonal-round-9-losers-only.3767227/,SV DOU Summer Seasonal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/2025-sv-doubles-ou-summer-seasonal-round-8.3766851/,SV DOU Summer Seasonal 2025,Top 16
+https://www.smogon.com/forums/threads/2025-ubers-championship-finals-won-by-zuzhouwawa.3774519/,2025 Ubers Championship,
+https://www.smogon.com/forums/threads/2026-doubles-ladder-tournament-won-by-code.3776162/,2026 Doubles Ladder Tournament,Playoffs
+https://www.smogon.com/forums/threads/doubles-ou-last-chance-round-4.3773434/,Doubles OU Last Chance II,Top 16
+https://www.smogon.com/forums/threads/doubles-ou-last-chance-round-5.3773760/,Doubles OU Last Chance II,Quarterfinals
+https://www.smogon.com/forums/threads/doubles-ou-last-chance-round-6.3774063/,Doubles OU Last Chance II,Semifinals
+https://www.smogon.com/forums/threads/doubles-ou-last-chance-round-7-finals-won-by-breakfast-enjoyer.3774334/,Doubles OU Last Chance II,Finals
+https://www.smogon.com/forums/threads/flying-economy-tour-iv-finals-won-by-entrocefalo.3761635/,Flying Economy Tour IV,
+https://www.smogon.com/forums/threads/flying-economy-tour-iv-round-4.3761253/,Flying Economy Tour IV,
+https://www.smogon.com/forums/threads/flying-economy-v-round-4.3779086/,Flying Economy Tour V,
+https://www.smogon.com/forums/threads/flying-economy-v-round-5.3779441/,Flying Economy Tour V,
+https://www.smogon.com/forums/threads/flying-economy-v-round-6-finals-won-by-jb291.3779759/,Flying Economy Tour V,
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-grand-finals-won-by-not-enjoying-lc.3775863/,LC Fall Seasonal IX,Grand Finals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-losers-finals.3775584/,LC Fall Seasonal IX,Loser Finals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-round-14.3775370/,LC Fall Seasonal IX,Top 4
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-round-13-losers.3775121/,LC Fall Seasonal IX,Loser Semifinals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-round-12.3774840/,LC Fall Seasonal IX,Top 8
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-round-11-losers.3774553/,LC Fall Seasonal IX,Loser Quarterfinals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-ix-round-10.3774266/,LC Fall Seasonal IX,Top 16
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-grand-finals-won-by-polloariosto.3756674/,LC Fall Seasonal VIII,Grand Finals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-round-13-losers.3756120/,LC Fall Seasonal VIII,Loser Finals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-round-12.3755976/,LC Fall Seasonal VIII,Top 4
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-round-11-losers.3755533/,LC Fall Seasonal VIII,Loser Semifinals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-round-10.3755181/,LC Fall Seasonal VIII,Top 8
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-round-9-losers.3754781/,LC Fall Seasonal VIII,Loser Quarterfinals
+https://www.smogon.com/forums/threads/lc-fall-seasonal-viii-round-8.3754403/,LC Fall Seasonal VIII,Top 16
+https://www.smogon.com/forums/threads/lc-last-chance-round-6-and-finals-won-by-demarvelous.3774886/,LC Last Chance 2025,Finals
+https://www.smogon.com/forums/threads/lc-last-chance-2025-round-5.3774523/,LC Last Chance 2025,Quarterfinals
+https://www.smogon.com/forums/threads/lc-last-chance-2025-round-4.3774284/,LC Last Chance 2025,Top 16
+https://www.smogon.com/forums/threads/little-cup-ladder-tournament-2026-play-offs-won-by-fate1q.3782612/,Little Cup Ladder Tournament 2026,Playoffs
+https://www.smogon.com/forums/threads/little-cup-ladder-tournament-won-by-cen344uu-100-prize-for-winner.3765159/,Little Cup Ladder Tournament 2025,Playoffs
+https://www.smogon.com/forums/threads/lc-majors-vi-finals-won-by-not-enjoying-lc.3771020/,LC Majors VI,Finals
+https://www.smogon.com/forums/threads/lc-majors-vi-semifinals.3770698/,LC Majors VI,Semifinals
+https://www.smogon.com/forums/threads/lc-majors-vi-round-3.3770292/,LC Majors VI,Quarterfinals
+https://www.smogon.com/forums/threads/lc-majors-vi-round-2.3769960/,LC Majors VI,Top 16
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-finals-won-by-hacker.3763478/,LC Winter Seasonal IX,Grand Finals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-round-13-losers.3763182/,LC Winter Seasonal IX,Loser Finals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-round-12.3762835/,LC Winter Seasonal IX,Top 4
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-round-11-losers.3762410/,LC Winter Seasonal IX,Loser Semifinals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-round-10.3762063/,LC Winter Seasonal IX,Top 8
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-round-9-losers.3761656/,LC Winter Seasonal IX,Loser Quarterfinals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-ix-round-8.3761277/,LC Winter Seasonal IX,Top 16
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-grand-finals-won-by-fate1q.3782035/,LC Winter Seasonal X,Grand Finals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-round-15-losers-finals.3781712/,LC Winter Seasonal X,Loser Finals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-round-14.3781398/,LC Winter Seasonal X,Top 4
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-round-13-losers-bracket.3781076/,LC Winter Seasonal X,Loser Semifinals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-round-12.3780566/,LC Winter Seasonal X,Top 8
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-round-11-losers-bracket.3780249/,LC Winter Seasonal X,Loser Quarterfinals
+https://www.smogon.com/forums/threads/lc-winter-seasonal-x-round-10.3780009/,LC Winter Seasonal X,Top 16
+https://www.smogon.com/forums/threads/neverused-ladder-tour-x-playoffs-won-by-kingler.3768362/,NeverUsed Ladder Tour X,Playoffs
+https://www.smogon.com/forums/threads/neverused-ladder-tour-xi-finals-won-by-etern.3787040/,NeverUsed Ladder Tour XI,Finals
+https://www.smogon.com/forums/threads/neverused-ladder-tour-xi-semifinals.3786544/,NeverUsed Ladder Tour XI,Semifinals
+https://www.smogon.com/forums/threads/neverused-ladder-tour-xi-playoffs-round-3.3786211/,NeverUsed Ladder Tour XI,Quarterfinals
+https://www.smogon.com/forums/threads/neverused-ladder-tour-xi-playoffs-round-2.3785879/,NeverUsed Ladder Tour XI,Top 16
+https://www.smogon.com/forums/threads/neverused-ladder-tour-xi-playoffs-round-1.3785532/,NeverUsed Ladder Tour XI,Top 32
+https://www.smogon.com/forums/threads/nu-last-chance-finals-won-by-memphisdepay.3774449/,NU Last Chance 2025,Finals
+https://www.smogon.com/forums/threads/nu-last-chance-semi-finals-no-johns.3774239/,NU Last Chance 2026,Semifinals
+https://www.smogon.com/forums/threads/nu-last-chance-round-4-no-johns.3774159/,NU Last Chance 2027,Quarterfinals
+https://www.smogon.com/forums/threads/nu-last-chance-round-3-no-johns.3774040/,NU Last Chance 2028,Top 16
+https://www.smogon.com/forums/threads/nu-seasonal-grand-finals-won-by-shengineer.3762881/,NU Seasonal I,Grand Finals
+https://www.smogon.com/forums/threads/nu-seasonal-round-12.3762460/,NU Seasonal I,Top 4
+https://www.smogon.com/forums/threads/nu-seasonal-round-11-losers-bracket.3762139/,NU Seasonal I,Loser Semifinals
+https://www.smogon.com/forums/threads/nu-seasonal-round-10.3761603/,NU Seasonal I,Top 8
+https://www.smogon.com/forums/threads/nu-seasonal-round-9-losers-bracket.3761238/,NU Seasonal I,Loser Quarterfinals
+https://www.smogon.com/forums/threads/nu-seasonal-1-round-8.3760872/,NU Seasonal I,Top 16
+https://www.smogon.com/forums/threads/nu-seasonal-ii-finals-won-by-elias-psy.3756489/,NU Seasonal II,Grand Finals
+https://www.smogon.com/forums/threads/nu-seasonal-ii-finals-won-by-elias-psy.3756489/#post-10373055,NU Seasonal II,Loser Finals
+https://www.smogon.com/forums/threads/nu-seasonal-ii-round-12-winners-finals-losers-semis.3756086/,NU Seasonal II,Top 4
+https://www.smogon.com/forums/threads/nu-seasonal-ii-round-11-losers-bracket.3755628/,NU Seasonal II,Loser Semifinals
+https://www.smogon.com/forums/threads/nu-seasonal-ii-round-10.3755159/,NU Seasonal II,Top 8
+https://www.smogon.com/forums/threads/nu-seasonal-ii-round-9-lower-bracket.3754846/,NU Seasonal II,Loser Quarterfinals
+https://www.smogon.com/forums/threads/nu-seasonal-ii-round-8.3754417/,NU Seasonal II,Top 16
+https://www.smogon.com/forums/threads/nu-seasonal-iv-grand-final-won-by-loocas13.3773718/,NU Seasonal IV,Grand Finals
+https://www.smogon.com/forums/threads/nu-seasonal-iv-losers-final.3773298/,NU Seasonal IV,Loser Finals
+https://www.smogon.com/forums/threads/nu-seasonal-iv-round-12.3773089/,NU Seasonal IV,Top 4
+https://www.smogon.com/forums/threads/nu-seasonal-iv-round-11-losers.3772740/,NU Seasonal IV,Loser Semifinals
+https://www.smogon.com/forums/threads/nu-seasonal-iv-round-10-terrakion-is-banned.3772396/,NU Seasonal IV,Top 8
+https://www.smogon.com/forums/threads/nu-seasonal-iv-round-9-losers-bracket.3772060/,NU Seasonal IV,Loser Quarterfinals
+https://www.smogon.com/forums/threads/nu-seasonal-iv-round-8-tier-shifts-not-legal.3771762/,NU Seasonal IV,Top 16
+https://www.smogon.com/forums/threads/nu-seasonal-v-grand-finals-won-by-etern.3781540/,NU Seasonal V,Grand Finals
+https://www.smogon.com/forums/threads/nu-seasonal-v-round-15.3781063/,NU Seasonal V,Loser Finals
+https://www.smogon.com/forums/threads/nu-seasonal-v-round-14.3780821/,NU Seasonal V,Top 4
+https://www.smogon.com/forums/threads/nu-seasonal-v-round-13-losers.3780177/,NU Seasonal V,Loser Semifinals
+https://www.smogon.com/forums/threads/nu-seasonal-v-round-12.3779767/,NU Seasonal V,Top 8
+https://www.smogon.com/forums/threads/nu-seasonal-v-round-11-losers.3779514/,NU Seasonal V,Loser Quarterfinals
+https://www.smogon.com/forums/threads/nu-seasonal-v-round-10.3779157/,NU Seasonal V,Top 16
+https://www.smogon.com/forums/threads/ou-fall-seasonal-finals-won-by-mgdos16.3774263/,OU Fall Seasonal 2025,Grand Finals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-15-losers-only.3774240/,OU Fall Seasonal 2025,Loser Finals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-14.3773377/,OU Fall Seasonal 2025,Top 4
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-13-losers-only.3773066/,OU Fall Seasonal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-12.3772792/,OU Fall Seasonal 2025,Top 8
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-11-losers-only.3772410/,OU Fall Seasonal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-10.3772122/,OU Fall Seasonal 2025,Top 16
+https://www.smogon.com/forums/threads/ou-fall-seasonal-finals-won-by-finchinator.3755543/,OU Fall Seasonal 2024,Grand Finals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-losers-finals.3755189/,OU Fall Seasonal 2024,Loser Finals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-14.3754874/,OU Fall Seasonal 2024,Top 4
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-13-losers-only.3754463/,OU Fall Seasonal 2024,Loser Semifinals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-12.3754013/,OU Fall Seasonal 2024,Top 8
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-11-losers-only.3753565/,OU Fall Seasonal 2024,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ou-fall-seasonal-round-10.3753171/,OU Fall Seasonal 2024,Top 16
+https://www.smogon.com/forums/threads/ou-last-chance-qualifier-finals-won-by-baddy.3773894/,OU Last Chance Qualifier 2025,Finals
+https://www.smogon.com/forums/threads/ou-last-chance-qualifier-semifinals.3773604/,OU Last Chance Qualifier 2025,Semifinals
+https://www.smogon.com/forums/threads/ou-last-chance-qualifier-round-7.3773378/,OU Last Chance Qualifier 2025,Quarterfinals
+https://www.smogon.com/forums/threads/ou-last-chance-qualifier-round-6.3773088/,OU Last Chance Qualifier 2025,Top 16
+https://www.smogon.com/forums/threads/ou-spring-seasonal-finals-won-by-silent-waltz.3784865/,OU Spring Seasonal 2025,Grand Finals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-15-losers-only.3784560/,OU Spring Seasonal 2025,Loser Finals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-14.3784351/,OU Spring Seasonal 2025,Top 4
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-13-losers-only.3783885/,OU Spring Seasonal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-12.3783649/,OU Spring Seasonal 2025,Top 8
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-11-losers-only.3783481/,OU Spring Seasonal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-10.3782917/,OU Spring Seasonal 2025,Top 16
+https://www.smogon.com/forums/threads/ou-spring-seasonal-finals-won-by-xuwu.3767396/,OU Spring Seasonal 2024,Grand Finals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-losers-finals.3767312/,OU Spring Seasonal 2024,Loser Finals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-16.3766761/,OU Spring Seasonal 2024,Top 4
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-15-losers-only.3766541/,OU Spring Seasonal 2024,Loser Semifinals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-14.3766178/,OU Spring Seasonal 2024,Top 8
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-13-losers-only.3765829/,OU Spring Seasonal 2024,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ou-spring-seasonal-round-12.3765455/,OU Spring Seasonal 2024,Top 16
+https://www.smogon.com/forums/threads/ou-stour-tour-finals-won-by-abele.3784574/,OU Stour Tour 2026,Finals
+https://www.smogon.com/forums/threads/ou-stour-tour-semifinals.3784231/,OU Stour Tour 2026,Semifinals
+https://www.smogon.com/forums/threads/ou-stour-tour-quarterfinals.3783856/,OU Stour Tour 2026,Quarterfinals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-5.3783589/,OU Stour Tour 2026,Top 16
+https://www.smogon.com/forums/threads/ou-stour-tour-finals-won-by-tace.3766648/,OU Stour Tour 2025,Finals
+https://www.smogon.com/forums/threads/ou-stour-tour-semifinals.3766540/,OU Stour Tour 2025,Semifinals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-6.3766179/,OU Stour Tour 2025,Quarterfinals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-5.3765827/,OU Stour Tour 2025,Top 16
+https://www.smogon.com/forums/threads/ou-stour-tour-finals-won-by-mgdos16.3745455/,OU Stour Tour 2024,Finals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-6.3744970/,OU Stour Tour 2024,Semifinals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-5.3744496/,OU Stour Tour 2024,Quarterfinals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-4.3744036/,OU Stour Tour 2024,Top 16
+https://www.smogon.com/forums/threads/ou-stour-tour-finals-won-by-jj09lie.3723210/,OU Stour Tour 2023,Finals
+https://www.smogon.com/forums/threads/ou-stour-tour-semifinals.3722824/,OU Stour Tour 2023,Semifinals
+https://www.smogon.com/forums/threads/ou-stour-tour-round-5.3722465/,OU Stour Tour 2023,Top 12
+https://www.smogon.com/forums/threads/ou-stour-tour-round-4.3722082/,OU Stour Tour 2023,Top 24
+https://www.smogon.com/forums/threads/pu-cup-finals-won-by-xiri.3774434/,PU Cup 2025,Finals
+https://www.smogon.com/forums/threads/pu-cup-round-6.3774113/,PU Cup 2025,Semifinals
+https://www.smogon.com/forums/threads/pu-cup-round-5-quarterfinals.3773742/,PU Cup 2025,Quarterfinals
+https://www.smogon.com/forums/threads/pu-cup-round-4.3773417/,PU Cup 2025,Top 16
+https://www.smogon.com/forums/threads/pu-ladder-tour-playoffs-finals-won-by-sugar-ovens.3765500/,PU Ladder Tour 2025,Finals
+https://www.smogon.com/forums/threads/pu-ladder-tour-2025-playoffs-semifinals.3765204/,PU Ladder Tour 2025,Semifinals
+https://www.smogon.com/forums/threads/pu-ladder-tour-2025-playoffs-round-3.3764890/,PU Ladder Tour 2025,Quarterfinals
+https://www.smogon.com/forums/threads/pu-ladder-tour-2025-playoffs-round-2.3764391/,PU Ladder Tour 2025,Top 16
+https://www.smogon.com/forums/threads/pu-ladder-tour-2025-playoffs-round-1.3763966/,PU Ladder Tour 2025,Top 32
+https://www.smogon.com/forums/threads/pu-ladder-tournament-2026-finals-won-by-regiboob.3785439/,PU Ladder Tour 2026,Finals
+https://www.smogon.com/forums/threads/pu-ladder-tour-2026-playoffs-round-4.3785155/,PU Ladder Tour 2026,Semifinals
+https://www.smogon.com/forums/threads/pu-ladder-tour-2026-playoffs-round-3.3784987/,PU Ladder Tour 2026,Quarterfinals
+https://www.smogon.com/forums/threads/pu-ladder-tour-2026-playoffs-round-2.3784566/,PU Ladder Tour 2026,Top 16
+https://www.smogon.com/forums/threads/pu-ladder-tour-2026-playoffs-round-1.3784337/,PU Ladder Tour 2026,Top 32
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-14-grand-finals-won-by-bouff.3781006/,PU Winter Seasonal 2026,Grand Finals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-13-losers-finals.3780926/,PU Winter Seasonal 2026,Loser Finals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-12.3780134/,PU Winter Seasonal 2026,Top 4
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-11-losers.3779765/,PU Winter Seasonal 2026,Loser Semifinals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-10.3779471/,PU Winter Seasonal 2026,Top 8
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-9-losers.3779134/,PU Winter Seasonal 2026,Loser Quarterfinals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-8.3778821/,PU Winter Seasonal 2026,Top 16
+https://www.smogon.com/forums/threads/pu-winter-seasonal-grand-finals-won-by-suzukaaa.3763607/,PU Winter Seasonal 2025,Grand Finals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-13-losers-replays-required.3763370/,PU Winter Seasonal 2025,Loser Finals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-12-replays-required.3762985/,PU Winter Seasonal 2025,Top 4
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-11-losers-replays-required.3762619/,PU Winter Seasonal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-10-replays-required.3762176/,PU Winter Seasonal 2025,Top 8
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-9-losers-replays-required.3761675/,PU Winter Seasonal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-8-replays-required.3761382/,PU Winter Seasonal 2025,Top 16
+https://www.smogon.com/forums/threads/pupl-xii-replays-and-usage-stats.3783653/,PUPL XII,
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-14-grand-finals-won-by-dugza.3741898/,PU Winter Seasonal 2024,Grand Finals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-13-losers-finals-replays-required.3741254/,PU Winter Seasonal 2024,Loser Finals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-12-replays-required.3740720/,PU Winter Seasonal 2024,Top 4
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-11-losers-only-replays-required.3740181/,PU Winter Seasonal 2024,Loser Semifinals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-10-replays-required.3739756/,PU Winter Seasonal 2024,Top 8
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-9-losers-only-replays-required.3739187/,PU Winter Seasonal 2024,Loser Quarterfinals
+https://www.smogon.com/forums/threads/pu-winter-seasonal-round-8-replays-required.3738654/,PU Winter Seasonal 2024,Top 16
+https://www.smogon.com/forums/threads/ru-circuit-playoffs-finals-won-by-esteb4n.3775215/,2025 RU Circuit Playoffs,Finals
+https://www.smogon.com/forums/threads/ru-circuit-playoffs-semifinals-lilligant-hisui-is-banned-this-round.3774978/,2025 RU Circuit Playoffs,Semifinals
+https://www.smogon.com/forums/threads/ru-circuit-playoffs-round-2.3774609/,2025 RU Circuit Playoffs,Quarterfinals
+https://www.smogon.com/forums/threads/2025-ru-circuit-playoffs-round-1.3774280/,2025 RU Circuit Playoffs,Top 16
+https://www.smogon.com/forums/threads/ru-cup-finale-won-by-feliburn.3773825/,RU Cup 2025,Finals
+https://www.smogon.com/forums/threads/ru-cup-semifinale.3773639/,RU Cup 2025,Semifinals
+https://www.smogon.com/forums/threads/ru-cup-round-v.3773380/,RU Cup 2025,Quarterfinals
+https://www.smogon.com/forums/threads/ru-cup-round-iv.3773105/,RU Cup 2025,Top 16
+https://www.smogon.com/forums/threads/ru-ladder-tour-vi-finals-won-by-daharan.3768180/,RU Ladder Tour VI,Finals
+https://www.smogon.com/forums/threads/ru-ladder-tour-vi-semifinals.3767907/,RU Ladder Tour VI,Semifinals
+https://www.smogon.com/forums/threads/ru-ladder-tour-vi-playoffs-round-3.3767453/,RU Ladder Tour VI,Quarterfinals
+https://www.smogon.com/forums/threads/ru-ladder-tour-vi-playoffs-round-2.3767070/,RU Ladder Tour VI,Top 16
+https://www.smogon.com/forums/threads/ru-ladder-tour-vi-playoffs-round-1.3766828/,RU Ladder Tour VI,Top 32
+https://www.smogon.com/forums/threads/ru-ladder-tour-vii-playoffs-finals.3785169/,RU Ladder Tour VII,Finals
+https://www.smogon.com/forums/threads/ru-ladder-tour-vii-playoffs-round-4.3784880/,RU Ladder Tour VII,Semifinals
+https://www.smogon.com/forums/threads/ru-ladder-tour-vii-playoffs-round-3.3784561/,RU Ladder Tour VII,Quarterfinals
+https://www.smogon.com/forums/threads/ru-ladder-tour-vii-playoffs-round-2.3784245/,RU Ladder Tour VII,Top 16
+https://www.smogon.com/forums/threads/ru-ladder-tour-vii-playoffs-round-1.3784010/,RU Ladder Tour VII,Top 32
+https://www.smogon.com/forums/threads/ru-pentathlon-iii-finals-won-by-dugza.3781403/,RU Pentathlon III,Finals
+https://www.smogon.com/forums/threads/ru-pentathlon-iii-semifinals.3781213/,RU Pentathlon III,Semifinals
+https://www.smogon.com/forums/threads/ru-pentathlon-iii-quarterfinals.3780675/,RU Pentathlon III,Quarterfinals
+https://www.smogon.com/forums/threads/ru-pentathlon-iii-round-4.3780348/,RU Pentathlon III,Top 16
+https://www.smogon.com/forums/threads/ru-summer-seasonal-finals-won-by-thefranklin.3773033/,RU Summer Seasonal 2025,Grand Finals
+https://www.smogon.com/forums/threads/ru-summer-seasonal-round-15-losers-finals.3772447/,RU Summer Seasonal 2025,Loser Finals
+https://www.smogon.com/forums/threads/ru-summer-seasonal-round-14.3772123/,RU Summer Seasonal 2025,Top 4
+https://www.smogon.com/forums/threads/ru-summer-seasonal-round-13.3771707/,RU Summer Seasonal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/ru-summer-seasonal-round-12.3771347/,RU Summer Seasonal 2025,Top 8
+https://www.smogon.com/forums/threads/ru-summer-seasonal-round-11-losers.3771077/,RU Summer Seasonal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ru-summer-seasonal-round-10.3770746/,RU Summer Seasonal 2025,Top 16
+https://www.smogon.com/forums/threads/ru-winter-seasonal-finals-won-by-thefranklin.3782118/,RU Winter Seasonnal 2026,Grand Finals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-17-losers-finals.3781854/,RU Winter Seasonnal 2026,Loser Finals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-16.3781558/,RU Winter Seasonnal 2026,Top 4
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-15-losers.3781069/,RU Winter Seasonnal 2026,Loser Semifinals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-14.3780739/,RU Winter Seasonnal 2026,Top 8
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-13-losers.3780193/,RU Winter Seasonnal 2026,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-12.3779861/,RU Winter Seasonnal 2026,Top 16
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-16-grand-finals-won-by-lbn.3763503/,RU Winter Seasonnal 2025,Grand Finals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-15-losers-finals.3763160/,RU Winter Seasonnal 2025,Loser Finals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-14.3762765/,RU Winter Seasonnal 2025,Top 4
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-13-losers-bracket.3762671/,RU Winter Seasonnal 2025,Loser Semifinals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-12.3762038/,RU Winter Seasonnal 2025,Top 8
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-11-losers-only.3761721/,RU Winter Seasonnal 2025,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ru-winter-seasonal-round-10.3761251/,RU Winter Seasonnal 2025,Top 16
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-14-grand-finals-won-by-xmarsh.3786510/,SV DOU Fall Seasonal 2026,Grand Finals
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-13-losers-finals.3786272/,SV DOU Fall Seasonal 2026,Loser Finals
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-12-winners-finals.3785850/,SV DOU Fall Seasonal 2026,Top 4
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-11-losers-only.3785503/,SV DOU Fall Seasonal 2026,Loser Semifinals
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-10.3785160/,SV DOU Fall Seasonal 2026,Top 8
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-9-losers-only.3784903/,SV DOU Fall Seasonal 2026,Loser Quarterfinals
+https://www.smogon.com/forums/threads/sv-dou-summer-seasonal-round-8.3784575/,SV DOU Fall Seasonal 2026,Top 16
+https://www.smogon.com/forums/threads/ubers-ladder-tournament-vii-playoffs-finals-won-by-icemaster.3763672/,Ubers Ladder Tournament VII,Playoffs
+https://www.smogon.com/forums/threads/ubers-ladder-tournament-viii-playoffs-finals-won-by-baconeatinassassin.3781203/,Ubers Ladder Tournament VIII,Playoffs
+https://www.smogon.com/forums/threads/ubers-last-chance-qualifier-no-johns-finals-replays-required-won-by-skyiew.3774124/,Ubers Last Chance 2025,Finals
+https://www.smogon.com/forums/threads/ubers-last-chance-qualifier-no-johns-semifinals-replays-required.3774046/,Ubers Last Chance 2025,Semifinals
+https://www.smogon.com/forums/threads/ubers-last-chance-qualifier-no-johns-round-4-replays-required.3773916/,Ubers Last Chance 2025,Quarterfinals
+https://www.smogon.com/forums/threads/ubers-pentathlon-ix-finals-won-by-the-strap.3773790/,Ubers Pentathlon IX,Finals
+https://www.smogon.com/forums/threads/ubers-pentathlon-ix-round-5-replays-required.3773363/,Ubers Pentathlon IX,Semifinals
+https://www.smogon.com/forums/threads/ubers-pentathlon-ix-round-4-replays-required.3773058/,Ubers Pentathlon IX,Quarterfinals
+https://www.smogon.com/forums/threads/ubers-retro-cup-iv-finals-won-by-the-strap.3772100/,Ubers Retro Cup IV,Finals
+https://www.smogon.com/forums/threads/ubers-retro-cup-iv-semi-finals.3771760/,Ubers Retro Cup IV,Semifinals
+https://www.smogon.com/forums/threads/ubers-retro-cup-iii-finals-won-by-keshba54.3753030/,Ubers Retro Cup III,Finals
+https://www.smogon.com/forums/threads/ubers-retro-cup-iii-round-5.3752664/,Ubers Retro Cup III,Semifinals
+https://www.smogon.com/forums/threads/ubers-retro-cup-iii-round-4.3752037/,Ubers Retro Cup III,Quarterfinals
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-grand-finals-won-by-vitiate.3773961/,Ubers Summer Seasonal X,Grand Finals
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-losers-finals.3773655/,Ubers Summer Seasonal X,Loser Finals
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-round-14.3773337/,Ubers Summer Seasonal X,Top 4
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-round-13.3773036/,Ubers Summer Seasonal X,Loser Semifinals
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-round-12.3772659/,Ubers Summer Seasonal X,Top 8
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-round-11.3772431/,Ubers Summer Seasonal X,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ubers-summer-seasonal-x-round-10.3772037/,Ubers Summer Seasonal X,Top 16
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-finals-replays-mandatory-won-by-truenora.3763833/,Ubers Winter Seasonal X,Grand Finals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-round-13-losers-only-replays-mandatory.3762905/,Ubers Winter Seasonal X,Loser Finals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-round-12-replays-mandatory.3762394/,Ubers Winter Seasonal X,Top 4
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-round-11-losers-only-replays-mandatory.3762138/,Ubers Winter Seasonal X,Loser Semifinals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-round-10-replays-mandatory.3761691/,Ubers Winter Seasonal X,Top 8
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-round-9-losers-only-replays-mandatory.3761345/,Ubers Winter Seasonal X,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-x-round-8-replays-mandatory.3760995/,Ubers Winter Seasonal X,Top 16
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-grand-finals-won-by-evuelf.3781289/,Ubers Winter Seasonal XI,Grand Finals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-round-15-replays-required.3781077/,Ubers Winter Seasonal XI,Loser Finals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-round-14-replays-required.3780671/,Ubers Winter Seasonal XI,Top 4
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-round-13-replays-required.3780191/,Ubers Winter Seasonal XI,Loser Semifinals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-round-12-replays-required.3779789/,Ubers Winter Seasonal XI,Top 8
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-round-11-replays-required.3779449/,Ubers Winter Seasonal XI,Loser Quarterfinals
+https://www.smogon.com/forums/threads/ubers-winter-seasonal-xi-round-10.3779171/,Ubers Winter Seasonal XI,Top 16
+https://www.smogon.com/forums/threads/uu-championship-2025-won-by-mintwinter.3775163/,UU Championship 2025,
+https://www.smogon.com/forums/threads/uult-2026-finals-won-by-wssi-preps.3786961/,UU Ladder Tournament 2026,Finals
+https://www.smogon.com/forums/threads/uult-playoffs-top-4.3786725/,UU Ladder Tournament 2026,Semifinals
+https://www.smogon.com/forums/threads/uult-playoffs-top-8.3786267/,UU Ladder Tournament 2026,Quarterfinals
+https://www.smogon.com/forums/threads/uult-playoffs-top-16.3785983/,UU Ladder Tournament 2026,Top 16
+https://www.smogon.com/forums/threads/uu-ladder-tour-2025-finals-won-by-mimilucha.3768151/,UU Ladder Tournament 2025,Finals
+https://www.smogon.com/forums/threads/uult-2025-top-4.3767861/,UU Ladder Tournament 2025,Semifinals
+https://www.smogon.com/forums/threads/uu-ladder-tour-2025-top-8.3767583/,UU Ladder Tournament 2025,Quarterfinals
+https://www.smogon.com/forums/threads/uu-ladder-tour-2025-top-16.3767096/,UU Ladder Tournament 2025,Top 16
+https://www.smogon.com/forums/threads/uu-last-chance-iii-finals-no-johns-won-by-foulplayg.3757691/,UU Last Chance III,Finals
+https://www.smogon.com/forums/threads/uu-last-chance-iii-semi-finals-no-johns-pre-january-shifts.3757472/,UU Last Chance III,Semifinals
+https://www.smogon.com/forums/threads/uu-last-chance-iii-round-4-no-johns.3757260/,UU Last Chance III,Quarterfinals
+https://www.smogon.com/forums/threads/uu-masters-vii-round-14-grand-finals-replays-mandatory.3764742/,UU Masters VII,Grand Finals
+https://www.smogon.com/forums/threads/uu-masters-vii-round-13-losers-replays-mandatory.3764373/,UU Masters VII,Loser Finals
+https://www.smogon.com/forums/threads/uu-masters-vii-round-12-replays-mandatory.3763998/,UU Masters VII,Top 4
+https://www.smogon.com/forums/threads/uu-masters-vii-round-11-losers-replays-mandatory.3763573/,UU Masters VII,Loser Semifinals
+https://www.smogon.com/forums/threads/uu-masters-vii-round-10-replays-mandatory.3763262/,UU Masters VII,Top 8
+https://www.smogon.com/forums/threads/uu-masters-vii-round-9-losers-replays-mandatory.3762918/,UU Masters VII,Loser Quarterfinals
+https://www.smogon.com/forums/threads/uu-masters-vii-round-8-replays-mandatory.3762478/,UU Masters VII,Top 16
+https://www.smogon.com/forums/threads/uu-masters-viii-round-16-finals-won-by-kimer.3782134/,UU Masters VIII,Grand Finals
+https://www.smogon.com/forums/threads/uu-masters-viii-round-15-tera-blast-is-banned.3781658/,UU Masters VIII,Loser Finals
+https://www.smogon.com/forums/threads/uu-masters-viii-round-14.3781171/,UU Masters VIII,Top 4
+https://www.smogon.com/forums/threads/uu-masters-viii-round-13.3780855/,UU Masters VIII,Loser Semifinals
+https://www.smogon.com/forums/threads/uu-masters-viii-round-12.3780152/,UU Masters VIII,Top 8
+https://www.smogon.com/forums/threads/uu-masters-viii-round-11-losers-only.3779792/,UU Masters VIII,Loser Quarterfinals
+https://www.smogon.com/forums/threads/uu-masters-viii-round-10.3779510/,UU Masters VIII,Top 16
+https://www.smogon.com/forums/threads/uu-showtime-round-14-finals-won-by-foulplayg.3773743/,UU Showtime I,Grand Finals
+https://www.smogon.com/forums/threads/uu-showtime-round-13-losers-finals.3773331/,UU Showtime I,Loser Finals
+https://www.smogon.com/forums/threads/uu-showtime-round-12.3773101/,UU Showtime I,Top 4
+https://www.smogon.com/forums/threads/uu-showtime-round-11-losers.3772778/,UU Showtime I,Loser Semifinals
+https://www.smogon.com/forums/threads/uu-showtime-round-10.3772457/,UU Showtime I,Top 8
+https://www.smogon.com/forums/threads/uu-showtime-round-9-losers-bracket.3772052/,UU Showtime I,Loser Quarterfinals
+https://www.smogon.com/forums/threads/uu-showtime-round-8.3771799/,UU Showtime I,Top 16
+https://www.smogon.com/forums/threads/uupl-xiv-finals-won-by-sendoff-spring-surfers.3781879/,UUPL XIV,Finals
+https://www.smogon.com/forums/threads/uupl-xiv-semifinals.3781544/,UUPL XIV,Semifinals
+https://www.smogon.com/forums/threads/uupl-xiv-replays-and-usage-statistics.3779327/,UUPL XIV,Regular Season 
+https://www.smogon.com/forums/threads/upl-xiv-finals-won-by-void-villains.3786213/,UPL XIV,Finals
+https://www.smogon.com/forums/threads/upl-xiv-semifinals.3785511/,UPL XIV,Semifinals
+https://www.smogon.com/forums/threads/upl-xiv-replays-and-usage-stats.3783657/,UPL XIV,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xiv-finals-won-by-glacial-glastriers.3784604/,NUPL XIV,Finals
+https://www.smogon.com/forums/threads/nupl-xiv-semifinals.3783929/,NUPL XIV,Semifinals
+https://www.smogon.com/forums/threads/nupl-xiv-replays-and-usage-stats.3781479/,NUPL XIV,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xiii-finals-won-by-taunting-talonflames.3766749/,NUPL XIII,Finals
+https://www.smogon.com/forums/threads/nupl-xiii-semifinals.3766497/,NUPL XIII,Semifinals
+https://www.smogon.com/forums/threads/nupl-xiii-replays.3764566/,NUPL XIII,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xii-finals-won-by-vibrant-vivillons.3746153/,NUPL XII,Finals
+https://www.smogon.com/forums/threads/nupl-xii-semifinals.3745782/,NUPL XII,Semifinals
+https://www.smogon.com/forums/threads/nupl-xii-replays.3742712/,NUPL XII,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-finals-won-by-mf-plooms.3724286/,NUPL XI,Finals
+https://www.smogon.com/forums/threads/nupl-xi-semi-finals.3723938/,NUPL XI,Semifinals
+https://www.smogon.com/forums/threads/nupl-xi-week-7.3723536/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-week-6.3723178/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-week-5.3722823/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-week-4.3722484/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-week-3.3722084/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-week-2.3721793/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-xi-week-1.3721433/,NUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-finals-won-by-mf-plooms.3704606/,NUPL X,Finals
+https://www.smogon.com/forums/threads/nupl-x-semifinals.3703930/,NUPL X,Semifinals
+https://www.smogon.com/forums/threads/nupl-x-week-7-aka-week-6-part-2.3703568/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-week-6.3703197/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-week-5.3702880/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-week-4.3702572/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-week-3.3702232/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-week-2.3701964/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/nupl-x-week-1.3701699/,NUPL X,Regular Season 
+https://www.smogon.com/forums/threads/pupl-xii-finals-won-by-haunter-x-haunter.3785821/,PUPL XII,Finals
+https://www.smogon.com/forums/threads/pupl-xii-semifinals.3785530/,PUPL XII,Semifinals
+https://www.smogon.com/forums/threads/pupl-xii-replays-and-usage-stats.3783653/,PUPL XII,Regular Season 
+https://www.smogon.com/forums/threads/pupl-xi-finals-won-by-m-a-a-d-city-magmortars.3769298/,PUPL XI,Finals
+https://www.smogon.com/forums/threads/pupl-xi-semifinals.3768593/,PUPL XI,Semifinals
+https://www.smogon.com/forums/threads/pupl-xi-replays.3766113/,PUPL XI,Regular Season 
+https://www.smogon.com/forums/threads/pupl-x-finals-won-by-goofy-goober-goodras.3749442/,PUPL X,Finals
+https://www.smogon.com/forums/threads/pupl-x-semifinals.3748921/,PUPL X,Semifinals
+https://www.smogon.com/forums/threads/pupl-x-replays.3746145/,PUPL X,Regular Season 
+https://www.smogon.com/forums/threads/pupl-ix-finals-won-by-m-a-a-d-city-magmortars.3727287/,PUPL IX,Finals
+https://www.smogon.com/forums/threads/pupl-ix-semifinals-tiebreaker-post-51.3726581/,PUPL IX,Semifinals
+https://www.smogon.com/forums/threads/pupl-ix-replays-and-usage-stats.3723912/,PUPL IX,Regular Season 
+https://www.smogon.com/forums/threads/pupl-viii-finals-won-by-moo-moo-milkers.3706676/,PUPL VIII,Finals
+https://www.smogon.com/forums/threads/pupl-viii-semifinals.3706335/,PUPL VIII,Semifinals
+https://www.smogon.com/forums/threads/pupl-viii-replays-and-usage-statistics.3703839/,PUPL VIII,Regular Season 
