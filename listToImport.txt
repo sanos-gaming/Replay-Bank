@@ -1,18 +1,1 @@
-https://www.smogon.com/forums/threads/oraspl-vi-finals-won-by-dreadful-darkrais.3787699/,ORASPL VI,Finals
-https://www.smogon.com/forums/threads/oraspl-vi-semifinals.3787289/,ORASPL VI,Semifinals
-https://www.smogon.com/forums/threads/oraspl-vi-replays-and-usage-stats.3785250/,ORASPL VI,Regular Season
-https://www.smogon.com/forums/threads/sspl-iv-finals-won-by-shadow-sovereigns.3787712/,SSPL IV,Finals
-https://www.smogon.com/forums/threads/sspl-iv-semifinals.3786953/,SSPL IV,Semifinals
-https://www.smogon.com/forums/threads/sspl-iv-replays-and-useage.3784849/,SSPL IV,Regular Season
-https://www.smogon.com/forums/threads/oras-ou-global-championships-2026-finals-won-by-destro16.3787495/,ORAS OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/oras-ou-global-championships-2026-round-7-stage-2.3786609/,ORAS OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/oras-ou-global-championships-2026-round-6.3785864/,ORAS OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/oras-ou-global-championships-2026-round-5.3785195/,ORAS OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/ss-ou-global-championship-2026-grand-final-won-by-mipc.3787344/,SS OU Global Championship 2026,Finals
-https://www.smogon.com/forums/threads/ss-ou-global-championships-2026-round-7.3786592/,SS OU Global Championship 2026,Semifinals
-https://www.smogon.com/forums/threads/ss-ou-global-championships-2026-round-6.3785916/,SS OU Global Championship 2026,Quarterfinals
-https://www.smogon.com/forums/threads/ss-ou-global-championships-2026-round-5.3785256/,SS OU Global Championship 2026,Top 16
-https://www.smogon.com/forums/threads/ss-cup-iv-grand-final-won-by-ikaishi.3787669/,SS Cup IV,Finals
-https://www.smogon.com/forums/threads/ss-cup-iv-semifinals.3787345/,SS Cup IV,Semifinals
-https://www.smogon.com/forums/threads/ss-cup-iv-round-6.3786973/,SS Cup IV,Quarterfinals
-https://www.smogon.com/forums/threads/ss-cup-iv-round-5.3786595/,SS Cup IV,Top 16
+https://www.smogon.com/forums/threads/sun-and-moon-invitational-main-event-round-1.3787930/,SM Invitational 1,Round 1
