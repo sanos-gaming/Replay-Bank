@@ -235,6 +235,7 @@
   let format = window.location.hash.slice(1)||"none"
   if (format=="none") {document.getElementById("ifFormatChoosen").hidden=true;revealFormatList();document.getElementById("formatButton").hidden=true;}
   let formats
+  let samples={}
   fetch("./format-data/format-list.txt").then(resp=>resp.text()).then(x=>{formats=x.split(",");createFormatsTable();start(format)})
 
   function createFormatsTable(){
@@ -325,10 +326,10 @@
         x.team2=x.team2.split(".")
       })
       console.log(fromat,data)
-      init(data)
+      init(data,fromat)
   })}
 
-  function init(data){
+  function init(data,fromat){
     createTable(data)
     isTera=data.some(x=>x.info1.tera)
     dic={}
@@ -347,7 +348,16 @@
     }
     
     // toggleTourRound()
-    tableFilter()
+    fetch("./format-data/"+fromat+"/samples.csv").then(data=>{
+      if (data.status!=404) return(data)
+      else {
+        console.log("No sample")  
+        tableFilter()}
+    }).then(data=>data.text()).then(s=>{
+      ss=s.split('\r\n').map(l=>l.split(",")).filter(l=>l.length==7)
+      ss.forEach(l=>samples[l.slice(0,-1)]=l[6])
+      tableFilter()})
+    
   }
   function createTable(data){
     document.getElementById("switch").hidden=false
@@ -658,6 +668,13 @@
             if((searchedTeam(pokeSearch1,[team1,team2][i-1])&pokeSearch1.some(x=>x!=""))||([player1,player2][i-1].includes(playerSearch1)&playerSearch1!="")||([style1,style2][i-1].includes(styleSearch1)&styleSearch1!="")){coloring(row,colorFrien,i);displayedRows.push([row,i])};
           }
         }
+        else if (sampleSearch!='All'){
+          for (var i=1;i<3;i++){
+            coloring(row,"transparent",i)
+            console.log([team1,team2][i-1])
+            if(Object.keys(samples).some(team=>searchedTeam(team.split(","),[team1,team2][i-1],5))){coloring(row,colorFrien,i);};
+          }
+        }
         else{displayedRows.push([row,0]);coloring(row,"transparent",1);coloring(row,"transparent",2)}
       }
       else {row.style.display = "none";}
@@ -669,7 +686,7 @@
       row.cells[2+i].getElementsByTagName("span")[0].style.backgroundColor= color
     }
 
-    function searchedTeam(search,team){
+    function searchedTeam(search,team,count=6){
       const ALIASES = {
                         ttar: "tyranitar",
                         landot : "landorus-therian",
@@ -680,7 +697,8 @@
                         kb: "kyurem-black",
                         dnite: "dragonite",             
                       };
-      return search.filter(x=> x!=="").every(term => {const termNoMega=term.replace("mega","");const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega; return team.some(mon=>(mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (term.includes("mega")===mon.includes("mega"))))})
+      console.log(search.filter(x=> x!=="").filter(term => {const termNoMega=term.replace("mega","");const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega; return team.some(mon=>(mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (term.includes("mega")===mon.includes("mega"))))}))
+      return search.filter(x=> x!=="").filter(term => {const termNoMega=term.replace("mega","");const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega; return team.some(mon=>(mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (term.includes("mega")===mon.includes("mega"))))}).length>=Math.min(count,search.filter(x=>x!="").length)
     }
 
     document.getElementById("count").textContent =`${n} replay${n === 1 ? "" : "s"} found.`;
