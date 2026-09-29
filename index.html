@@ -376,7 +376,7 @@
       a=x.info2.style
       row.insertCell(4).innerHTML="<span>"+a.replace("/","<br>(")+(a.includes("/")?")":"")+"</span>"
       row.insertCell(5).innerHTML=new Date(x["date"] * 1000).toLocaleDateString('en-GB',{day: '2-digit',month: '2-digit',year: '2-digit'})
-      row.insertCell(6).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x.threadFormat.trim()+(x.threadRound==""?"":"<br>("+x.threadRound.trim()+")")+'</a>'
+      row.insertCell(6).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x.threadName.trim()+(x.threadRound==""?"":"<br>("+x.threadRound.trim()+")")+'</a>'
       // row.insertCell(7).innerHTML='<a href="'+x["threadURL"]+'" target="_blank">'+x["threadRound"]+'</a>'
       row.insertCell(7).innerHTML=x.isASample
     })
