@@ -215,6 +215,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
     if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
+    if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");retur
     LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
   }
   else{
@@ -229,6 +230,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
     var html = await resp.text()
     if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
+    if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");retur
     LinkList = ReplayFinderFromHTML(html)
     while(html.includes(DomainLink+String(page+1))){
       page+=1
