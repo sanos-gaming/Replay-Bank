@@ -242,6 +242,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   }}
   debugger
   var formats=[]
+  if (LinkList.size===0) console.error(`No replays were found in this thread. The fetched HTML contains ${html.length} characters.`)
   console.log("About to import "+LinkList.size+" replays")
   for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
   db.close()
