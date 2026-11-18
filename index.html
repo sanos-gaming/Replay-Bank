@@ -661,21 +661,38 @@
       if (truth){row.style.display = "";n+=1;
         const colorFrien = "#41653D"
         const colorFoe = "#68615B"
-        if (pokeSearch1.concat(pokeSearch2.concat([playerSearch1,playerSearch2,styleSearch1,styleSearch2])).some(x=>x!="")){
+        var isThereASearch = pokeSearch1.concat(pokeSearch2.concat([playerSearch1,playerSearch2,styleSearch1,styleSearch2])).some(x=>x!="")
+        if (isThereASearch){
           for (var i=1;i<3;i++){
             coloring(row,"transparent",i)
             if((searchedTeam(pokeSearch2,[team1,team2][i-1])&pokeSearch2.some(x=>x!=""))||([player1,player2][i-1].includes(playerSearch2)&playerSearch2!="")||([style1,style2][i-1].includes(styleSearch2)&styleSearch2!="")){coloring(row,colorFoe,i);};
             if((searchedTeam(pokeSearch1,[team1,team2][i-1])&pokeSearch1.some(x=>x!=""))||([player1,player2][i-1].includes(playerSearch1)&playerSearch1!="")||([style1,style2][i-1].includes(styleSearch1)&styleSearch1!="")){coloring(row,colorFrien,i);displayedRows.push([row,i])};
           }
         }
-        else if (sampleSearch!='All'){
-          for (var i=1;i<3;i++){
-            coloring(row,"transparent",i)
-            console.log([team1,team2][i-1])
-            if(Object.keys(samples).some(team=>searchedTeam(team.split(","),[team1,team2][i-1],5))){coloring(row,colorFrien,i);};
-          }
-        }
         else{displayedRows.push([row,0]);coloring(row,"transparent",1);coloring(row,"transparent",2)}
+
+        if (sampleSearch!='All'){
+          var samplesOfThisLine = Array.from([false,false])
+          for (var i=1;i<3;i++){
+            if (!isThereASearch) coloring(row,"transparent",i)
+            for (var sampleTeam of Object.keys(samples)){
+              if (searchedTeam(sampleTeam.split(",").map(mon=>mon.toLowerCase().trim().replace(/[^a-zA-Z0-9]/g,"")),[team1,team2][i-1],5)){
+                if (!isThereASearch) coloring(row,colorFrien,i)
+                samplesOfThisLine[i-1] = samples[sampleTeam]
+                break
+              }
+            }
+          }
+          row.cells[0].innerHTML += `<div class = "sampleDisplay" style= "display:${samplesOfThisLine.some(a=>a)?"flex":"none"}; width: 100%">
+                                        <a href="${samplesOfThisLine[0]||"https://media1.tenor.com/m/6xulIBP5DIQAAAAd/luigi-dancing.gif"}" target="_blank" style="width:50%;${samplesOfThisLine[0]?"":"font-size:0"}">Sample Team</a>
+                                        <a href="${samplesOfThisLine[1]||"https://media1.tenor.com/m/6xulIBP5DIQAAAAd/luigi-dancing.gif"}" target="_blank" style="width:50%;${samplesOfThisLine[1]?"":"font-size:0"}">Sample Team</a>
+                                     </div>`
+
+        }
+        else {
+          Array.from(document.getElementsByClassName("sampleDisplay")).forEach(el=>el.remove())
+        }
+        
       }
       else {row.style.display = "none";}
     })
@@ -697,7 +714,6 @@
                         kb: "kyurem-black",
                         dnite: "dragonite",             
                       };
-      console.log(search.filter(x=> x!=="").filter(term => {const termNoMega=term.replace("mega","");const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega; return team.some(mon=>(mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (term.includes("mega")===mon.includes("mega"))))}))
       return search.filter(x=> x!=="").filter(term => {const termNoMega=term.replace("mega","");const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega; return team.some(mon=>(mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (term.includes("mega")===mon.includes("mega"))))}).length>=Math.min(count,search.filter(x=>x!="").length)
     }
 
