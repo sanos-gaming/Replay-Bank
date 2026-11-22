@@ -202,6 +202,19 @@ function closeness(array){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Functions relating to extracting all the replay links posted in a smogon thread
 
+async function getHTML(url) {
+    const browser = await chromium.launch({executablePath: "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"});
+    const page = await browser.newPage();
+
+    await page.goto(url,{"timeout":10000});
+    const html = await page.content();
+
+    await browser.close();
+    return html;
+}
+
+const { chromium } = require("playwright");
+
 async function SmogThreadImport(url1,tourName,tourRound) {
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
   let id=-1
@@ -212,10 +225,9 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     url1=url1.replace("smogon.com","").replace("www.","").replace("https://","").replace("http://","")
     var url="https://www.smogon.com"+url1
     id= await addToThreadDB(url,tourName,tourRound,db)
-    try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
-    var html = await resp.text()
+    var html = await getHTML(url)
     if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
-    if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");retur
+    if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");return}
     LinkList = ReplayFinderFromHTML(html.split('data-content="'+post+'"')[1].split("</article>")[0])
   }
   else{
@@ -226,11 +238,9 @@ async function SmogThreadImport(url1,tourName,tourRound) {
     var baseurl=DomainLink+String(page)
     var url="https://www.smogon.com"+baseurl
     id= await addToThreadDB(url,tourName,tourRound,db)
-    let resp;
-    try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
-    var html = await resp.text()
+    var html = await getHTML(url)
     if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
-    if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");retur
+    if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");return}
     LinkList = ReplayFinderFromHTML(html)
     while(html.includes(DomainLink+String(page+1))){
       page+=1
@@ -342,7 +352,7 @@ async function createZmoveDic(){
   "Psychic":"psychiumz"
   }
   let text = await fs.readFileSync("./moves.ts",{ encoding: 'utf8', flag: 'r' })
-  text.split(/\n(?!\t|\n)/).filter(x=>x.length>10).filter(x=>x.includes("isZ")||x.includes('category: "Status",')).forEach(move=>{
+  text.split(`\n},\n`).filter(x=>x.length>10).filter(x=>x.includes("isZ")||x.includes('category: "Status",')).forEach(move=>{
     let moveName=move.split("\n").filter(x=>x.includes("name: "))[0].split('"')[1]
     if (move.includes("isZ: ")) moveToZ[moveName]=move.split("\n").filter(x=>x.includes("isZ: "))[0].split('"')[1]
     else {
