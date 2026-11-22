@@ -650,8 +650,8 @@
       else {
         len = Array.from(document.getElementById("searchByMons").rows).at(-1).childNodes[0].childNodes[0].dataset.j - 1
         searchRows = Array.from({ length: len }, (_, i) =>document.getElementById(`advSearchRow${i + 1}`))
-        advSearch1 = searchRows.filter(row=>!row.cells[0].childNodes[0].value.trim().toLowerCase().startsWith("vs ")).map(row=>{return {pokemon: row.cells[0].childNodes[0].value, others: Array.from(row.cells).slice(1,-2).map(cell=>cell.childNodes[0].value).filter(cell=>cell!="")}}).filter(t=>t.pokemon!=""||t.others.length!=0)
-        advSearch2 = searchRows.filter(row=> row.cells[0].childNodes[0].value.trim().toLowerCase().startsWith("vs ")).map(row=>{return {pokemon: row.cells[0].childNodes[0].value.replace(/^vs /,""), others: Array.from(row.cells).slice(1,-2).map(cell=>cell.childNodes[0].value).filter(cell=>cell!="")}}).filter(t=>t.pokemon!=""||t.others.length!=0)
+        advSearch1 = searchRows.filter(row=>!row.cells[0].childNodes[0].value.trim().toLowerCase().startsWith("vs")).map(row=>{return {pokemon: row.cells[0].childNodes[0].value, others: Array.from(row.cells).slice(1,-2).map(cell=>cell.childNodes[0].value).filter(cell=>cell!="")}}).filter(t=>t.pokemon!=""||t.others.length!=0)
+        advSearch2 = searchRows.filter(row=> row.cells[0].childNodes[0].value.trim().toLowerCase().startsWith("vs")).map(row=>{return {pokemon: row.cells[0].childNodes[0].value.replace(/^vs /,""), others: Array.from(row.cells).slice(1,-2).map(cell=>cell.childNodes[0].value).filter(cell=>cell!="")}}).filter(t=>t.pokemon!=""||t.others.length!=0)
         truth_adv1 = ADVsearchedTeam(advSearch1, ...teamInfo1) & ADVsearchedTeam(advSearch2, ...teamInfo2)
         truth_adv2 = ADVsearchedTeam(advSearch1, ...teamInfo2) & ADVsearchedTeam(advSearch2, ...teamInfo1)
         truth_pokemon=(option=="Either" & ((truth_adv1)||(truth_adv2)))||(option=="Winner"&truth_adv1)||(option=="Loser"&truth_adv2)
