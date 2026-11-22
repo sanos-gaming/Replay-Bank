@@ -282,7 +282,7 @@
 
   function createPokeSearchAdv(){
     advSearch=true
-    var string = '<tr><th COLSPAN = 3><h class="searchTitle">Advanced</h></th><th COLSPAN=1><button onclick="createPokeSearch()">Normal search</button></th></tr><tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td></tr>'
+    var string = '<tr><th COLSPAN = 3><h class="searchTitle">Advanced</h></th><th COLSPAN=1><button onclick="createPokeSearch()">Normal search</button></th></tr><tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td><td><a href="https://www.smogon.com/forums/threads/replay-bank-created-semi-automatically-from-tournament-threads.3776107/#post-11200112">Help</a></td></tr>'
     for (let j=1;j<7;j++){
       string+='<tr id="advSearchRow'+j+'"><td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'}
     string+='<tr><td><button onclick="advAddRow(this)" data-j='+7+'>+</button></td></tr>'

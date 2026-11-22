@@ -66,7 +66,7 @@ async function SingleReplayImport(url,db,toururl="",fetchid=-1,replace=false) {
   // console.log(`INSERT INTO `+format+" (fetchid,url,team1,team2,player1,player2,style1,style2,date,isASample) VALUE("+toInsert+");")
 
   await db.serialize(() => {db.run("INSERT INTO replayData (fetchid,url,format,team1,team2,info1,info2,date,isASample,turnCount) VALUES (?,?,?,?,?,?,?,?,?,?);",toInsert,(err)=>{
-  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET fetchid=?, team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[fetchid,team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
+  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
   debugger
   return format
 }
@@ -103,7 +103,7 @@ function getInfos(log){
     
     log.forEach((x,index)=>{if ((x.includes("|detailschange|p"+i+"a: ")||x.includes("|detailschange|p"+i+"b: "))&!x.includes("Mimikyu-Busted")){
       detailChange[nicks[x.slice(20).split("|")[0]]]=cleanName(x.split("|")[3])
-      if ((log[index+1].includes("|-mega")||log[index+1].includes("|-primal"))&log[index+1].split("|").length>=4) items[nicks[x.slice(20).split("|")[0]]] = "formItem:"+cleanName(log[index+1].split("|")[3])
+      if ((log[index+1].includes("|-mega")||log[index+1].includes("|-primal"))&log[index+1].split("|").length>=4) items[nicks[x.slice(20).split("|")[0]]] = "formItem:"+cleanName(log[index+1].split("|")[log[index+1].includes("|-mega")?4:3])
       if (log[index+1].includes("|-burst")&log[index+1].split("|").length==5) items[nicks[x.slice(20).split("|")[0]]] = "Zmove:"+cleanName(log[index+1].split("|")[4])
     }})
   
@@ -342,7 +342,7 @@ createZmoveDic()//.then(()=>useCSVFile())
 async function createZmoveDic(){
   moveToZ={}
   let zmoveDic={
-  "Fighting":"fightiniu-z",
+  "Fighting":"fightiniumz",
   "Flying":"flyiniumz",
   "Fire":"firiumz",
   "Electric":"electriumz",
@@ -352,7 +352,7 @@ async function createZmoveDic(){
   "Psychic":"psychiumz"
   }
   let text = await fs.readFileSync("./moves.ts",{ encoding: 'utf8', flag: 'r' })
-  text.split(`\n},\n`).filter(x=>x.length>10).filter(x=>x.includes("isZ")||x.includes('category: "Status",')).forEach(move=>{
+  text.split(`\n},\r\n`).filter(x=>x.includes("isZ")||x.includes('category: "Status",')).forEach(move=>{
     let moveName=move.split("\n").filter(x=>x.includes("name: "))[0].split('"')[1]
     if (move.includes("isZ: ")) moveToZ[moveName]=move.split("\n").filter(x=>x.includes("isZ: "))[0].split('"')[1]
     else {
@@ -370,20 +370,18 @@ async function refreshData(){
   const { promisify } = require('util');
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
   const dbAll = promisify(db.all).bind(db);
-  const rows= await dbAll('SELECT url FROM replayData WHERE info1 LIKE "%mimikyu-busted%" OR info2 LIKE "%mimikyu-busted%"')
-  console.log(rows.length)
+  const rows= await dbAll('SELECT url FROM replayData WHERE info1 LIKE "%undefined%" OR info2 LIKE "%undefined%"')
+  console.log(`Redoing ${rows.length} replays`)
   for (row of rows){
     await SingleReplayImport(row.url,db,undefined,undefined,true)
   }
-  ["gen7ou","gen6ubers"].forEach(format=>exportData(format))
 }
 
-//redoJSONFiles()
+// redoJSONFiles()
 async function redoJSONFiles(){
   const { promisify } = require('util');
   const db=new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE)
   const dbAll = promisify(db.all).bind(db);
   const rows= await dbAll('SELECT DISTINCT format FROM replayData')
   Object.values(rows).forEach(x=>exportData(x.format))
-
 }
