@@ -258,9 +258,9 @@
       tableForm.forEach(forms=>{
         if (!forms[1][i]) row.insertCell()
         else {
-          f=forms[1][i]
+          f=forms[1][i].replace("predlc","").replace('bo3',"").replace("dlc1","")
           gen=forms[0]
-          row.insertCell().outerHTML='<td onclick="start(this.dataset.f)" data-f="gen'+gen+f+'" style="cursor: pointer;">Gen '+gen+' <b>'+(formatNameDic[f]||((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1))))+'</b></td>'
+          row.insertCell().outerHTML='<td onclick="start(this.dataset.f)" data-f="gen'+gen+f+'" style="cursor: pointer;">'+(f.includes("champions")?"":`Gen ${gen}`)+' <b>'+(formatNameDic[f]||((f.length==2)?f.toUpperCase():(f[0].toUpperCase()+f.slice(1))))+'</b></td>'
         }
       })
     }
@@ -269,7 +269,7 @@
   createPokeSearch()
   function createPokeSearch(){
     advSearch=false
-    var string = '<tr><th COLSPAN = 7><h class="searchTitle">Search by pokemon</h></th><th COLSPAN=2><button onclick="createPokeSearchAdv()" hidden>Advanced search</button></th> </tr> <tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>'
+    var string = '<tr><th COLSPAN = 7><h class="searchTitle">Search by pokemon</h></th><th COLSPAN=2><button onclick="createPokeSearchAdv()">Advanced search</button></th> </tr> <tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td>'
     for (let j=1;j<7;j++){
       string+='<td><input type="search" id="PokeSearch1'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'}
     string +='</tr><tr><td> <b>VS</b> </td>'
@@ -277,21 +277,23 @@
       string+='<td><input type="search" id="PokeSearch2'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'}
     string+= '</tr>'
     document.getElementById("searchByMons").innerHTML=string
+    tableFilter()
   }
 
   function createPokeSearchAdv(){
     advSearch=true
-    var string = '<tr><th COLSPAN = 3><h class="searchTitle">Advanced</h></th><th COLSPAN=1><button onclick="createPokeSearch()">Normal search</button></th> </tr>'
+    var string = '<tr><th COLSPAN = 3><h class="searchTitle">Advanced</h></th><th COLSPAN=1><button onclick="createPokeSearch()">Normal search</button></th></tr><tr><td><select id="PokeSearchOption" onchange="tableFilter()"><option value="Either">Either</option><option value="Winner">Winner</option><option value="Loser">Loser</option></select></td></tr>'
     for (let j=1;j<7;j++){
-      string+='<tr class="advSearchRow"><td><input type="search" id="PokeSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" id="OtherSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'}
+      string+='<tr id="advSearchRow'+j+'"><td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'}
     string+='<tr><td><button onclick="advAddRow(this)" data-j='+7+'>+</button></td></tr>'
     document.getElementById("searchByMons").innerHTML=string
+    tableFilter()
   }
   function advAddCol(obj,j){
     let row=obj.parentElement.parentElement
     if (obj.textContent=='+'){
       let newcell=row.insertCell(row.cells.length-2)
-      newcell.innerHTML='<td><input type="search" id="PokeSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td>'
+      newcell.innerHTML='<td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)"></td>'
     }
     if (obj.textContent=='-'){
       row.deleteCell(row.cells.length-3)
@@ -302,7 +304,7 @@
     let table=obj.parentElement.parentElement.parentElement
     let newRow=table.insertRow(table.rows.length-1)
     let j=+obj.dataset.j
-    newRow.outerHTML='<tr class="advSearchRow"><td><input type="search" id="PokeSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" id="OtherSearch'+j+'" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'
+    newRow.outerHTML='<tr id="advSearchRow'+j+'"><td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)" list="pokeList"></td><td><input type="search" onkeyup="tableFilter()" onsearch="tableFilter(true)"></td><td><button onclick="advAddCol(this,'+j+')">+</button></td><td hidden><button onclick="advAddCol(this,'+j+')">-</button></td></tr>'
     obj.dataset.j=j+1
   }
   
@@ -605,8 +607,6 @@
     var n=0
     var displayedRows=[]
     //Retrieve the results of searches
-    const pokeSearch1 = Array.from({ length: 6 }, (_, i) =>document.getElementById(`PokeSearch1${i + 1}`).value.toLowerCase().trim().replace(/[^a-zA-Z0-9]/g,""))
-    const pokeSearch2 = Array.from({ length: 6 }, (_, i) =>document.getElementById(`PokeSearch2${i + 1}`).value.toLowerCase().trim().replace(/[^a-zA-Z0-9]/g,""))
     const option = document.getElementById("PokeSearchOption").value
 
     const playerSearch1 = document.getElementById(`PlayerSearch1`).value.toLowerCase().trim().replace(/[^a-zA-Z0-9]/g,"")
@@ -628,11 +628,34 @@
       var team1 = row.dataset.team1.split(",")
       var team2 = row.dataset.team2.split(",")
 
+      var items1 = row.dataset.items1.split(",").map(i=>i.startsWith("formItem:")?"":i)
+      var items2 = row.dataset.items2.split(",").map(i=>i.startsWith("formItem:")?"":i)
+      var moves1 = row.dataset.moves1.split(",").map(a=>a.split("|").map(b=>b.toLowerCase().replace(/[^a-zA-Z0-9]/g,"")))
+      var moves2 = row.dataset.moves2.split(",").map(a=>a.split("|").map(b=>b.toLowerCase().replace(/[^a-zA-Z0-9]/g,"")))
+      var tera1 = row.dataset.tera?[team1.indexOf(row.dataset.tera.split(",")[0].split("|")[0]), row.dataset.tera.split(",")[0].split("|")[1].toLowerCase()]:[-1,"ik this code is a mess"]
+      var tera2 = row.dataset.tera?[team2.indexOf(row.dataset.tera.split(",")[1].split("|")[0]), row.dataset.tera.split(",")[1].split("|")[1].toLowerCase()]:[-1,"ik this code is a mess"]
+      var teamInfo1 = [team1, items1, moves1, tera1]
+      var teamInfo2 = [team2, items2, moves2, tera2]
 
-      var truth_pokemon1=searchedTeam(pokeSearch1,team1)&searchedTeam(pokeSearch2,team2)
-      var truth_pokemon2=searchedTeam(pokeSearch1,team2)&searchedTeam(pokeSearch2,team1)
-      var truth_pokemon=(option=="Either" & ((truth_pokemon1)||(truth_pokemon2)))||(option=="Winner"&truth_pokemon1)||(option=="Loser"&truth_pokemon2)
-
+      var truth_pokemon
+      var advSearch1 = []
+      var advSearch2 = []
+      if (!advSearch) {
+        pokeSearch1 = Array.from({ length: 6 }, (_, i) =>document.getElementById(`PokeSearch1${i + 1}`).value.toLowerCase().trim().replace(/[^a-zA-Z0-9]/g,""))
+        pokeSearch2 = Array.from({ length: 6 }, (_, i) =>document.getElementById(`PokeSearch2${i + 1}`).value.toLowerCase().trim().replace(/[^a-zA-Z0-9]/g,""))
+        truth_pokemon1=searchedTeam(pokeSearch1,team1)&searchedTeam(pokeSearch2,team2)
+        truth_pokemon2=searchedTeam(pokeSearch1,team2)&searchedTeam(pokeSearch2,team1)
+        truth_pokemon=(option=="Either" & ((truth_pokemon1)||(truth_pokemon2)))||(option=="Winner"&truth_pokemon1)||(option=="Loser"&truth_pokemon2)
+      }
+      else {
+        len = Array.from(document.getElementById("searchByMons").rows).at(-1).childNodes[0].childNodes[0].dataset.j - 1
+        searchRows = Array.from({ length: len }, (_, i) =>document.getElementById(`advSearchRow${i + 1}`))
+        advSearch1 = searchRows.filter(row=>!row.cells[0].childNodes[0].value.trim().toLowerCase().startsWith("vs ")).map(row=>{return {pokemon: row.cells[0].childNodes[0].value, others: Array.from(row.cells).slice(1,-2).map(cell=>cell.childNodes[0].value).filter(cell=>cell!="")}}).filter(t=>t.pokemon!=""||t.others.length!=0)
+        advSearch2 = searchRows.filter(row=> row.cells[0].childNodes[0].value.trim().toLowerCase().startsWith("vs ")).map(row=>{return {pokemon: row.cells[0].childNodes[0].value.replace(/^vs /,""), others: Array.from(row.cells).slice(1,-2).map(cell=>cell.childNodes[0].value).filter(cell=>cell!="")}}).filter(t=>t.pokemon!=""||t.others.length!=0)
+        truth_adv1 = ADVsearchedTeam(advSearch1, ...teamInfo1) & ADVsearchedTeam(advSearch2, ...teamInfo2)
+        truth_adv2 = ADVsearchedTeam(advSearch1, ...teamInfo2) & ADVsearchedTeam(advSearch2, ...teamInfo1)
+        truth_pokemon=(option=="Either" & ((truth_adv1)||(truth_adv2)))||(option=="Winner"&truth_adv1)||(option=="Loser"&truth_adv2)
+      }
       var player1 = row.cells[1].textContent.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-zA-Z0-9]/g,"")
       var player2 = row.cells[2].textContent.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-zA-Z0-9]/g,"")
 
@@ -660,13 +683,13 @@
       
       if (truth){row.style.display = "";n+=1;
         const colorFrien = "#41653D"
-        const colorFoe = "#68615B"
-        var isThereASearch = pokeSearch1.concat(pokeSearch2.concat([playerSearch1,playerSearch2,styleSearch1,styleSearch2])).some(x=>x!="")
+        const colorFoe = "#885151"
+        var isThereASearch = pokeSearch1.concat(pokeSearch2.concat([playerSearch1,playerSearch2,styleSearch1,styleSearch2])).some(x=>x!="")||advSearch1.length!=0||advSearch2.length!=0
         if (isThereASearch){
           for (var i=1;i<3;i++){
             coloring(row,"transparent",i)
-            if((searchedTeam(pokeSearch2,[team1,team2][i-1])&pokeSearch2.some(x=>x!=""))||([player1,player2][i-1].includes(playerSearch2)&playerSearch2!="")||([style1,style2][i-1].includes(styleSearch2)&styleSearch2!="")){coloring(row,colorFoe,i);};
-            if((searchedTeam(pokeSearch1,[team1,team2][i-1])&pokeSearch1.some(x=>x!=""))||([player1,player2][i-1].includes(playerSearch1)&playerSearch1!="")||([style1,style2][i-1].includes(styleSearch1)&styleSearch1!="")){coloring(row,colorFrien,i);displayedRows.push([row,i])};
+            if((advSearch?(ADVsearchedTeam(advSearch2,...[teamInfo1,teamInfo2][i-1])&advSearch2.length!=0):(searchedTeam(pokeSearch2,[team1,team2][i-1])&pokeSearch2.some(x=>x!="")))||([player1,player2][i-1].includes(playerSearch2)&playerSearch2!="")||([style1,style2][i-1].includes(styleSearch2)&styleSearch2!="")){coloring(row,colorFoe,i);};
+            if((advSearch?(ADVsearchedTeam(advSearch1,...[teamInfo1,teamInfo2][i-1])&advSearch1.length!=0):(searchedTeam(pokeSearch1,[team1,team2][i-1])&pokeSearch1.some(x=>x!="")))||([player1,player2][i-1].includes(playerSearch1)&playerSearch1!="")||([style1,style2][i-1].includes(styleSearch1)&styleSearch1!="")){coloring(row,colorFrien,i);displayedRows.push([row,i])};
           }
         }
         else{displayedRows.push([row,0]);coloring(row,"transparent",1);coloring(row,"transparent",2)}
@@ -684,8 +707,8 @@
             }
           }
           row.cells[0].innerHTML += `<div class = "sampleDisplay" style= "display:${samplesOfThisLine.some(a=>a)?"flex":"none"}; width: 100%">
-                                        <a href="${samplesOfThisLine[0]||"https://media1.tenor.com/m/6xulIBP5DIQAAAAd/luigi-dancing.gif"}" target="_blank" style="width:50%;${samplesOfThisLine[0]?"":"font-size:0"}">Sample Team</a>
-                                        <a href="${samplesOfThisLine[1]||"https://media1.tenor.com/m/6xulIBP5DIQAAAAd/luigi-dancing.gif"}" target="_blank" style="width:50%;${samplesOfThisLine[1]?"":"font-size:0"}">Sample Team</a>
+                                        <a href="${samplesOfThisLine[0]||"https://c.tenor.com/6xulIBP5DIQAAAAd/tenor.gif"}" target="_blank" style="width:50%;${samplesOfThisLine[0]?"":"font-size:0"}">Sample Team</a>
+                                        <a href="${samplesOfThisLine[1]||"https://c.tenor.com/6xulIBP5DIQAAAAd/tenor.gif"}" target="_blank" style="width:50%;${samplesOfThisLine[1]?"":"font-size:0"}">Sample Team</a>
                                      </div>`
 
         }
@@ -702,19 +725,99 @@
       row.cells[i].getElementsByTagName("span")[0].style.backgroundColor= color
       row.cells[2+i].getElementsByTagName("span")[0].style.backgroundColor= color
     }
-
     function searchedTeam(search,team,count=6){
-      const ALIASES = {
-                        ttar: "tyranitar",
-                        landot : "landorus-therian",
-                        tornt: "tornadus-therian",
-                        thundt: "thundurus-therian",
-                        xard: "charizard-mega-x",zardx: "charizard-mega-x",charizardx:"charizard-mega-x",x:"charizard-mega-x",
-                        yard: "charizard-mega-y",zardy: "charizard-mega-y",charizardy:"charizard-mega-y",y:"charizard-mega-y",
-                        kb: "kyurem-black",
-                        dnite: "dragonite",             
-                      };
       return search.filter(x=> x!=="").filter(term => {const termNoMega=term.replace("mega","");const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega; return team.some(mon=>(mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (term.includes("mega")===mon.includes("mega"))))}).length>=Math.min(count,search.filter(x=>x!="").length)
+    }
+    function ADVsearchedTeam(search,team,items,moves,tera){
+      var searchMod = search.map(s=>{
+        var pkmn = s.pokemon
+        var others = s.others
+        var output = {
+          modifier: "and",
+          include: true,
+          isTrue: true
+        } //at first set to the default search param, then we check if we have modifiers. We also assume that the search is successfull then we check if thats true
+        const defaultRegEx = /^and |^\+/ //starts with "and " or "+"
+        const excludeRegEx = /^not |^\-/ //starts with "not " or "-"
+        const orRegEx = /^or |^\||^\~/   //starts with "or " or "|" or "~"
+        if (!defaultRegEx.test(pkmn)){
+          if (excludeRegEx.test(pkmn)) {
+            output.include = false
+            pkmn = pkmn.replace(excludeRegEx,"")
+          }
+          else if (orRegEx.test(pkmn)) {
+            output.modifier = "or"
+            pkmn = pkmn.replace(orRegEx,"")
+          }
+        }
+        pkmn = pkmn.replace(defaultRegEx,"").toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim()
+
+        if (pkmn!="") {
+          var indexOfMon = -1
+          team.forEach((mon,i)=>{
+            const termNoMega=pkmn.replace("mega","")
+            const aliasedTerm=ALIASES[termNoMega] ? ALIASES[termNoMega].replace(/[^a-zA-Z0-9]/,"") : termNoMega
+            if (i<6 & mon.replace(/[^a-zA-Z0-9]/,"").includes(aliasedTerm) & (pkmn.includes("mega")===pkmn.includes("mega"))) indexOfMon = i 
+          })
+          if (pkmn.includes("arceus") & team.slice(6).some(mon=>mon.replace(/[^a-zA-Z0-9]/,"").trim().includes(pkmn.replace(/[^a-zA-Z0-9]/,"").trim().toLowerCase()))) {
+            indexOfMon = team.indexOf("arceus")
+          }
+          if (indexOfMon==-1){
+            output.isTrue=false
+            return output
+          }
+          output.isTrue = ADVotherCheck(others, indexOfMon, moves, items, tera)
+        }
+        else {
+          output.isTrue = Array.from({ length: 6 }, (_, i) => i).some(i=>ADVotherCheck(others, i, moves, items, tera)) // if no mon is specified we check if one of the mons verifies all the conditions
+        }
+        return output
+      })
+      truth = true
+      for (var a of searchMod){
+        if (a.modifier=="and") truth = truth & (a.isTrue==a.include) //you want it if both are false or both are true
+        else truth = truth || a.isTrue
+      }
+      return truth
+    }
+    function ADVotherCheck (others, index, moves, items, tera){
+      var otherMod = others.map(b=>{
+        var a = b
+        var output2 = {
+          modifier: "and",
+          include: true,
+          isTrue: false
+        }
+        const defaultRegEx = /^and |^\+/ //starts with "and " or "+"
+        const excludeRegEx = /^not |^\-/ //starts with "not " or "-"
+        const orRegEx = /^or |^\||^\~/   //starts with "or " or "|" or "~"
+        if (excludeRegEx.test(a)) {
+          output2.include = false
+          a = a.replace(excludeRegEx,"")
+        }
+        else if (orRegEx.test(a)) {
+          output2.modifier = "or"
+          a = a.replace(orRegEx,"")
+        }
+        a = a.replace(defaultRegEx,"")
+
+        if (/^i:|^item:/.test(a)) {
+          if (a.replace(/^i:|^item:/,"").toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim() in ["z", "zcrystal", "zmove"]) output2.isTrue = items[index].startsWith("Zmove:")
+          else output2.isTrue=items[index].replace(/[^a-zA-Z0-9]/g,"").includes(a.replace(/^i:|^item:/,"").toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim())
+        }
+        else if (a.toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim() in ["z", "zcrystal", "zmove"]) output2.isTrue = items[index].startsWith("Zmove:")
+        else if (/^m:|^move:/.test(a)) output2.isTrue=moves[index].some(m=>m.includes(a.replace(/^m:|^move:/,"").toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim()))
+        else if (/^t:|^tera:/.test(a)) output2.isTrue=tera[0] == index & tera[1].toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim().includes(a.replace(/^t:|^tera:/,"").toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim())
+        else if (items[index].replace(/[^a-zA-Z0-9]/g,"").includes(a.toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim())||moves[index].some(m=>m.includes(a.toLowerCase().replace(/[^a-zA-Z0-9]/g,"").trim()))) output2.isTrue = true
+        return output2
+      })
+
+      otherTruth = true
+      for (var a of otherMod){
+        if (a.modifier=="and") otherTruth = otherTruth & (a.isTrue==a.include) //you want it if both are false or both are true
+        else otherTruth = otherTruth || a.isTrue
+      }
+      return otherTruth
     }
 
     document.getElementById("count").textContent =`${n} replay${n === 1 ? "" : "s"} found.`;
@@ -959,6 +1062,11 @@
     const IDList=["sampleSearch","tourSearch","StyleSearchOption",`StyleSearch2`,`StyleSearch1`,"PlayerSearchOption",`PlayerSearch2`,`PlayerSearch1`,"PokeSearchOption"].concat(Array.from({ length: 6 }, (_, i)=>'PokeSearch1'+String(i+1)).concat(Array.from({ length: 6 }, (_, i)=>'PokeSearch2'+String(i+1))))
     IDList.forEach(id=>{var element=document.getElementById(id);if (!element){return};if(element.tagName==='INPUT'){element.value=""};if(element.tagName==='SELECT'){element.selectedIndex=0}})
     document.getElementById("seeOld").checked=false
+    if (advSearch){
+      len = Array.from(document.getElementById("searchByMons").rows).at(-1).childNodes[0].childNodes[0].dataset.j - 1
+      searchRows = Array.from({ length: len }, (_, i) =>document.getElementById(`advSearchRow${i + 1}`))
+      searchRows.forEach(r=>Array.from(r.getElementsByTagName("input")).forEach(i=>i.value=""))
+    }
     tableFilter(true)
   }
 
@@ -1099,7 +1207,22 @@
     "nationaldexdoubles":"National Dex Doubles",
     "nationaldexmonotype":"National Dex Monotype",
     "nationaldexag":"National Dex AG",
+    "ubersuu": "Ubers UU",
+    "nfe": "NFE",
+    "letsgoou": "Let's Go OU",
+    "natdexdraft": "National Dex Draft",
+    "championsvgc2026regmc": "Champions VGC Reg M-C"
   }
+  const ALIASES = {
+    ttar: "tyranitar",
+    landot : "landorus-therian",
+    tornt: "tornadus-therian",
+    thundt: "thundurus-therian",
+    xard: "charizard-mega-x",zardx: "charizard-mega-x",charizardx:"charizard-mega-x",x:"charizard-mega-x",
+    yard: "charizard-mega-y",zardy: "charizard-mega-y",charizardy:"charizard-mega-y",y:"charizard-mega-y",
+    kb: "kyurem-black",
+    dnite: "dragonite",             
+  };
 
   function team1row(check){
     document.querySelectorAll(".imTeam1, .imTeam2").forEach(x=>x.style.setProperty('--columns', check.checked?'6':'3'));
