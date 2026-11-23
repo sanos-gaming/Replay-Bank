@@ -66,7 +66,7 @@ async function SingleReplayImport(url,db,toururl="",fetchid=-1,replace=false) {
   // console.log(`INSERT INTO `+format+" (fetchid,url,team1,team2,player1,player2,style1,style2,date,isASample) VALUE("+toInsert+");")
 
   await db.serialize(() => {db.run("INSERT INTO replayData (fetchid,url,format,team1,team2,info1,info2,date,isASample,turnCount) VALUES (?,?,?,?,?,?,?,?,?,?);",toInsert,(err)=>{
-  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
+  if (err?.code === "SQLITE_CONSTRAINT" && replace) {console.log("refreshing replay "+url);db.run("UPDATE replaydata SET fetchid=?, team1=?, team2=?, info1=?, info2=?, isASample=? WHERE url==?",[fetchid,team1.join("."),team2.join("."),JSON.stringify(info1),JSON.stringify(info2),IsASample([team1,team2],format),url])}})});
   debugger
   return format
 }
@@ -247,8 +247,9 @@ async function SmogThreadImport(url1,tourName,tourRound) {
       console.log("Page "+String(page)+" exists!")
       baseurl=DomainLink+String(page)
       url="https://www.smogon.com"+baseurl
-      try {resp = await fetch(url);} catch(err){console.error("The thread URL that failed is "+url+".","The error was "+err);return}
-      var html = (await resp.text()).replace(/<aside class="message-signature">[\s\S]*?<\/aside>/g,'')
+      var html = await getHTML(url)
+      if (html.includes('<title>Oops! We ran into some problems. | Smogon Forums</title>')) {console.error("The thread "+url+" was not found.");return}
+      if (html.includes('<div class="blockMessage blockMessage--error blockMessage--iconic">\n		You must be logged-in to do that.\n	</div>')) {console.error("Log in required...");return}
       // debugger
       LinkList = new Set([...LinkList, ...ReplayFinderFromHTML(html)])
   }}
@@ -256,7 +257,7 @@ async function SmogThreadImport(url1,tourName,tourRound) {
   var formats=[]
   if (LinkList.size===0) console.error(`No replays were found in this thread. The fetched HTML contains ${html.length} characters.`)
   console.log("About to import "+LinkList.size+" replays")
-  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
+  for (const x of LinkList){try { formats.push(await SingleReplayImport(x,db,"https://www.smogon.com"+url1,id, true))}catch(err){console.error("Failed for "+x+" from https://www.smogon.com"+url1,err)}}
   db.close()
   formats = [...new Set(formats)]
   debugger
